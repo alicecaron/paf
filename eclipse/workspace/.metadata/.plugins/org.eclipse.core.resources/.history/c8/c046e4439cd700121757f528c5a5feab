@@ -1,0 +1,10 @@
+package analyse;
+
+public class DocInfo {
+	private String filename;
+	private Set words = new HashSet();
+	
+	public DocInfo(){
+		
+	}
+}

@@ -1,0 +1,1103 @@
+
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+
+Programme
+
+Le programme est présenté en deux colonnes. Chaque thème comporte une brève introduction qui en indique l’esprit
+général.
+La colonne de gauche liste les connaissances (en caractères romains) qui doivent être acquises par les élèves à
+l’issue de la classe de première.
+En italique, la colonne de gauche comporte aussi quelques commentaires qui précisent et limitent les objectifs
+d’apprentissage, lorsque cela paraît nécessaire :
+- en italique simple, quelques précisions sur les objectifs et mots clés (ces mots clés correspondent à des notions
+qui n’ont pas été placées directement dans le programme pour de simples questions d’écriture, mais qui doivent être
+connues des élèves) ;
+- entre parenthèses, des indications sur ce qui a déjà été étudié et qui ne sera pas reconstruit en première (ces
+acquis peuvent cependant être rappelés) ;
+- entre crochets, quelques limites, chaque fois qu’il a semblé nécessaire de rendre parfaitement explicite ce jusqu’où
+ne doit pas aller l’exigible (il s’agit bien de limites de ce qui est exigible pour les élèves, ce qui ne veut pas dire qu’il
+est interdit d’en parler dans le déroulement de la construction du savoir) ;
+- les convergences les plus marquantes vers d’autres disciplines (ces relations ne sont pas indiquées de façon
+exhaustive).
+Une nouvelle rubrique apparaît dans cette colonne par rapport au programme de seconde.  Dénommée
+« pistes », elle suggère des directions de réflexions susceptibles d’être exploitées dans le cadre de prolongements au-
+delà du programme lui-même, en TPE, accompagnement personnalisé ou clubs scientifiques par exemple, de
+préférence en interdisciplinarité.
+La colonne de droite indique les capacités et attitudes dont on attend qu’elles soient développées dans le cadre
+de l’item décrit.
+En préambule du programme, une liste de capacités et attitudes générales est présentée. Celles-ci sont communes
+à la plupart des items qui, par conséquent, ne sont pas reprises par la suite. Il convient cependant de ne pas les
+oublier et d’organiser leur apprentissage sur l’ensemble de l’année.
+On observera que, par souci de continuité et de cohérence, le vocabulaire utilisé pour décrire les capacités et
+attitudes  mises  en  œuvre  s’inspire  fortement  de  celui  utilisé  pour  le  socle  commun  de  connaissances  et  de
+compétences du collège (décret n° 2006-830 du 11 juillet 2006, encart au B.O.EN n° 29 du 20 juillet 2006).
+Capacités et attitudes développées tout au long du programme
+Pratiquer une démarche scientifique (observer, questionner, formuler une hypothèse, expérimenter, raisonner avec
+rigueur, modéliser).
+Recenser, extraire et organiser des informations.
+Comprendre le lien entre les phénomènes naturels et le langage mathématique.
+Manipuler et expérimenter.
+Comprendre qu’un effet peut avoir plusieurs causes.
+Exprimer et exploiter des résultats, à l’écrit, à l’oral, en utilisant les technologies de l’information et de la
+communication.
+Communiquer dans un langage scientifiquement approprié : oral, écrit, graphique, numérique.
+Percevoir le lien entre sciences et techniques.
+Manifester sens de l’observation, curiosité, esprit critique.
+Montrer de l’intérêt pour les progrès scientifiques et techniques.
+Être conscient de sa responsabilité face à l’environnement, la santé, le monde vivant.
+Avoir une bonne maîtrise de son corps.
+Être conscient de l’existence d’implications éthiques de la science.
+Respecter les règles de sécurité.
+Comprendre la nature provisoire, en devenir, du savoir scientifique.
+Être capable d’attitude critique face aux ressources documentaires.
+Manifester de l’intérêt pour la vie publique et les grands enjeux de la société.
+Savoir choisir un parcours de formation.
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               1 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Connaissances     Capacités et attitudes
+Thème 1. La Terre dans l’Univers, la vie et l’évolution du vivant
+Thème 1 - A
+Expression, stabilité et variation du patrimoine génétique
+Ce thème s’appuie sur les connaissances acquises en collège et en classe de seconde sur la molécule d’ADN.
+Il s’agit de comprendre comment la réplication et la mitose permettent une reproduction cellulaire conforme. Toutefois,
+la fragilité de la molécule d’ADN - notamment lors de la réplication - est source de mutation, cause de variation
+génétique.
+Les mécanismes de transcription et traduction expliquent l’équipement protéique des cellules.
+Reproduction conforme de la cellule et réplication de l’ADN
+Les chromosomes sont des structures constantes des
+cellules eucaryotes qui sont dans des états de
+condensation variables au cours du cycle cellulaire.
+En général la division cellulaire est une reproduction
+conforme qui conserve toutes les caractéristiques du
+caryotype (nombre et morphologie des chromosomes).
+
+Objectifs et mots clés. Phases du cycle cellulaire :
+interphase (G1, S, G), mitose.
+(Collège et seconde. Première approche de la mitose, du
+caryotype).
+[Limites. Les anomalies du caryotype ne sont pas
+abordées ici. Le fonctionnement du fuseau mitotique est
+hors programme.]
+Pistes. Explication des anomalies chromosomiques ;
+caryotypes et définition des espèces.
+Recenser, extraire et exploiter des informations
+permettant de caractériser le cycle cellulaire et ses
+phases, dans différents types cellulaires.
+Effectuer un geste technique en observant au microscope
+des divisions de cellules eucaryotes.
+Chaque chromatide contient une molécule d’ADN.
+Au cours de la phase S, l’ADN subit la réplication semi-
+conservative. En absence d’erreur, ce phénomène
+préserve, par copie conforme, la séquence des
+nucléotides.
+Ainsi, les deux cellules filles provenant par mitose d’une
+cellule mère possèdent la même information génétique.
+
+Objectifs et mots clés. Il s’agit de donner aux élèves les
+connaissances de base nécessaires sur la multiplication
+cellulaire conforme aux  échelles cellulaire (mitose) et
+moléculaire (réplication de l’ADN).
+(Collège et seconde. Première approche de l’ADN).
+[Limites. L’intervention d’un ensemble d’enzymes et la
+nécessité d’une source d’énergie sont seulement
+signalées, sans souci de description exhaustive.]
+Pistes. Comprendre la PCR. Calculer la vitesse de
+réplication chez les eucaryotes.
+Mettre en œuvre une méthode (démarche historique)
+et/ou une utilisation de logiciels et/ou une pratique
+documentaire permettant de comprendre le mécanisme
+de réplication semi conservative.
+Variabilité génétique et mutation de l’ADN
+Pendant la réplication de l’ADN surviennent des erreurs
+spontanées et rares, dont la fréquence est augmentée
+par l’action d’agents mutagènes. L’ADN peut aussi être
+endommagé en dehors de la réplication.
+Le plus souvent l’erreur est réparée par des systèmes
+enzymatiques. Quand elle ne l’est pas, si les modifications
+n’empêchent pas la survie de la cellule, il apparaît une
+mutation, qui sera transmise si la cellule se divise.
+Une mutation survient soit dans une cellule somatique
+(elle est ensuite présente dans le clone issu de cette
+cellule) soit dans une cellule germinale (elle devient alors
+héréditaire).
+Les mutations sont la source aléatoire de la diversité des
+allèles, fondement de la biodiversité.
+Recenser, exploiter et interpréter des bases de données
+et/ou concevoir et réaliser un protocole pour :
+- mettre en évidence l’influence d’agents mutagènes sur
+des populations humaines (UV, benzène, etc.) ;
+- analyser l’influence de l’irradiation d’une culture de
+levures par des UV (suivi du taux de mortalité).
+Utiliser des logiciels pour caractériser des mutations.
+Recenser et exploiter des informations permettant de
+caractériser la diversité allélique d’une population.
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               2 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+(Collège et seconde. Première approche de la variation
+génétique.)
+[Limites. L’action d’agents mutagènes est étudiée à titre
+d’exemple, mais leur mécanisme d’action n’a pas à être
+mémorisé. Aucune exhaustivité n’est attendue dans la
+présentation de ces agents.]
+Convergences. Mathématiques : probabilité.
+Pistes. Quantification de la mutation dans une population
+cellulaire (mathématiques) ; les agents mutagènes dans
+l’environnement (physique-chimie).  
+L’expression du patrimoine génétique
+La séquence des nucléotides d’une molécule d’ADN
+représente une information. Le code génétique est le
+système de correspondance mis en jeu lors de la
+traduction de cette information. À quelques exceptions
+près, il est commun à tous les êtres vivants.
+Les portions codantes de l’ADN comportent l’information
+nécessaire à la synthèse de chaînes protéiques issues
+de l’assemblage d’acides aminés.
+Chez les eucaryotes, la transcription est la fabrication,
+dans le noyau, d’une molécule d’ARN pré-messager,
+complémentaire du brin codant de l’ADN. Après une
+éventuelle maturation, l’ARN messager est traduit en
+protéines dans le cytoplasme.
+Un même ARN pré-messager peut subir, suivant le
+contexte, des maturations différentes et donc être à
+l’origine de plusieurs protéines différentes.
+
+[Limites. Le code génétique n’est pas à mémoriser. Les
+rôles des ARNt et ARNr ne sont pas au programme. Les
+mécanismes sont étudiés chez les eucaryotes, mais
+l’objectif n’est pas de mettre l’accent sur les différences
+entres les eucaryotes et les procaryotes. L’existence
+d’une maturation de l’ARN prémessager est signalée,
+mais ses différents aspects ne sont pas exigibles]
+Recenser, extraire et exploiter des informations
+permettant de caractériser les protéines comme
+expression primaire de l’information génétique.
+Mettre en œuvre une méthode (démarche historique)
+et/ou une utilisation de logiciels et/ou une pratique
+documentaire permettant :
+- d’approcher le mécanisme de la transcription, et de la
+traduction ;
+- comprendre comment le code génétique a été élucidé.
+L’ensemble des protéines qui se trouvent dans une
+cellule (phénotype moléculaire) dépend :
+- du patrimoine génétique de la cellule (une mutation
+allélique peut être à l’origine d’une protéine différente ou
+de l’absence d’une protéine) ;
+- de la nature des gènes qui s’expriment sous l’effet de
+l’influence de facteurs internes et externes variés.
+Le phénotype macroscopique dépend du phénotype
+cellulaire, lui-même induit par le phénotype moléculaire.
+
+(Collège et seconde. Première approche des différentes
+échelles du phénotype et de la variation.)
+[Limites. L’étude de la différenciation cellulaire n’est pas
+au programme ; on se contente de constater que
+plusieurs cellules d’un même organisme peuvent ne pas
+contenir les mêmes protéines.]
+Pistes. Perturbation de la production de protéines dans
+une cellule cancéreuse. Différenciation cellulaire et
+expression protéique.
+Recenser, extraire et exploiter des informations (à partir
+d’un exemple comme la drépanocytose ou le xeroderma
+pigmentosum) permettant de :
+- caractériser les différentes échelles d’un phénotype ;
+- différencier les rôles de l’environnement et du génotype
+dans l’expression d’un phénotype.
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               3 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Connaissances     Capacités et attitudes
+Thème 1 - B
+La tectonique des plaques : l’histoire d’un modèle
+Les grandes lignes de la tectonique des plaques ont été présentées au collège. Il s’agit, en s’appuyant sur une
+démarche historique, de comprendre comment ce modèle a peu à peu été construit au cours de l’histoire des
+sciences et de le compléter. On se limite à quelques étapes significatives de l’histoire de ce modèle.
+L’exemple de la tectonique des plaques donne l’occasion de comprendre la notion de modèle scientifique et son
+mode d’élaboration. Il s’agit d’une construction intellectuelle hypothétique et modifiable. Au cours du temps, la
+communauté scientifique l’affine et le précise en le confrontant en permanence au réel. Il a une valeur prédictive et
+c’est souvent l’une de ces prédictions qui conduit à la recherche d’un fait nouveau qui, suivant qu’il est ou non
+découvert, conduit à étayer ou modifier le modèle. La solidité du modèle est peu à peu acquise par l’accumulation
+d’observations en accord avec lui. Les progrès techniques accompagnent le perfectionnement du modèle tout autant
+que les débats et controverses.
+NB -  À  partir  de  l’exemple  de  la  tectonique  des  plaques,  les  élèves  seront  conduits  à  comprendre  quelques
+caractéristiques du mode de construction des théories scientifiques.
+La naissance de l’idée
+Au début du XXème siècle, les premières idées
+évoquant la mobilité horizontale s’appuient sur quelques
+constatations :
+- la distribution bimodale des altitudes
+(continents/océans) ;
+- les tracés des côtes ;
+- la distribution géographique des paléoclimats et de
+certains fossiles.
+Ces idées se heurtent au constat d’un état solide de la
+quasi-totalité du globe terrestre établi, à la même
+époque, par les études sismiques. L’idée de mobilité
+horizontale est rejetée par l’ensemble de la communauté
+scientifique.
+
+[Limites. Il ne s’agit pas d’une étude exhaustive des
+précurseurs de la tectonique des plaques, mais
+simplement de l’occasion de montrer la difficile
+naissance d’une idée prometteuse.]
+Convergences. Mathématiques : distributions,
+fréquences.
+Comprendre les difficultés d’acceptation des premières
+idées de mobilité.
+Réaliser et exploiter des modélisations analogique et
+numérique pour établir un lien entre propagation des
+ondes sismiques et structure du globe.
+L’interprétation actuelle des différences d’altitude moyennes entre les continents et les océans
+La différence d’altitude observée entre continents et
+océans reflète un contraste géologique.
+Les études sismiques et pétrographiques permettent de
+caractériser et de limiter deux grands types de croûtes
+terrestres : une croûte océanique essentiellement formée
+de basalte et de gabbro et une croûte continentale
+constituée entre autres de granite.
+La croûte repose sur le manteau, constitué de péridotite.
+
+Objectifs et mots clés. La découverte des deux
+lithosphères est l’occasion de fournir aux élèves les
+données fondamentales sur les principales roches
+rencontrées (basalte, gabbro, granite, péridotite).
+(Collège et seconde. Première approche de la croûte et
+de la lithosphère.)
+[Limites. L’étude pétrographique se limite à la
+présentation des principales caractéristiques des quatre
+roches citées. Bien que l’observation de lames minces
+soit recommandée, il n’est pas attendu de faire
+mémoriser par les élèves les critères d’identification
+microscopique des minéraux].
+Convergences. Physique : ondes mécaniques.
+Concevoir une modélisation analogique et réaliser des
+mesures à l’aide de dispositifs d’expérimentation assistée
+par ordinateur de propagation d’ondes à travers des
+matériaux de nature pétrographique différente.
+Observer à différentes échelles, de l’échantillon
+macroscopique à la lame mince, les roches des croûtes
+océanique et continentale et du manteau.
+Comprendre comment des observations fondées sur des
+techniques nouvelles ont permis de dépasser les
+obstacles du bon sens apparent.
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               4 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+L’hypothèse d’une expansion océanique et sa confrontation à des constats nouveaux
+Au début des années 1960, les découvertes de la
+topographie océanique et des variations du flux
+thermique permettent d’imaginer une expansion
+océanique par accrétion de matériau remontant à l’axe
+des dorsales, conséquence d’une convection profonde.
+La mise en évidence de bandes d’anomalies
+magnétiques symétriques par rapport à l’axe des
+dorsales océaniques, corrélables avec les phénomènes
+d’inversion des pôles magnétiques (connus depuis le
+début du siècle), permet d’éprouver cette hypothèse et
+de calculer des vitesses d’expansion.
+
+Objectifs et mots clés. Cette étude est l’occasion de
+fournir aux élèves les données fondamentales sur le
+magnétisme des roches (magnétite, point de Curie).
+[Limites. Un élève doit situer cet épisode de l’histoire des
+sciences dans les années 1960. La mémorisation des
+dates précises et des auteurs n’est pas attendue.]
+Convergences. Physique : magnétisme.
+Pistes. Les variations du champ magnétique terrestre ;
+les inversions magnétiques.
+Comprendre comment la convergence des observations
+océanographiques avec les mesures de flux thermique a
+permis d’avancer l’hypothèse d’une expansion océanique
+réactualisant l’idée d’une dérive des continents.
+Comprendre comment la corrélation entre les anomalies
+magnétiques découvertes sur le plancher océanique et la
+connaissance plus ancienne de l’existence d’inversion des
+pôles magnétiques confirma l’hypothèse de l’expansion
+océanique.
+Calculer des taux d’expansion.
+Le concept de lithosphère et d’asthénosphère
+Au voisinage des fosses océaniques, la distribution
+spatiale des foyers des séismes en fonction de leur
+profondeur s’établit selon un plan incliné.
+Les différences de vitesse des ondes sismiques qui se
+propagent le long de ce plan, par rapport à celles qui
+s’en écartent, permettent de distinguer : la lithosphère de
+l’asthénosphère.
+L’interprétation de ces données sismiques permet ainsi
+de montrer que la lithosphère s’enfonce dans le manteau
+au niveau des fosses dites de subduction.
+La limite inférieure de la lithosphère correspond
+généralement à l’isotherme 1300° C.
+
+Objectifs et mots clés. Distinction claire des notions de :
+lithosphère, asthénosphère, croûte, manteau, subduction.
+(Collège : lithosphère-asthénosphère)
+[Limites. On se contente de présenter la notion de
+subduction. Le mécanisme et les conséquences géologiques
+de ce phénomène seront abordés en terminale.]
+Saisir et exploiter des données sur des logiciels pour
+mettre en évidence la répartition des foyers des séismes
+au voisinage des fosses océaniques.
+Comprendre comment l’interprétation de la distribution
+particulière des foyers des séismes permet :
+- de définir la lithosphère par rapport à l’asthénosphère;
+- de confirmer, dans le cadre du modèle en construction,
+que la lithosphère océanique retourne dans le manteau.
+Concevoir une modélisation analogique et réaliser des
+mesures à l’aide de dispositifs d’expérimentation assistée
+par ordinateur de propagation d’ondes à travers un même
+matériau mais à des températures différentes pour
+comprendre la différence entre lithosphère et
+asthénosphère.
+Un premier modèle global : une lithosphère découpée en plaques rigides
+À la fin des années soixante, la géométrie des failles
+transformantes océaniques permet de proposer un
+modèle en plaques rigides. Des travaux
+complémentaires parachèvent l’établissement de la
+théorie de la tectonique des plaques en montrant que les
+mouvements divergents (dorsales), décrochants (failles
+transformantes) et convergents (zones de subduction)
+sont cohérents avec ce modèle géométrique.
+Des alignements volcaniques, situés en domaine
+océanique ou continental, dont la position ne correspond
+pas à des frontières de plaques, sont la trace du
+déplacement de plaques lithosphériques au dessus d’un
+point chaud fixe, en première approximation, dans le
+manteau.
+
+(Collège : plaques lithosphériques)
+[Limites. La formalisation mathématique de la
+cinématique des plaques n’est pas attendue.]
+Réaliser une manipulation analogique simple, ou utiliser
+un logiciel de simulation, pour comprendre que les
+mouvements des plaques sont des rotations de pièces
+rigides se déplaçant sur une sphère.
+Comprendre comment désormais des faits ne s’intégrant
+pas a priori avec le modèle initial (volcanisme intraplaque)
+permettent un enrichissement du modèle (théorie des
+points chauds) et non son rejet.
+Corréler les directions et les vitesses de déplacements
+des plaques tirées des données paléomagnétiques avec
+celles déduites de l’orientation et des âges des
+alignements volcaniques intraplaques.
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               5 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Pistes. Étude géométrique de la cinématique des
+plaques (mathématiques) ; modélisation des types de
+failles.  
+Le renforcement du modèle par son efficacité prédictive
+Le modèle prévoit que la croûte océanique est d’autant
+plus vieille qu’on s’éloigne de la dorsale. Les âges des
+sédiments en contact avec le plancher océanique
+(programme de forage sous-marins JOIDES) confirment
+cette prédiction et les vitesses prévues par le modèle de
+la tectonique des plaques.
+Le modèle prévoit des vitesses de déplacements des
+plaques (d’après le paléomagnétisme et les alignements
+de volcans intraplaques). Avec l’utilisation des
+techniques de positionnement par satellites (GPS), à la
+fin du XXème siècle, les mouvements des plaques
+deviennent directement observables et leurs vitesses
+sont confirmées.
+
+[Limites. L’étude des forages marins se limite à
+l’interprétation du premier sédiment au contact de la
+croûte magmatique. L’interprétation des inversions
+magnétiques enregistrées dans les sédiments des
+carottes de forage n’est pas au programme.]
+Pistes. Les systèmes de positionnement satellitaire
+(physique, mathématiques).
+Saisir et exploiter des informations sur cartes.
+Concevoir, réaliser et exploiter un modèle analogique.
+Réaliser des mesures sur le terrain pour comprendre le
+principe du GPS.
+Saisir et exploiter des données sur des logiciels.
+L’évolution du modèle : le renouvellement de la lithosphère océanique
+En permanence, de la lithosphère océanique est détruite
+dans les zones de subduction et produite dans les
+dorsales.
+La divergence des plaques de part et d’autre de la
+dorsale permet la mise en place d’une lithosphère
+nouvelle à partir de matériaux d’origine mantélique.
+Dans les zones de subduction, les matériaux de la vieille
+lithosphère océanique s’incorporent au manteau.
+Objectifs et mots clés. Il s’agit de construire une
+représentation graphique synthétique du modèle global
+et de fournir aux élèves les données essentielles sur le
+fonctionnement d’une dorsale type.
+
+(Collège : volcanisme)
+[Limites. La subduction est localisée et simplement
+présentée comme un lieu de destruction de lithosphère
+océanique, les phénomènes géologiques associés
+seront traités en terminale. On se limite à l’étude d’une
+dorsale siège de la production d’une lithosphère
+océanique complète : les différents types de dorsales ne
+sont pas au programme. Le moteur de la tectonique des
+plaques sera explicité en classe de terminale.]
+Convergences. Physique : changements d’état.
+Pistes. Construire un raisonnement sur des données
+géochimiques (mathématiques, physique) ; frontières de
+plaques et risques naturels (histoire-géographie,
+mathématiques).
+Recenser, extraire et organiser des informations sur des
+images satellitales et de tomographie sismique.
+Réaliser des modélisations analogiques et numériques
+pour établir les liens entre amincissement de la
+lithosphère, remontée, dépressurisation et fusion partielle
+de l’asthénosphère sous-jacente et formation d’une
+nouvelle lithosphère.
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               6 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Connaissances     Capacités et attitudes
+Thème 2 - Enjeux planétaires contemporains
+Thème 2 - A
+Tectonique des plaques et géologie appliquée
+L’objectif est de montrer que le modèle de la tectonique des plaques présente un intérêt appliqué. Sans chercher à
+donner une vision naïve selon laquelle toute application géologique pratique nécessite les concepts de la tectonique
+des plaques, on choisira un exemple permettant de montrer que, parfois, ce modèle permet de comprendre les
+conditions d’existence d’une ressource exploitable.
+L’exemple sera choisi de façon à introduire quelques idées concernant une histoire sédimentaire compréhensible
+dans le cadre du modèle de la tectonique des plaques.
+Deux possibilités sont proposées, l’une d’approche locale, l’autre plus globale. Le professeur choisira de traiter au
+moins l’une de ces deux approches.
+Première possibilité : tectonique des plaques et recherche d’hydrocarbures
+Le choix est fait de s’intéresser à un champ pétrolifère ou gazier situé dans un bassin de marge passive pour
+comprendre les principaux facteurs qui conditionnent la formation des gisements. En s’appuyant éventuellement sur
+ce qui aura été étudié en seconde, il s’agit d’expliciter le constat fait alors : les gisements d’hydrocarbures sont rares
+et précisément localisés.
+Le modèle de la tectonique des plaques constitue un
+cadre intellectuel utile pour rechercher des gisements
+pétroliers.
+À partir de l’étude d’un exemple on montre que la
+tectonique globale peut rendre compte :
+- d’un positionnement géographique du bassin favorable
+au dépôt d’une matière organique abondante et à sa
+conservation ;
+- d’une tectonique en cours de dépôt (subsidence) et
+après le dépôt qui permettent l’enfouissement et la
+transformation de la matière organique puis la mise en
+place du gisement.
+La rare coïncidence de toutes ces conditions
+nécessaires explique la rareté des gisements dans
+l’espace et le temps.
+
+Objectifs et mots clés. L’exemple étudié permet de
+présenter ce qu’est un bassin sédimentaire et quelques
+exemples de roches sédimentaires. Il permet aussi de
+montrer l’intérêt de la tectonique des plaques dans la
+compréhension du phénomène sédimentaire.
+[Limites. Une présentation exhaustive des types de
+bassins et de leur contexte géodynamique est hors
+programme. La typologie des pièges pétroliers l’est
+également.]
+Pistes. Comprendre l’importance économique d’une
+histoire géologique (géographie) ; ressources
+énergétiques et géopolitique (histoire-géographie).
+Rechercher d’autres contextes de gisements
+d’hydrocarbures, sur Terre ou ailleurs.
+Recenser, extraire et organiser des informations
+permettant de reconstituer le contexte géographique et
+géologique à l’époque du dépôt à l’origine de
+l’hydrocarbure de l’exemple étudié.
+Découvrir la morphologie et la structure des marges
+passives à partir des profils de sismique réflexion et/ou
+des cartes et/ou des coupes
+Recenser, extraire et organiser des informations
+notamment lors d’une sortie sur le terrain.
+Analyser les positions relatives des continents et des
+océans (Téthys ou Atlantique) lors des périodes
+d’absence ou de grande accumulation de roches-mères
+pétrolières pour comprendre les conditions favorables à
+leur dépôt.
+Modéliser la circulation de fluides de densités différentes
+non miscibles dans des roches perméables.
+Concevoir une modélisation et suivre un protocole pour
+comprendre comment une structure géologique associée
+à un recouvrement imperméable constitue un piège à
+liquide.
+Repérer les grandes caractéristiques d’un bassin
+sédimentaire et de quelques roches sédimentaires.
+Deuxième possibilité : tectonique des plaques et ressource locale
+Un exemple de ressource géologique est choisi dans un
+contexte proche de l’établissement scolaire. Son étude
+(nature, gisement) permet de comprendre que ses
+conditions d’existence peuvent être décrites en utilisant
+le cadre général de la tectonique des plaques.
+
+Objectif et mots clés. Il s’agit de montrer l’intérêt local et
+concret du modèle. Tout exemple de matériau
+géologique d’intérêt pratique peut être retenu.
+[Limites. Aucune connaissance spécifique n’est attendue.]
+Recenser, extraire et organiser des informations
+notamment lors d’une sortie sur le terrain.
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               7 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Connaissances     Capacités et attitudes
+Thème 2 - B
+Nourrir l’humanité
+Le thème Nourrir l’humanité prolonge l’approche globale de l’agriculture conduite en seconde. Pour cela, il nécessite
+la présentation de quelques grandes notions concernant les écosystèmes et leur fonctionnement. Par comparaison,
+l’étude d’une culture permet de comprendre la conception, l’organisation et le fonctionnement d’un agrosystème ; celle
+d’un élevage amène l’idée d’impacts écologiques différents selon les agrosystèmes. Enfin, ce thème permet de mettre
+en relation les pratiques alimentaires individuelles et les problématiques de gestion de l’environnement telles que les
+sciences de la vie et de la Terre permettent de les aborder scientifiquement.
+La production végétale : utilisation de la productivité primaire
+Un écosystème naturel est constitué d’un biotope et
+d’une biocénose. Son fonctionnement d’ensemble est
+permis par la productivité primaire qui, dans les
+écosystèmes continentaux, repose sur la photosynthèse
+des plantes vertes.
+L’agriculture repose sur la constitution d’agrosystèmes
+gérés dans le but de fournir des produits (dont les
+aliments) nécessaires à l’humanité.
+Un agrosystème implique des flux de matière (dont l’eau)
+et d’énergie qui conditionnent sa productivité et son
+impact environnemental.
+L’exportation de biomasse, la fertilité des sols, la recherche
+de rendements posent le problème de l’apport d’intrants
+dans les cultures (engrais, produits phytosanitaires, etc.).
+Le coût énergétique et les conséquences
+environnementales posent le problème des pratiques
+utilisées. Le choix des techniques culturales vise à
+concilier la nécessaire production et la gestion durable
+de l’environnement.
+
+Objectifs et mots clés. Il s’agit de quantifier les flux
+d’énergie et de matière dans l’agrosystème de
+production végétale (qualitativement - polluants compris -
+et quantitativement). Cette étude permet de présenter les
+principes de la réflexion qui conduisent à une pratique
+raisonnée de l’agriculture.
+(Collège et seconde. Première approche des bases
+biologiques de la production agricole.)
+[Limites. Aucune exhaustivité n’est attendue dans la
+présentation des pratiques agricoles et des intrants.]
+Pistes. Agriculture et développement durable ;
+agriculture biologique / raisonnée (histoire-géographie).
+Étudier un exemple de culture végétale pour montrer
+comment des techniques variées permettent une
+production quantitativement et qualitativement adaptée
+aux besoins.
+Faire preuve d’esprit critique en étudiant la conduite d’une
+culture quant à son impact sur l’environnement.
+Recenser, extraire et exploiter des informations,
+notamment sur le terrain, utiliser des bases de données et
+des logiciels pour comparer les bilans d’énergie et de
+matière (dont l’eau) d’un agrosystème de production
+végétale et d’un écosystème peu modifié par l’homme.
+Concevoir et réaliser un protocole pour mettre en œuvre
+une culture et analyser ses caractéristiques et/ou utiliser
+des logiciels modélisant une culture, ses bilans et sa
+gestion.
+La production animale : une rentabilité énergétique réduite
+Dans un écosystème naturel, la circulation de matière et
+d’énergie peut être décrite par la notion de pyramide de
+productivité.
+Dans un agrosystème, le rendement global de la
+production par rapport aux consommations (énergie,
+matière) dépend de la place du produit consommé dans
+la pyramide de productivité.
+Ainsi, consommer de la viande ou un produit végétal n’a
+pas le même impact écologique. Objectifs et mots clés. Il
+s’agit de faire comprendre que la production animale
+fondée sur une production végétale quantitativement
+abondante se traduit par un bilan de matière et d’énergie
+plus défavorable.
+
+Convergences. Géographie (seconde) - eau ressource
+essentielle.
+Recenser, extraire et exploiter des informations, utiliser
+des bases de données et des logiciels pour comparer les
+bilans d’énergie et de matière (dont l’eau) de différents
+élevages, et comparer production animale et production
+végétale.
+Faire preuve d’esprit critique en étudiant la conduite d’un
+élevage quant à son impact sur l’environnement.
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               8 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Pratiques alimentaires collectives et perspectives globales
+Les pratiques alimentaires sont déterminées par les ressources disponibles, les habitudes individuelles et collectives
+selon les modes de consommation, de production et de distribution. Le but de cette partie est de montrer en quoi les
+pratiques alimentaires individuelles répétées collectivement peuvent avoir des conséquences environnementales
+globales.
+À l’échelle globale, l’agriculture cherche à relever le défi
+de l’alimentation d’une population humaine toujours
+croissante. Cependant, les limites de la planète
+cultivable sont bientôt atteintes : les ressources (eau, sol,
+énergie) sont limitées tandis qu’il est nécessaire de
+prendre en compte l’environnement pour en assurer la
+durabilité.
+
+Objectifs et mots clés. On cherche ici à mettre en relation
+les pratiques locales et leurs implications globales afin
+d’installer les bases de la réflexion qui conduit aux choix
+de pratiques. Il s’agit de montrer comment il est possible
+d’aborder la réflexion sur ces questions en termes de
+bilan planétaire.
+[Limites. Il ne s’agit pas d’enseigner les choix qui doivent
+être faits, mais d’introduire les bases scientifiques
+nécessaires à une réflexion éclairée sur les choix.
+Aucune exhaustivité concernant les pratiques
+alimentaires n’est attendue.]
+Convergences. Géographie (seconde) - Nourrir les
+hommes.
+Recenser, extraire et exploiter des informations, utiliser
+des bases de données et des logiciels pour comprendre :
+- l’impact global des pratiques alimentaires ;
+- la gestion de populations et/ou de peuplements
+naturels ;
+Recenser, extraire et exploiter des informations sur la
+variété des agro-systèmes mondiaux et leurs
+caractéristiques.
+Recenser et comparer différentes pratiques culturales, du
+point de vue de leur durabilité (bilan carbone, bilan
+énergétique, biodiversité, etc.).
+Recenser, extraire et exploiter des informations sur les
+recherches actuelles permettant d’améliorer la production
+végétale dans une logique de développement durable.
+Utiliser des systèmes d’information géographique(Sig)
+pour déterminer l’importance des besoins (énergie,
+matière, sol, etc.) de la production mondiale agricole
+actuelle (et son évolution récente).
+Connaissances     Capacités et attitudes
+Thème 3 - Corps humain et santé
+Thème 3 - A
+Féminin, masculin
+L’étude de la sexualité humaine s’appuie sur les acquis du collège. Dans une optique d’éducation à la santé et à la
+responsabilité, il s’agit de comprendre les composantes biologiques principales de l’état masculin ou féminin, du lien
+entre la sexualité et la procréation et des relations entre la sexualité et le plaisir. Ces enseignements gagneront à être
+mis en relation avec d’autres approches interdisciplinaire (philosophie) et/ou intercatégorielle (professionnels de
+santé). Il s’agit d’aider l’élève à la prise en charge responsable de sa vie sexuelle.
+Devenir femme ou homme
+On saisira l’occasion d’affirmer que si l’identité sexuelle et les rôles sexuels dans la société avec leurs stéréotypes
+appartiennent à la sphère publique, l’orientation sexuelle fait partie, elle, de la sphère privée. Cette distinction conduit
+à porter l’attention sur les phénomènes biologiques concernés.
+Les phénotypes masculin et féminin se distinguent par
+des différences anatomiques, physiologiques, et
+chromosomiques.
+La mise en place des structures et de la fonctionnalité
+des appareils sexuels se réalise, sous le contrôle du
+patrimoine génétique, sur une longue période qui va de
+la fécondation à la puberté, en passant par le
+développement embryonnaire et fœtal.
+La puberté est la dernière étape de la mise en place des
+caractères sexuels.
+
+Objectifs et mots clés. SRY, testostérone, AMH.
+(Collège et seconde. Première approche de la distinction
+homme / femme et de la puberté.)
+[Limites. Les acquis anatomiques du collège seront
+seulement rappelés.]
+Extraire et exploiter des informations de différents
+documents, réaliser des dissections pour :
+- identifier les différences anatomiques, physiologiques et
+chromosomiques des deux sexes ;
+- expliquer les étapes de différenciation de l’appareil
+sexuel au cours du développement embryonnaire.
+Traduire les différents mécanismes étudiés sous la forme
+de schémas fonctionnels.
+Sexualité et procréation
+Chez l’homme et la femme, le fonctionnement de
+l’appareil reproducteur est contrôlé par un dispositif
+neuroendocrinien qui fait intervenir l’hypothalamus,
+l’hypophyse et les gonades.
+
+Traduire les mécanismes de contrôle de l’activité
+gonadique sous la forme de schémas fonctionnels.
+Effectuer des gestes techniques pour réaliser différentes
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                               9 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+La connaissance de ces mécanismes permet de
+comprendre et de mettre au point des méthodes de
+contraception féminine préventive (pilules
+contraceptives) ou d’urgence (pilule du lendemain). Des
+méthodes de contraception masculine hormonale se
+développent. D’autres méthodes contraceptives existent,
+dont certaines présentent aussi l’intérêt de protéger
+contre les infections sexuellement transmissibles.
+L’infertilité des couples peut avoir des causes variées.
+Dans beaucoup de cas, des techniques permettent
+d’aider les couples à satisfaire leur désir d’enfant :
+insémination artificielle, Fivete, ICSI.
+
+Objectifs et mots clés. Les mécanismes neuroendocrines
+de contrôle de la reproduction sont étudiés.
+(Collège et lycée. Première approche du fonctionnement de
+l’appareil reproducteur et de la contraception. Première
+approche de la procréation médicalement assistée.)
+[Limites. Les mécanismes cellulaires de l’action des
+hormones, de même que les voies de leur synthèse, ne
+sont pas au programme. Il ne s’agit pas de présenter les
+techniques de procréation médicalement assistée mais
+seulement de montrer que la compréhension de leurs
+principes généraux repose sur des connaissances
+scientifiques et d’évoquer leur cadre éthique.]
+Pistes. Bioéthique (philosophie) ; hormones
+naturelles/hormones synthétiques (chimie).
+observations microscopiques.
+Mettre en œuvre une méthode (démarche historique)
+et/ou une utilisation de logiciels et/ou une pratique
+documentaire pour expliquer le mode d’action de
+différentes pilules contraceptives.
+Extraire et exploiter des données pour relier la prévention
+contre les IST (Sida, hépatite, papillomavirus, etc.) à la
+vaccination ou l’utilisation du préservatif.
+Recenser, extraire et organiser des informations pour
+comprendre les modalités de la procréation médicalement
+assistée.
+Percevoir le lien entre science et technique.
+Argumenter, débattre sur des problèmes éthiques posés
+par certaines pratiques médicales.
+Sexualité et bases biologiques du plaisir
+L’activité sexuelle est associée au plaisir.
+Le plaisir repose notamment sur des phénomènes
+biologiques, en particulier l’activation dans le cerveau
+des « systèmes de récompense ».
+
+Objectifs et mots clés. Sans chercher à laisser croire que
+les relations entre sexualité et plaisir ne s’expriment
+qu’en termes scientifiques, on montre qu’une
+composante biologique existe.
+ [Limites. Les mécanismes cérébraux du plaisir sont étudiés
+seulement d’une façon globale (activation de zones
+cérébrales) sans explicitation des phénomènes cellulaires].
+Pistes. Éducation à la santé et à la sexualité.
+Mettre en œuvre une méthode (démarche historique)
+et/ou une utilisation de logiciels et/ou une pratique
+documentaire pour mettre en évidence le système de
+récompense.
+Connaissances     Capacités et attitudes
+Thème 3 - B
+Variation génétique et santé
+L’Homme aussi bien que les microorganismes infectieux susceptibles de l’attaquer présentent une forte variabilité
+génétique issue de mutations et conservée au cours des générations. Ces variations présentent des implications en
+matière de santé : les hommes ne sont pas « génétiquement égaux devant la maladie » et l’évolution rapide des
+microorganismes pose des problèmes en termes de prévention et de traitement. En outre, on insiste sur le fait qu’en
+général, le développement d’une maladie ou la mise en place d’un phénotype dépend de l’interaction complexe entre
+le génotype et l’histoire personnelle.
+Patrimoine génétique et maladie
+La mucoviscidose est une maladie fréquente, provoquée
+par la mutation d’un gène qui est présent sous cette
+forme chez une personne sur 40 environ. Seuls les
+homozygotes pour l’allèle muté sont malades.
+Le phénotype malade comporte des aspects
+macroscopiques qui s’expliquent par la modification
+d’une protéine.
+L’étude d’un arbre généalogique permet de prévoir le
+risque de transmission de la maladie.
+
+Recenser, extraire et organiser des informations :
+- pour établir le lien entre le phénotype macroscopique et
+le génotype ;
+- pour comprendre les traitements médicaux
+(oxygénothérapie, kinésithérapie) et les potentialités
+offertes par les thérapies géniques.
+Étudier un arbre généalogique pour évaluer un risque
+génétique.
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                              10 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+On limite les effets de la maladie en agissant sur des
+paramètres du milieu. La thérapie génétique constitue un
+espoir de correction de la maladie dans les cellules
+pulmonaires atteintes.
+Objectifs et mots clés. Le but est de comprendre une
+maladie génique. La mucoviscidose est suggérée en
+raison de sa fréquence, mais le professeur pourra, s’il le
+souhaite, choisir un autre exemple.
+Collège et seconde. Mutation, phénotype, génotype,
+relation gène-protéine.
+[Limites : aucune connaissance concernant une autre
+maladie génique n’est attendue, mais un élève doit
+pouvoir l’étudier à partir de documents fournis. On se
+limite au cas de maladies autosomales.]
+Convergences. Mathématiques : probabilités.  
+Le plus souvent, l’impact du génome sur la santé n’est pas
+un déterminisme absolu. Il existe des gènes dont certains
+allèles rendent plus probable le développement d’une
+maladie sans pour autant le rendre certain. En général les
+modes de vie et le milieu interviennent également, et le
+développement d’une maladie dépend alors de l’interaction
+complexe entre facteurs du milieu et génome.
+Un exemple de maladie (maladie cardiovasculaire, diabète
+de type II) permet d’illustrer le type d’études envisageables.
+
+Objectifs et méthodes. Il s’agit de montrer aux élèves que
+la détermination des causes d’une maladie n’est possible
+qu’en utilisant un mode de pensée statistique. On cherche
+également à développer une capacité critique face à la
+simplicité de certains messages affirmant le rôle
+déterminant de tel facteur, génétique ou non.
+[Limites. Il s’agit, à partir de l’exemple des maladies
+cardiovasculaires ou du diabète de type II, de montrer
+les principes généraux d’une approche épidémiologique,
+sans formalisme mathématique complexe. Il ne s’agit
+nullement de développer une expertise réelle en matière
+d’épidémiologie, mais seulement de sensibiliser à ce
+type d’approche.]
+Pistes. Études statistiques de problèmes de santé
+(mathématiques).
+Recenser, extraire et organiser des informations pour
+identifier :
+- l’origine multigénique de certaines maladies ;
+- l’influence des facteurs environnementaux ;
+Comprendre que déterminer les facteurs génétiques ou
+non d’une maladie repose sur des méthodes particulières
+qui constituent les fondements de l’épidémiologie.
+Comprendre les conditions de validités d’affirmations
+concernant la responsabilité d’un gène ou d’un facteur de
+l’environnement dans le déclenchement d’une maladie.
+Savoir choisir ses comportements face à un risque de
+santé pour exercer sa responsabilité individuelle ou
+collective.
+Perturbation du génome et cancérisation
+Des modifications accidentelles du génome peuvent se
+produire dans des cellules somatiques et se transmettre
+à leurs descendantes. Elles sont à l’origine de la
+formation d’un clone cellulaire porteur de ce génome
+modifié. La formation d’un tel clone est parfois le
+commencement d’un processus de cancérisation.
+Des modifications somatiques du génome surviennent
+par mutations spontanées ou favorisée par un agent
+mutagène. D’autres sont dues à des infections virales.
+La connaissance de la nature des perturbations du
+génome responsable d’un cancer permet d’envisager
+des mesures de protection (évitement des agents
+mutagènes, surveillance, vaccination).
+
+Collège et seconde. Mutation, première approche de la
+vaccination.
+[Limites. L’intérêt de la vaccination n’est signalé qu’en
+s’appuyant sur les acquis du collège : les mécanismes
+précis de la vaccination seront étudiés en terminale. La
+perturbation du génome par un virus est présentée de
+Recenser, extraire et organiser des informations pour
+identifier l’origine des facteurs de cancérisation (agents
+mutagènes, infections virales).
+Comprendre les causes multiples pouvant concourir au
+développement de certains cancers (cas des cancers
+pulmonaires) et identifier des mesures de prévention
+possibles.
+Comprendre l’importance, en matière de santé publique,
+de certains virus liés à la cancérisation (hépatite B,
+papillomavirus) et connaître les méthodes de prévention
+possibles.
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                              11 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+façon globale seulement : ses mécanismes seront
+étudiés en terminale.]
+Pistes. Cancers et politiques de prévention ; cancer et
+santé publique (histoire, géographie, ECJS).  
+Variation génétique bactérienne et résistance aux antibiotiques
+Des mutations spontanées provoquent une variation
+génétique dans les populations de bactéries. Parmi ces
+variations, certaines font apparaître des résistances aux
+antibiotiques.
+L’application d’un antibiotique sur une population
+bactérienne sélectionne les formes résistantes et permet
+leur développement. L’utilisation systématique de
+traitements antibiotiques peut augmenter la fréquence
+des formes résistantes par sélection naturelle.
+
+Collège et seconde. Mutation, fréquence allélique,
+sélection naturelle.
+[Limites. Les mécanismes moléculaires de la résistance
+aux antibiotiques ne sont pas au programme : si un
+exemple est décrit pour faire comprendre ce dont il
+s’agit, il ne devra pas être mémorisé.]
+Pistes. La résistance aux antibiotiques, les infections
+nosocomiales.
+Concevoir et mettre en place un protocole permettant de
+montrer la sensibilité de microorganismes à différents
+antibiotiques.
+Recenser, extraire et organiser des informations pour :
+- identifier la sensibilité ou la résistance de
+microorganismes à différents antibiotiques
+- calculer le taux d’apparition de résistances dans une
+population.
+Comprendre, sur un exemple, l’application du
+raisonnement évolutionniste en matière médicale.
+Thème 3 - C
+De l’œil au cerveau : quelques aspects de la vision
+Les notions d’optique de la vision sont étudiées en physique, ainsi que quelques données essentielles sur la lumière
+et la couleur. Sans chercher à proposer une étude exhaustive de la physiologie de la vision, cette thématique est
+abordée selon trois approches qui associent des aspects scientifiques et des implications en matière de santé.
+Le cristallin : une lentille vivante
+Le cristallin est l’un des systèmes transparents de l’œil
+humain. Il est formé de cellules vivantes qui renouvellent
+en permanence leur contenu. Les modalités de ce
+renouvellement sont indispensables à sa transparence.
+Des anomalies de forme du cristallin expliquent certains
+défauts de vision. Avec l’âge sa transparence et sa
+souplesse peuvent être altérées.
+
+Convergences. Physique : optique géométrique,
+fonctionnement optique de l’œil.
+Pistes. Les traitements des déficiences du cristallin.
+Recenser, extraire et organiser des informations et/ou
+manipuler (dissection, maquette et/ou recherche
+documentaire) pour :
+- localiser et comprendre l’organisation et le
+fonctionnement du cristallin ;
+- comprendre certains défauts de vision.
+Les photorécepteurs : un produit de l’évolution
+La rétine est une structure complexe qui comprend les
+récepteurs sensoriels de la vision appelés
+photorécepteurs. Celle de l’Homme contient les cônes
+permettant la vision des couleurs (3 types de cônes
+respectivement sensibles au bleu, au vert et au rouge) et
+les bâtonnets sensibles à l’intensité lumineuse.
+Les gènes des pigments rétiniens constituent une famille
+multigénique (issue de duplications) dont l’étude permet
+de placer l’Homme parmi les Primates.
+Des anomalies des pigments rétiniens se traduisent par
+des perturbations de la vision des couleurs.
+Le message nerveux issu de l’œil est acheminé au
+cerveau par le nerf optique.
+Extraire et exploiter des informations (maquette, logiciel
+et/ou recherche documentaire et/ou observations
+microscopiques) pour :
+- comprendre l’organisation de la rétine ;
+- déterminer le rôle des photorécepteurs ;
+- comprendre l’organisation des voies visuelles ;
+- faire le lien entre la vision des couleurs et l’évolution.
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                              12 / 13
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Objectifs et mots clés. Tout en évoquant rapidement la
+complexité de la rétine et de ses fonctions, il s’agit de
+centrer l’attention sur les cellules photoréceptrices. Leur
+étude permet aussi bien d’évoquer des troubles de la
+vision colorée que de réaliser une première approche de
+la place de l’Homme dans l’évolution.
+[Limites. La physiologie de la rétine n’est pas abordée.
+On signale simplement l’élaboration globale d’un
+message acheminé par le nerf optique.]
+Convergences. Physique : lumière, couleur.
+Pistes. Le daltonisme ; la vision des couleurs chez les
+vertébrés.  
+Cerveau et vision : aires cérébrales et plasticité
+Plusieurs aires corticales participent à la vision.
+L’imagerie fonctionnelle du cerveau permet d’observer
+leur activation lorsque l’on observe des formes, des
+mouvements. La reconnaissance des formes nécessite
+une collaboration entre les fonctions visuelles et la
+mémoire.
+Des substances comme le LSD perturbent le
+fonctionnement des aires cérébrales associées à la
+vision et provoquent des hallucinations qui peuvent
+dériver vers des perturbations cérébrales graves et
+définitives.
+La mise en place du phénotype fonctionnel du système
+cérébral impliqué dans la vision repose sur des
+structures cérébrales innées, issues de l’évolution et sur
+la plasticité cérébrale au cours de l’histoire personnelle.
+De même la mémoire nécessaire par exemple à la
+reconnaissance d’un visage ou d’un mot repose sur la
+plasticité du cerveau.
+L’apprentissage repose sur la plasticité cérébrale. Il
+nécessite la sollicitation répétée des mêmes circuits
+neuroniques.
+
+Objectifs et mots clés. On cherche à montrer comment la
+réalisation d’une fonction cognitive complexe repose sur
+l’activité de plusieurs zones cérébrales de façon
+coordonnée. La maturation des systèmes cérébraux liés
+à la vision permet, à partir d’un nombre limité
+d’exemples, de présenter la notion de plasticité cérébrale
+et son lien avec l’apprentissage.
+[Limites. Il ne s’agit pas de présenter une étude
+exhaustive des aires cérébrales intervenant dans la
+vision, ni des mécanismes précis de la mémoire ou du
+langage. La notion de plasticité cérébrale est abordée à
+partir d’un nombre limité d’exemples, sans souci
+d’exposé exhaustif de ses mécanismes]
+Exploiter des données notamment expérimentales pour
+comprendre qu’une image naît des interactions entre
+différentes aires du cortex cérébral.
+Recenser, extraire et organiser des informations pour
+comprendre le phénomène de plasticité cérébrale et son
+importance dans l’établissement de différentes fonctions
+cognitives.
+Interpréter des expériences sur la maturation du cortex
+visuel chez l’animal.
+Interpréter des observations médicales et/ou des
+imageries cérébrales chez l’Homme.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                              13 / 13

@@ -1,0 +1,10 @@
+package analyse;
+
+public class WordInfo {
+
+	private int corpusFrequency;
+	
+	public WordInfo(){
+		corpusFrequency=1;
+	}
+}

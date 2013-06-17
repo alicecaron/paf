@@ -1,0 +1,826 @@
+
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+Annexe
+Programme de l'enseignement spécifique et de spécialité de mathématiques de la série économique et sociale et
+de l'enseignement de spécialité de mathématiques de la série littéraire
+
+L'enseignement des mathématiques au collège et au lycée a pour but de donner à chaque élève la culture
+mathématique indispensable pour sa vie de citoyen et les bases nécessaires à son projet de poursuite d'études.
+Le cycle terminal des séries ES et L permet l'acquisition d'un bagage mathématique qui favorise une adaptation aux
+différents cursus accessibles aux élèves, en développant leur sens critique vis-à-vis des informations chiffrées et, plus
+largement, en les formant à la pratique d'une démarche scientifique.
+L'apprentissage des mathématiques cultive des compétences qui facilitent une formation tout au long de la vie et
+aident à mieux appréhender une société en évolution. Au-delà du cadre scolaire, il s'inscrit dans une perspective de
+formation de l'individu.
+
+Objectif général
+Outre l'apport de nouvelles connaissances, le programme vise le développement des compétences suivantes :
+•   mettre en œuvre une recherche de façon autonome ;
+•   mener des raisonnements ;
+•   avoir une attitude critique vis-à-vis des résultats obtenus ;
+•   communiquer à l'écrit et à l'oral.
+
+Raisonnement et langage mathématiques
+Comme en classe de seconde, les capacités d'argumentation et de logique font partie intégrante des exigences du cycle
+terminal.
+Les concepts et méthodes relevant de la logique mathématique ne font pas l'objet de cours spécifiques mais prennent
+naturellement leur place dans tous les champs du programme.
+De même, le vocabulaire et les notations mathématiques ne sont pas fixés d'emblée, mais sont introduits au cours du
+traitement d'une question en fonction de leur utilité.
+Il convient de prévoir des temps de synthèse, l'objectif étant d'atteindre une bonne maîtrise en fin de cycle terminal.
+
+Utilisation d'outils logiciels
+L'utilisation de logiciels, d'outils de visualisation et de simulation, de calcul (formel ou scientifique) et de
+programmation change profondément la nature de l'enseignement en favorisant une démarche d'investigation.
+En particulier lors de la résolution de problèmes, l'utilisation de logiciels de calcul formel limite le temps consacré à
+des calculs très techniques afin de se concentrer sur la mise en place de raisonnements.
+L'utilisation de ces outils intervient selon trois modalités :
+•   par le professeur, en classe, avec un dispositif de visualisation collective ;
+•   par les élèves, sous forme de travaux pratiques de mathématiques ;
+•   dans le cadre du travail personnel des élèves hors de la classe.
+
+Diversité de l'activité de l'élève
+Les activités proposées en classe et hors du temps scolaire prennent appui sur la résolution de problèmes
+essentiellement en lien avec d'autres disciplines. Elles enrichissent la culture scientifique dans différents domaines :
+historique, économique, artistique, etc. De nature diverse, elles doivent entraîner les élèves à :
+•   chercher, expérimenter, modéliser, en particulier à l'aide d'outils logiciels ;
+•   choisir et appliquer des techniques de calcul ;
+•   mettre en œuvre des algorithmes ;
+•   raisonner, démontrer, trouver des résultats partiels et les mettre en perspective ;
+•   expliquer oralement une démarche, communiquer un résultat par oral ou par écrit.
+Des éléments d'épistémologie et d'histoire des mathématiques s'insèrent naturellement dans la mise en œuvre du
+programme. Connaître le nom de quelques mathématiciens célèbres, la période à laquelle ils ont vécu et leur
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   1 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+contribution fait partie intégrante du bagage culturel de tout élève ayant une formation scientifique. La présentation de
+textes historiques aide à comprendre la genèse et l'évolution de certains concepts.
+Fréquents, de longueur raisonnable et de nature variée, les travaux hors du temps scolaire contribuent à la formation
+des élèves et sont essentiels à leur progression. Ils sont conçus de façon à prendre en compte la diversité et
+l'hétérogénéité de leurs aptitudes.
+Les modes d'évaluation prennent également des formes variées, en phase avec les objectifs poursuivis. En particulier,
+l'aptitude à mobiliser l'outil informatique dans le cadre de la résolution de problèmes est à évaluer.
+
+Organisation du programme
+Le programme fixe les objectifs à atteindre en termes de capacités. Il est conçu pour favoriser une acquisition
+progressive des notions et leur pérennisation. Son plan n'indique pas la progression à suivre.
+A titre indicatif, on pourrait consacrer environ deux tiers du temps à l'analyse et le reste aux probabilités et à la
+statisitque.
+Les capacités attendues indiquent un niveau minimal de maîtrise des contenus en fin de cycle terminal. La formation
+ne s'y limite pas.
+Les capacités attendues dans le domaine de l'algorithmique d'une part et du raisonnement d'autre part sont rappelées
+en fin de programme. Elles doivent être exercées à l'intérieur de chaque champ du programme. Les exigences doivent
+être modestes et conformes à l'esprit des filières concernées.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   2 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+1. Analyse
+Un des objectifs de ce programme, comme en classe de première, est de doter les élèves d'outils mathématiques
+permettant de traiter des problèmes relevant de la modélisation de phénomènes continus ou discrets.
+On poursuit l'étude des suites géométriques pour lesquelles on aborde la notion de limite, ce qui peut conduire à
+différents types de questionnement, notamment philosophique ou économique.
+On consolide l'ensemble des fonctions mobilisables, enrichi des fonctions exponentielles et de la fonction logarithme
+népérien. Les fonctions exponentielles sont l'occasion d'évoquer le passage d'une situation discrète à une situation
+continue.
+La notion de convexité est introduite et étudiée essentiellement dans un cadre graphique. Elle est largement utilisée en
+économie, en particulier pour des problèmes de coût ou de rendement croissant et décroissant.
+Enfin, s'ajoute le nouveau concept d'intégration qui, bien que modestement abordé et développé, demeure un concept
+fondamental de l'analyse.
+Contenus     Capacités attendues     Commentaires
+Suites
+Suites géométriques.
+
+
+
+
+Limite de la suite (qn),
+q étant un nombre réel
+strictement positif.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suites arithmético-
+géométriques.
+• Reconnaître et exploiter une suite
+géométrique dans une situation donnée.
+• Connaître la formule donnant
+1 + q + K + q n avec q ≠ 1 .
+
+• Déterminer la limite d'une suite
+géométrique de raison strictement
+positive.
+
+• Étant donné une suite (qn) avec
+ 0 < q < 1, mettre en œuvre un
+algorithme permettant de déterminer un
+seuil à partir duquel q n est inférieur à
+un réel a positif donné.
+
+
+
+
+
+
+
+
+• Traduire une situation donnée à l'aide
+d'une suite arithmético-géométrique.
+Le tableur, les logiciels de géométrie
+dynamique et de calcul sont des outils
+adaptés à l'étude des suites, en particulier
+pour une approche expérimentale de la
+notion de limite.
+On détermine, sans soulever de difficulté, la
+limite de la somme 1 + q + K + q n quand
+0 < q < 1.
+Le comportement lorsque n tend vers +∞
+de la somme des n premiers termes de
+certaines suites géométriques fournit un
+exemple de suite croissante n'ayant pas
+pour limite +∞ .
+On évoque les aspects historiques et
+philosophiques de cette question en
+présentant quelques paradoxes classiques.
+
+Toute indication doit être donnée dans
+l'étude des suites arithmético-géométriques.
+Notion de continuité sur un
+intervalle
+• Exploiter le tableau de variation pour
+déterminer :
+- le nombre de solutions d'une équation
+du type  f (x) = k ;
+- le signe d'une fonction.
+On se limite à une approche intuitive et on
+admet que les fonctions usuelles sont
+continues par intervalle.
+La propriété des valeurs intermédiaires est
+présentée graphiquement ; on convient que
+les flèches obliques d'un tableau de
+variation traduisent la continuité et la stricte
+monotonie de la fonction sur l'intervalle
+considéré.
+On admet qu'une fonction dérivable sur un
+intervalle est continue sur cet intervalle.
+    
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   3 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+Contenus     Capacités attendues     Commentaires
+Fonctions exponentielles
+
+Fonction x a q x avec q > 0 .
+
+Relation fonctionnelle.
+
+
+
+
+Fonction exponentielle
+ x a ex.
+
+
+
+
+
+
+Dérivée de x a eu(x) où u est
+une fonction dérivable.
+• Connaître l'allure de la représentation
+graphique de la fonction x a q x selon
+les valeurs de q.
+
+
+
+• Connaître la dérivée, les variations et
+la représentation graphique de la
+fonction exponentielle.
+
+• Utiliser la relation fonctionnelle pour
+transformer une écriture.
+
+
+
+• Calculer la dérivée d'une fonction de
+la forme x a eu(x) .
+Ces fonctions sont présentées comme un
+prolongement continu des suites
+géométriques.
+On admet que ces fonctions sont dérivables
+sur R et transforment les sommes en
+produits.
+On fait observer à l'aide d'un logiciel
+qu'entre toutes les fonctions exponentielles,
+une seule semble avoir 1 pour nombre
+dérivé en 0.
+L'existence et l'unicité de cette fonction
+sont admises.
+Le nombre e est l'image de 1 par cette
+fonction.
+
+On étudie des exemples de fonctions de la
+forme x a eu(x) notamment avec u (x) = − k x
+ou u (x) = − k x 2 ( k > 0 ), qui sont utilisés
+dans des domaines variés.
+La notion générale de composée est hors
+programme.
+Fonction logarithme
+népérien
+
+
+
+Relation fonctionnelle.
+• Connaître la dérivée, les variations et
+la représentation graphique de la
+fonction logarithme népérien.
+
+• Utiliser la relation fonctionnelle pour
+transformer une écriture.
+
+• Résoudre une équation de la forme
+xn=ksur]0;+∞[aveck∈]0;+∞[et
+n∈N.
+Pour tout réel x > 0 , le réel ln x est
+l'unique solution de l'équation ey = x,
+d'inconnue y.
+On définit ainsi la fonction logarithme
+népérien.
+Convexité
+
+Fonction convexe, fonction
+concave sur un intervalle.
+
+
+
+
+
+
+
+Convexité et sens de
+variation de la dérivée.
+• Reconnaître graphiquement des
+fonctions convexes, concaves.
+
+
+
+
+
+
+
+• Utiliser le lien entre convexité et sens
+de variation de la dérivée.
+Une fonction dérivable sur un intervalle I
+est dite convexe sur cet intervalle si sa
+courbe représentative est entièrement située
+au-dessus de chacune de ses tangentes.
+On met en évidence ces notions sur les
+fonctions de référence : x a x 2 , x a  x ,
+x a ex, x a ln x .
+
+Le lien entre convexité et sens de variation
+de la dérivée est conjecturé puis admis.
+On peut utiliser le signe de la dérivée
+seconde.
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   4 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+Contenus     Capacités attendues     Commentaires
+Point d'inflexion.
+
+
+
+
+Positions relatives des
+courbes représentatives des
+fonctions x a e x , x a ln x
+et x a x .
+• Reconnaître graphiquement un point
+d'inflexion.
+Un point d'inflexion est un point où la
+représentation graphique traverse sa
+tangente.
+On met en évidence cette notion sur la
+fonction x a x 3 .
+Intégration
+Définition de l'intégrale
+d'une fonction continue et
+positive sur [a, b] comme aire
+sous la courbe.
+
+
+Notation ∫ b f (x)dx .
+                             a
+
+
+
+Théorème : si f est continue
+et positive sur [a, b], la
+fonction F définie sur [a, b]
+par F ( x) = ∫ ax f (t )dt est
+dérivable sur [a, b] et a pour
+dérivée f.    On s'appuie sur la notion intuitive d'aire
+rencontrée au collège et sur les propriétés
+d'additivité et d'invariance par translation
+et symétrie.
+Primitive d'une fonction
+continue sur un intervalle.
+
+
+
+Théorème : toute fonction
+continue sur un intervalle
+admet des primitives.
+
+
+
+
+Intégrale d'une fonction de
+signe quelconque.
+
+
+
+Linéarité, positivité, relation
+de Chasles.
+
+
+Valeur moyenne d'une
+fonction continue sur un
+intervalle.
+• Déterminer des primitives des
+fonctions usuelles par lecture inverse du
+tableau des dérivées.
+
+• Connaître et utiliser une primitive de
+x a u'(x)eu(x) .
+
+• Calculer une intégrale.
+
+
+
+
+• Calculer l'aire du domaine délimité
+par les courbes représentatives de deux
+fonctions positives.
+Une primitive F de la fonction continue et
+positive f étant connue, on a :
+
+∫abf(x)dx=F(b)−F(a).
+
+
+
+On fait prendre conscience aux élèves que
+certaines fonctions comme x a e− x2 n'ont
+pas de primitive « explicite ».
+
+
+
+
+
+Laformule∫abf(x)dx=F(b)−F(a),
+est étendue aux fonctions continues de
+signe quelconque.
+
+
+
+
+
+Les notions d'aire et de moyenne sont
+illustrées par des exemples issus des
+sciences économiques.
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   5 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+2. Probabilités et statistique
+On approfondit le travail en probabilités et statistique mené les années précédentes.
+Afin de traiter les champs de problèmes associés aux données continues, on introduit les lois de probabilité à densité.
+La loi normale permet d'initier les élèves à la statistique inférentielle par la détermination d'un intervalle de confiance
+pour une proportion à un niveau de confiance de 95 %.
+Cette partie se prête particulièrement à l'étude de problèmes issus d'autres disciplines, notamment des sciences
+économiques et sociales.
+Le recours aux représentations graphiques et aux simulations est indispensable.
+Contenus     Capacités attendues     Commentaires
+Conditionnement
+Conditionnement par un
+événement de probabilité non
+nulle.
+Notation PA (B) .
+• Construire un arbre pondéré en lien
+avec une situation donnée.
+
+• Exploiter la lecture d'un arbre
+pondéré pour déterminer des
+probabilités.
+
+• Calculer la probabilité d'un
+événement connaissant ses probabilités
+conditionnelles relatives à une partition
+de l'univers.
+On représente une situation à l'aide d'un
+arbre pondéré ou d'un tableau. On énonce
+et on justifie les règles de construction et
+d'utilisation des arbres pondérés.
+Un arbre pondéré correctement construit
+constitue une preuve.
+Le vocabulaire lié à la formule des
+probabilités totales n'est pas un attendu du
+programme, mais la mise en œuvre de cette
+formule doit être maîtrisée.
+Cette partie du programme se prête
+particulièrement à l'étude de situations
+concrètes.
+Notion de loi à densité à
+partir d'exemples
+
+Loi à densité sur un
+intervalle.    Les exemples étudiés s'appuient sur une
+expérience aléatoire et un univers associé
+Ω , muni d'une probabilité. On définit alors
+une variable aléatoire X, fonction de Ω
+dans R, qui associe à chaque issue un
+nombre réel d'un intervalle I de R. On
+admet que X satisfait aux conditions qui
+permettent de définir la probabilité de
+l'événement {X ∈ J } comme aire du
+domaine:{M(x,y);x∈Jet0≤y≤f(x)}
+où f désigne la fonction de densité de la loi
+et J un intervalle inclus dans I.
+Toute théorie générale des lois à densité et
+des intégrales sur un intervalle non borné
+est exclue.
+Loi uniforme sur [a, b].
+
+Espérance d'une variable
+aléatoire suivant une loi
+uniforme.
+• Connaître la fonction de densité de la
+loi uniforme sur [a, b].
+L'instruction « nombre aléatoire » d'un
+logiciel ou d'une calculatrice permet
+d'introduire la loi uniforme sur [0,1].
+La notion d'espérance d'une variable
+aléatoire à densité sur [ a, b] est introduite à
+cetteoccasionpar∫abtf(t)dt.Onnoteque
+cette définition constitue un prolongement
+dans le cadre continu de l'espérance d'une
+variable aléatoire discrète.
+    
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   6 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+Contenus     Capacités attendues     Commentaires
+Loi normale centrée réduite
+N (0,1).
+
+
+
+
+
+
+
+
+
+
+Loi normale N (μ,σ 2)
+d'espérance μ et d'écart-type
+σ.
+• Connaître la fonction de densité de la
+loi normale N (0,1) et sa représentation
+graphique.
+
+• Connaître une valeur approchée de la
+probabilité de l'événement
+{X∈[−1,96;1,96]}lorsqueXsuitla
+loi normale N (0,1).
+
+
+
+
+• Utiliser une calculatrice ou un tableur
+pour obtenir une probabilité dans le
+cadre d'une loi normale N (μ,σ 2).
+
+• Connaître une valeur approchée de la
+probabilité des événements suivants :
+{X∈[μ−σ,μ+σ]},
+{X∈[μ−2σ,μ+2σ]}et
+{X∈[μ−3σ,μ+3σ]},
+lorsque X suit la loi normale
+N (μ,σ 2).
+Pour introduire la loi normale N (0,1), on
+s'appuie sur l'observation des
+représentations graphiques de la loi de la
+                                                  X  − np
+variable aléatoire Z  =               où X n
+                                                  n
+
+                                   n      np(1− p)
+suit la loi binomiale B (n, p) et cela pour de
+grandes valeurs de n et une valeur de p
+fixée entre 0 et 1.
+
+À ce propos, on peut faire référence aux
+travaux de Moivre et de Laplace en les
+situant dans une perspective historique.
+Une variable aléatoire X suit la loi N (μ,σ 2)
+X−μ
+si           suit la loi normale N (0,1).
+       σ
+
+On se limite à une approche intuitive de la
+notion d'espérance.
+
+On exploite les outils logiciels pour faire
+percevoir l'information apportée par la
+valeur de l'écart-type.
+La connaissance d'une expression
+algébrique de la fonction de densité de cette
+loi n'est pas un attendu du programme.
+On illustre ces notions par des exemples
+issus des sciences économiques ou des
+sciences humaines et sociales.
+Intervalle de fluctuation
+• Connaître, pour n assez grand,
+l'intervalle de fluctuation asymptotique
+(*) au seuil de 95 % :
+ ⎡             p(1 − p)                p(1 − p) ⎤
+ ⎢ p − 1,96               , p + 1,96             ⎥
+⎢                n                         n    ⎥⎦
+⎣
+
+où p désigne la proportion dans la
+population.
+La variable aléatoire Fn qui, à tout
+échantillon de taille n, associe la fréquence,
+prend ses valeurs dans l'intervalle de
+fluctuation asymptotique au seuil de 95 %
+avec une probabilité qui s'approche de 0,95
+quand n devient grand.
+
+On admet le résultat ci-contre, qui est
+conforté grâce à la simulation.
+Avec les exigences usuelles de précision,
+on pratique cette approximation dès que
+  n ≥ 30 , np ≥ 5 et n(1 − p) ≥ 5 .
+
+
+En majorant 1,96  p(1 − p) , on retrouve
+l'intervalle de fluctuation présenté en classe
+de seconde.
+La problématique de prise de décision, déjà
+rencontrée, est travaillée à nouveau.
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   7 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+Contenus     Capacités attendues     Commentaires
+Estimation
+
+Intervalle de confiance au
+niveau de confiance 0,95(*).
+
+Niveau de confiance.
+• Estimer une proportion inconnue à
+partir d'un échantillon.
+
+• Déterminer une taille d'échantillon
+suffisante pour obtenir, avec une
+précision donnée, une estimation d'une
+proportion au niveau de confiance 0,95.
+Les attendus de ce paragraphe sont
+modestes et sont à exploiter en lien avec les
+autres disciplines.
+On énonce que p est élément de l'intervalle
+⎡      1          1⎤
+⎢ f −     , f +     ⎥ avec un niveau de
+⎣       n          n⎦
+confiance de plus de 95 %, où f désigne la
+fréquence observée sur un échantillon de
+taille n.
+Avec les exigences usuelles de précision,
+on utilise cet intervalle dès que n ≥ 30 ,
+  np ≥ 5 et n(1 − p) ≥ 5 .
+
+La simulation de sondages sur tableur
+permet de sensibiliser aux fourchettes de
+sondage.
+Il est important de noter que, dans d'autres
+champs, on utilise l'intervalle
+  ⎡            f (1 − f )                f (1 − f ) ⎤
+⎢ f −1,96               , f +1,96             ⎥
+⎢                n                         n    ⎥⎦
+⎣
+
+qu'il n'est pas possible de justifier dans ce
+programme.
+
+(*)Avec les notations précédentes :
+Un intervalle de fluctuation asymptotique de la variable aléatoire Fn au seuil 0,95 est un intervalle déterminé à partir
+de p et de n et qui contient Fn avec une probabilité d'autant plus proche de 0,95 que n est grand.
+        ⎡        1            1⎤
+Pour une valeur de p fixée, l'intervalle aléatoire ⎢F  −     , F  +     ⎥ contient, pour n assez grand, la proportion p à
+nn
+        ⎣         n            n⎦
+estimer avec une probabilité au moins égale à 0,95.
+Un intervalle de confiance pour une proportion p au niveau de confiance 0,95 est la réalisation, à partir d'un
+échantillon, d'un intervalle aléatoire contenant la proportion p avec une probabilité supérieure ou égale à 0,95,
+intervalle aléatoire déterminé à partir de la variable aléatoire Fn qui, à tout échantillon de taille n, associe la
+fréquence.
+Les intervalles de confiance considérés ici sont centrés en la fréquence observée f.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   8 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+Algorithmique
+En seconde, les élèves ont conçu et mis en œuvre quelques algorithmes. Cette formation se poursuit tout au long du
+cycle terminal.
+Dans le cadre de cette activité algorithmique, les élèves sont entraînés à :
+       •   décrire certains algorithmes en langage naturel ou dans un langage symbolique ;
+        •   en réaliser quelques-uns à l'aide d'un tableur ou d'un programme sur calculatrice ou avec un logiciel adapté ;
+       •   interpréter des algorithmes plus complexes.
+Aucun langage, aucun logiciel n'est imposé.
+L'algorithmique a une place naturelle dans tous les champs des mathématiques et les problèmes posés doivent être en
+relation avec les autres parties du programme (algèbre et analyse, statistiques et probabilités, logique), mais aussi avec
+les autres disciplines ou le traitement de problèmes concrets.
+À l'occasion de l'écriture d'algorithmes et de programmes, il convient de donner aux élèves de bonnes habitudes de
+rigueur et de les entraîner aux pratiques systématiques de vérification et de contrôle.
+Instructions élémentaires (affectation, calcul, entrée, sortie)
+Les élèves, dans le cadre d'une résolution de problèmes, doivent être capables :
+•   d'écrire une formule permettant un calcul ;
+•   d'écrire un programme calculant et donnant la valeur d'une fonction, ainsi que les instructions d'entrées et sorties
+       nécessaires au traitement.
+Boucle et itérateur, instruction conditionnelle
+Les élèves, dans le cadre d'une résolution de problèmes, doivent être capables de :
+•   programmer un calcul itératif, le nombre d'itérations étant donné ;
+•   programmer une instruction conditionnelle, un calcul itératif, avec une fin de boucle conditionnelle.
+
+Notations et raisonnement mathématiques
+Cette rubrique, consacrée à l'apprentissage des notations mathématiques et à la logique, ne doit pas faire l'objet de
+séances de cours spécifiques mais doit être répartie sur toute l'année scolaire.
+Notations mathématiques
+Les élèves doivent connaître les notions d'élément d'un ensemble, de sous-ensemble, d'appartenance et d'inclusion,
+de réunion, d'intersection et de complémentaire et savoir utiliser les symboles de base correspondants : ∈ , ⊂ , ∪ , ∩
+ainsi que la notation des ensembles de nombres et des intervalles.
+Pour le complémentaire d'un ensemble A, on utilise la notation des probabilités A .
+Pour ce qui concerne le raisonnement logique, les élèves sont entraînés sur des exemples à :
+•   utiliser correctement les connecteurs logiques « et », « ou » et à distinguer leur sens des sens courants de « et »,
+       « ou » dans le langage usuel ;
+•   utiliser à bon escient les quantificateurs universel, existentiel (les symboles ∀, ∃ ne sont pas exigibles) et repérer
+       les quantifications implicites dans certaines propositions et, particulièrement, dans les propositions
+       conditionnelles ;
+•   distinguer, dans le cas d'une proposition conditionnelle, la proposition directe, sa réciproque, sa contraposée et sa
+       négation ;
+•   utiliser à bon escient les expressions « condition nécessaire », « condition suffisante » ;
+•   formuler la négation d'une proposition ;
+•   utiliser un contre-exemple pour infirmer une proposition universelle ;
+•   reconnaître et utiliser des types de raisonnement spécifiques : raisonnement par disjonction des cas, recours à la
+       contraposée, raisonnement par l'absurde.
+
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                   9 / 10
+Bulletin officiel spécial n° 8 du 13 octobre 2011
+
+Enseignement de spécialité, série ES
+L'enseignement de spécialité prend appui sur la résolution de problèmes. Cette approche permet une introduction
+motivée des notions mentionnées dans le programme. Plusieurs exemples de problèmes sont donnés à titre indicatif.
+L'étude de telles situations conduit à un travail de modélisation et place les élèves en position de recherche.
+Les thèmes abordés sont particulièrement propices à l'utilisation des outils informatiques (logiciels de calcul, tableur)
+et à la mise en œuvre d'algorithmes.
+Les graphes probabilistes permettent d'étudier des phénomènes d'évolution simples et de faire un lien avec les suites.
+Les matrices sont présentées comme des tableaux de nombres. Au même titre que les graphes, elles apparaissent
+comme des outils pour résoudre des problèmes.
+Le niveau d'approfondissement des notions est guidé par les besoins rencontrés dans la résolution des problèmes
+traités. Les thèmes abordés ne doivent pas faire l'objet d'un développement théorique.
+Exemples de problèmes     Contenus
+Recherche de courbes polynomiales passant par un
+ensemble donné de points.
+
+Gestion de flux, problèmes simples de partitionnement de
+graphes sous contraintes : problème du voyageur de
+commerce, gestion de trafic routier ou aérien, planning de
+tournois sportifs, etc.
+
+Modélisation d'échanges inter-industriels (matrices de
+Léontief).
+
+Codage par un graphe étiqueté, applications à l'accès à un
+réseau informatique, reconnaissance de codes.
+
+Minimisation d'une grandeur (coût, longueur, durée, etc.).
+
+Phénomènes évolutifs (variation d'une population,
+propagation d'une rumeur ou d'un virus, etc.).
+• Matrice carrée, matrice colonne : opérations.
+
+• Matrice inverse d'une matrice carrée.
+
+• Graphes : sommets, sommets adjacents, arêtes, degré
+d'un sommet, ordre d'un graphe, chaîne, longueur d'une
+chaîne, graphe complet, graphe connexe, chaîne
+eulérienne, matrice d'adjacence associée à un graphe.
+
+• Recherche du plus court chemin sur un graphe pondéré
+connexe.
+
+• Graphe probabiliste à deux ou trois sommets : matrice
+de transition, état stable d'un graphe probabiliste.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale, de la Jeunesse et de la Vie associative > www.education.gouv.fr                                  10 / 10

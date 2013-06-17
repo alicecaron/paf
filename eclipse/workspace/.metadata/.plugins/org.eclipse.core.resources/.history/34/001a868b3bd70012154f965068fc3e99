@@ -1,0 +1,12 @@
+import java.io.IOException;
+
+
+
+public class Menu {
+
+	public static void main (String[] args) throws IOException{
+		
+		PDFReader pdf1 = new PDFReader("src/programme_hist-geo-EC_intro_33220.pdf");
+		System.out.println(pdf1.getText());
+	}
+}

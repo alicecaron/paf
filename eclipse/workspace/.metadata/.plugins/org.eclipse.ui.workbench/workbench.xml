@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="49" version="2.0">
+<workbenchAdvisor/>
+<window height="720" maximized="true" width="1024" x="0" y="24">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1371485238169" focus="true" label="Workspace - Resource">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comptage.java" partName="Comptage.java" path="/home/alice/paf/eclipse/workspace/paf/src/analyse/Comptage.java" title="Comptage.java" tooltip="paf/src/analyse/Comptage.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/src/analyse/Comptage.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="829" selectionTopPixel="407"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DocInfo.java" partName="DocInfo.java" path="/home/alice/paf/eclipse/workspace/paf/src/analyse/DocInfo.java" title="DocInfo.java" tooltip="paf/src/analyse/DocInfo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/src/analyse/DocInfo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="298" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Words.java" partName="Words.java" path="/home/alice/paf/eclipse/workspace/paf/src/analyse/Words.java" title="Words.java" tooltip="paf/src/analyse/Words.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/src/analyse/Words.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="232" selectionTopPixel="51"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" partName="Menu.java" path="/home/alice/paf/eclipse/workspace/paf/src/reader/Menu.java" title="Menu.java" tooltip="paf/src/reader/Menu.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/src/reader/Menu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="2054" selectionTopPixel="1049"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="cirque.txt" partName="cirque.txt" path="/home/alice/paf/eclipse/workspace/paf/txt/cirque.txt" title="cirque.txt" tooltip="paf/txt/cirque.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/txt/cirque.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="746"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="creation_innovation_technologiques_143751.txt" partName="creation_innovation_technologiques_143751.txt" path="/home/alice/paf/eclipse/workspace/paf/txt/creation_innovation_technologiques_143751.txt" title="creation_innovation_technologiques_143751.txt" tooltip="paf/txt/creation_innovation_technologiques_143751.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/txt/creation_innovation_technologiques_143751.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="physique_chimie_143729.txt" partName="physique_chimie_143729.txt" path="/home/alice/paf/eclipse/workspace/paf/txt/physique_chimie_143729.txt" title="physique_chimie_143729.txt" tooltip="paf/txt/physique_chimie_143729.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/paf/txt/physique_chimie_143729.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="128" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="312" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.ui.resourcePerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.jst.j2ee.J2EEPerspective"/>
+<perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="bottomLeft" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.gef.ui.palette_view" ratio="0.23921272" ratioLeft="316" ratioRight="1005" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.54145515" ratioLeft="320" ratioRight="271" relationship="4" relative="org.eclipse.gef.ui.palette_view">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.1590909" ratioLeft="119" ratioRight="629" relationship="2" relative="org.eclipse.gef.ui.palette_view"/>
+<info folder="true" part="bottomLeft" ratio="0.49915683" ratioLeft="296" ratioRight="297" relationship="4" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/analyse/Comptage.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/analyse/DocInfo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/analyse/Words.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/reader/Menu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/reader/HTMLReader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/reader/PDFReader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/paf/src/reader/HTMLReader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/paf/txt/cirque.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/paf/txt/creation_innovation_technologiques_143751.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/paf/txt/physique_chimie_143729.txt"/>
+</editors>
+<item historyLabel="DocInfo.java" index="1">
+<position info="not_deleted" x="17" y="0"/>
+</item>
+<item historyLabel="Words.java" index="2">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="DocInfo.java" index="1">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="410" y="0"/>
+</item>
+<item historyLabel="DocInfo.java" index="1">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="Words.java" index="2">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="DocInfo.java" index="1">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position/>
+</item>
+<item historyLabel="DocInfo.java" index="1">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="1712" y="36"/>
+</item>
+<item historyLabel="Words.java" index="2">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="1680" y="6"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="1680" y="348"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="764" y="5"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1397" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1367" y="21"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1391" y="1"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1418" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="586" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="955" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1086" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1079" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="1115" y="7"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="2275" y="5"/>
+</item>
+<item historyLabel="HTMLReader.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="3626" y="0"/>
+</item>
+<item historyLabel="PDFReader.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="3626" y="0"/>
+</item>
+<item historyLabel="HTMLReader.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Menu.java" index="3">
+<position info="not_deleted" x="2054" y="11"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="813" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="527" y="0"/>
+</item>
+<item historyLabel="cirque.txt" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="527" y="0"/>
+</item>
+<item historyLabel="cirque.txt" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="creation_innovation_technologiques_143751.txt" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="physique_chimie_143729.txt" index="9">
+<position info="not_deleted" x="128" y="0"/>
+</item>
+<item historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="527" y="0"/>
+</item>
+<item active="true" historyLabel="Comptage.java" index="0">
+<position info="not_deleted" x="784" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="bottomLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="physique_chimie_143729.txt" tooltip="paf/txt/physique_chimie_143729.txt">
+<persistable path="/paf/txt/physique_chimie_143729.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="creation_innovation_technologiques_143751.txt" tooltip="paf/txt/creation_innovation_technologiques_143751.txt">
+<persistable path="/paf/txt/creation_innovation_technologiques_143751.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="cirque.txt" tooltip="paf/txt/cirque.txt">
+<persistable path="/paf/txt/cirque.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HTMLReader.java" tooltip="paf/src/reader/HTMLReader.java">
+<persistable path="/paf/src/reader/HTMLReader.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PDFReader.java" tooltip="paf/src/reader/PDFReader.java">
+<persistable path="/paf/src/reader/PDFReader.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="paf/src/reader/Menu.java">
+<persistable path="/paf/src/reader/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Words.java" tooltip="paf/src/analyse/Words.java">
+<persistable path="/paf/src/analyse/Words.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordInfo.java" tooltip="paf/src/analyse/WordInfo.java">
+<persistable path="/paf/src/analyse/WordInfo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DocInfo.java" tooltip="paf/src/analyse/DocInfo.java">
+<persistable path="/paf/src/analyse/DocInfo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comptage.java" tooltip="paf/src/analyse/Comptage.java">
+<persistable path="/paf/src/analyse/Comptage.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="www.education.gouv.fr_cid53324_mene1019738a.txt" tooltip="paf/htmlContent/www.education.gouv.fr_cid53324_mene1019738a.txt">
+<persistable path="/paf/htmlContent/www.education.gouv.fr_cid53324_mene1019738a.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="www.education.gouv.fr_cid51336_mene1007245a.txt" tooltip="paf/htmlContent/www.education.gouv.fr_cid51336_mene1007245a.txt">
+<persistable path="/paf/htmlContent/www.education.gouv.fr_cid51336_mene1007245a.txt"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="File.class" tooltip="java.io.File">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=paf/\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.io(File.class"/>
+</file>
+</mruList>
+</workbench>

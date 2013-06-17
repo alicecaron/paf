@@ -1,0 +1,16 @@
+package analyse;
+
+public class Words {
+	private int corpusFrequency;
+	private String word;
+	private String type;
+	private String classe;
+	private String matiere;
+	
+	public Words(String word,type){
+		this.corpusFrequency=1;
+		this.word=word;
+		this.type=type;
+
+	}
+}

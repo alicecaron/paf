@@ -1,0 +1,8 @@
+package analyse;
+
+public class WordInfo {
+
+	public WordInfo(){
+		
+	}
+}

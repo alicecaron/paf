@@ -1,0 +1,15 @@
+package analyse;
+
+public class WordInfo {
+
+	private int corpusFrequency;
+	private String word;
+	
+	public WordInfo(String word){
+		this.corpusFrequency=1;
+		this.word=word;
+		this.type=type;
+		this.classe=classe;
+		this.matiere=matiere;
+	}
+}
