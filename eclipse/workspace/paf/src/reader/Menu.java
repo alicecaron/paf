@@ -13,7 +13,6 @@ import java.util.Scanner;
 import org.apache.commons.lang3.StringEscapeUtils;
 
 
-
 public class Menu {
 
 	private static int choice;
@@ -45,7 +44,7 @@ public class Menu {
 
 	private static void computeHTML() throws Exception {
 		ArrayList<String> HTMLLinks=getList("src/list.txt");
-		makeTXTFile(HTMLLinks,"htmlContent/");
+		makeTXTFile(HTMLLinks,"txt/");
 	}
 
 	private static void computePDF() throws Exception {
@@ -70,10 +69,10 @@ public class Menu {
 	
 	private static void makeTXTFile(ArrayList<String> fileList, String repository) throws Exception {
 		if(choice==1){
-			PDFReader pdfContent=null;
+			MyPDFReader pdfContent=null;
 			for(String link:fileList){
 				if(link.endsWith(".pdf")){
-				pdfContent = new PDFReader(link);
+				pdfContent = new MyPDFReader(link);
 				String[] st = link.split("\\/");
 				String filename=st[st.length-1];
 				filename=repository+filename.subSequence(0, filename.length()-4)+".txt";
@@ -99,7 +98,7 @@ public class Menu {
 				filename=filename.replaceAll("\\/", "_");
 				filename+=".txt";
 				System.out.println(filename);
-				HTMLReader textFromHTML = new HTMLReader(link);
+				MyHTMLReader textFromHTML = new MyHTMLReader(link);
 				String text=extractHTMLText(textFromHTML.getText(),link);
 				if(text!=null){
 					String path = repository+filename;

@@ -3,7 +3,7 @@ package reader;
 import java.net.*;
 import java.io.*;
 
-public class HTMLReader {
+public class MyHTMLReader {
 	
 	private String url;
 	private String text;
@@ -21,7 +21,7 @@ public class HTMLReader {
 		this.text = text;
 	}
 
-	public HTMLReader(String url) throws Exception {
+	public MyHTMLReader(String url) throws Exception {
     	this.url=url;
         URL oracle = new URL(url);
         URLConnection yc = oracle.openConnection();

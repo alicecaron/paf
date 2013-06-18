@@ -4,7 +4,7 @@ import java.io.IOException;
 import com.snowtide.pdf.OutputTarget;
 import com.snowtide.pdf.PDFTextStream;
  
-public class PDFReader {
+public class MyPDFReader {
 
 	private String filename;
 	private StringBuilder text;
@@ -25,7 +25,7 @@ public class PDFReader {
 		this.text = text;
 	}
 
-	public PDFReader(String pdfFilePath) throws IOException {
+	public MyPDFReader(String pdfFilePath) throws IOException {
         PDFTextStream pdfts = new PDFTextStream(pdfFilePath);
         this.text = new StringBuilder(1024);
         pdfts.pipe(new OutputTarget(text));
