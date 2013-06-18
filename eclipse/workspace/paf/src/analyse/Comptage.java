@@ -33,25 +33,37 @@ public class Comptage {
 		while (it.hasNext()){
 		   String key =  it.next();
 		   Words word = corpusWords.get(key);
-		   System.out.println(key+" apparaît "+word.getCorpusFrequency()+" fois dans ce corpus de textes.");
+		   System.out.println(key+" |||| "+word.getCorpusFrequency()+" times/corpus |||| type : "+word.getType());
+		   getDocPresenceOfTheWord(word);
 		}
 		
+	}
+
+	private static void getDocPresenceOfTheWord(Words word) {
+		Set<String> clef = word.getDocFrequency().keySet();
+		Iterator<String> it = clef.iterator();
+		while (it.hasNext()){
+		   String key =  it.next();
+		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
+		   System.out.println("************** "+key+": "+documentFrequency+" times");
+		}
 	}
 
 	private static void computeDocument(File file) throws IOException {
 		String content = getFileContent(file);
 		//System.out.println(content);
 		content=StringEscapeUtils.escapeJava(content);
-		System.out.println(content);
+		//System.out.println(content);
 		content = content.replaceAll("([ \t\n\r\f.'():]|u2019|,)","%%%");
-		System.out.println("here "+content);
+		//System.out.println("here "+content);
 		content=StringEscapeUtils.unescapeJava(content);
 		String[] wordsTab=content.split("%%%");
 		
 		for(String word:wordsTab){
 			if(!word.equals("") && !(word.length()<2)){
 				System.out.println(word);
-				computeWord(word,file.getAbsolutePath());
+				String[] name = file.getAbsolutePath().split("/");
+				computeWord(word,name[name.length-1]);
 			}
 		}
 	}
@@ -60,14 +72,16 @@ public class Comptage {
 		String[] wordProp = str.split("_");
 		Words lastWord;
 		String theWord=wordProp[0];
+
 		if(!corpusWords.containsKey(theWord)){
-			if(wordProp.length==2)
-				lastWord = new Words(theWord,wordProp[1],documentPath);	
+			//if(wordProp.length==2){
+			//lastWord = new Words(theWord,wordProp[1],documentPath);
+				lastWord = new Words(theWord,"N",documentPath);
+				corpusWords.put(theWord, lastWord);
+			//}
 		}
-		else{
-			corpusWords.get(theWord).updateCorpusFrequency();
-			corpusWords.get(theWord).updateDocumentFrequency(documentPath);
-		}	
+		corpusWords.get(theWord).updateCorpusFrequency(documentPath);
+	
 	}
 
 	private static String getFileContent(File file) throws IOException {
