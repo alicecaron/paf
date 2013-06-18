@@ -16,11 +16,11 @@ public class Tagged {
 		String ligne;
 		
 		try {
-		String[] cmd = {"/bin/sh",	"-c",
-				"export LIA_TAGG=\"lia_tagg\"",
-				"export LIA_TAGG_LANG=french",
-				"iconv -c -f UTF-8 -t ISO-8859-15 "+file+" | "+pathToLIA+"/script/lia_clean | " +
+			System.out.println(System.getProperty("user.dir"));
+		String[] cmd = {"/bin/sh", "-c"," export LIA_TAGG=\""+System.getProperty("user.dir") +"/lia_tagg\" " +
+				"&& export LIA_TAGG_LANG=\"french\" && iconv -c -f UTF-8 -t ISO-8859-15 "+file+" | "+pathToLIA+"/script/lia_clean | " +
 				pathToLIA+"/script/lia_tagg+lemm | iconv -f ISO-8859-15 -t UTF-8 > "+file+".tagged"};
+
 		Process p =	Runtime.getRuntime().exec(cmd);
 
         p.waitFor();
@@ -37,7 +37,7 @@ public class Tagged {
 	}
 	
 	public static void main(String[] args){
-		Tagged taggedText = new Tagged("/home/adrien/PAF/txt/college_maths.txt");
+		Tagged taggedText = new Tagged("test/physique_chimie_143729.txt");
 		for(TaggedWord w : taggedText.getWords()){
 			if(w.getType().equals("VINF")){
 				System.out.println (w.getWord());
@@ -47,10 +47,7 @@ public class Tagged {
 		}	
 		
 	}
-
 	private ArrayList<TaggedWord> getWords() {
 		return mots;
-	}
-		
-
+	}	
 }
