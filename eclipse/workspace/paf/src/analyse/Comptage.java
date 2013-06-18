@@ -16,6 +16,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 public class Comptage {
 	private static Map<String,Words> corpusWords=new HashMap<String,Words>();
 	private static Set<File> corpus=new HashSet<File>();
+	private static int CORPUS_SIZE;
 //	private Map<String,File> corpusFileNames=new HashMap<String,File>();
 
 	
@@ -25,6 +26,7 @@ public class Comptage {
 		for(File file:corpus)
 			computeDocument(file);
 		displayStatistics();
+		System.out.println(CORPUS_SIZE);
 	}
 	
 	private static void displayStatistics() {
@@ -34,6 +36,7 @@ public class Comptage {
 		   String key =  it.next();
 		   Words word = corpusWords.get(key);
 		   System.out.println(key+" |||| "+word.getCorpusFrequency()+" times/corpus |||| type : "+word.getType());
+		   System.out.println("Nb docs : "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
 		}
 		
@@ -45,7 +48,7 @@ public class Comptage {
 		while (it.hasNext()){
 		   String key =  it.next();
 		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
-		   System.out.println("************** "+key+": "+documentFrequency+" times");
+		   System.out.println("************** "+key+": "+documentFrequency+" times |||| TFIDF : "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
 		}
 	}
 
@@ -101,6 +104,7 @@ public class Comptage {
 			list = repertoire.listFiles();
 		for(File file:list)
 			//this.corpusFileNames.put(file.getAbsolutePath(), file);
-			corpus.add(file);		
+			corpus.add(file);
+		CORPUS_SIZE=corpus.size();
 	}
 }
