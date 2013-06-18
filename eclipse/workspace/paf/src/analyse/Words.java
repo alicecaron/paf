@@ -7,7 +7,7 @@ public class Words {
 	private int corpusFrequency;
 	private String word;
 	private String type;
-//	private Map<String,DocInfo> docPresence = new HashMap<String,DocInfo>();
+	private String lemm;
 	private Map<String,DocFrequency> docFrequency = new HashMap<String,DocFrequency>();
 
 	
@@ -35,20 +35,17 @@ public class Words {
 	public void setType(String type) {
 		this.type = type;
 	}
-
-/*	public Map<String, DocInfo> getDocPresence() {
-		return docPresence;
+	public String getLemm() {
+		return lemm;
 	}
-	public void setDocPresence(Map<String, DocInfo> docPresence) {
-		this.docPresence = docPresence;
+	public void setLemm(String lemm) {
+		this.lemm = lemm;
 	}
-*/
-	
-	public Words(String word,String type,String documentPath){
+	public Words(String[] wordiz,String documentPath){
 		this.corpusFrequency=0;
-		this.word=word;
-		this.type=type;
-		//this.docPresence.put(documentPath, new DocInfo(documentPath));
+		this.word=wordiz[0];
+		this.type=wordiz[1];
+		this.lemm=wordiz[2];
 		this.docFrequency.put(documentPath, new DocFrequency());
 	}
 	public void updateCorpusFrequency(String documentPath) {

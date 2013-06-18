@@ -1,24 +1,20 @@
 package analyse;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.commons.lang3.StringEscapeUtils;
+import tagger.TaggedDocument;
 
 public class Comptage {
 	private static Map<String,Words> corpusWords=new HashMap<String,Words>();
 	private static Set<File> corpus=new HashSet<File>();
 	private static int CORPUS_SIZE;
-//	private Map<String,File> corpusFileNames=new HashMap<String,File>();
-
 	
 	public static void main(String[] args) throws IOException{
 		String repository="test/";
@@ -35,66 +31,74 @@ public class Comptage {
 		while (it.hasNext()){
 		   String key =  it.next();
 		   Words word = corpusWords.get(key);
-		   System.out.println(key+" |||| "+word.getCorpusFrequency()+" times/corpus |||| type : "+word.getType());
-		   System.out.println("Nb docs : "+word.getDocFrequency().size());
+		   System.out.println("====================="+key+" "+word.getType()+" "+word.getLemm());
+		   System.out.println("++ Corpus frequency: "+word.getCorpusFrequency());
+		   System.out.println("++ Documents presence: "+word.getDocFrequency().size());
+		   
+		  // System.out.println(key+" |||| "+word.getCorpusFrequency()+" times/corpus |||| type : "+word.getType());
+		   //System.out.println("Nb docs : "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
 		}
 		
 	}
 
 	private static void getDocPresenceOfTheWord(Words word) {
+		System.out.println("-------------------Statistics per document:");
 		Set<String> clef = word.getDocFrequency().keySet();
 		Iterator<String> it = clef.iterator();
 		while (it.hasNext()){
 		   String key =  it.next();
 		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
-		   System.out.println("************** "+key+": "+documentFrequency+" times |||| TFIDF : "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
+		   System.out.println("**"+key+": "+documentFrequency+" times");
+		   System.out.println("    TFIDF: "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
+
 		}
+		System.out.println("-------------------------------------------");
 	}
 
 	private static void computeDocument(File file) throws IOException {
-		String content = getFileContent(file);
-		//System.out.println(content);
-		content=StringEscapeUtils.escapeJava(content);
-		//System.out.println(content);
-		content = content.replaceAll("([ \t\n\r\f.'():]|u2019|,)","%%%");
-		//System.out.println("here "+content);
-		content=StringEscapeUtils.unescapeJava(content);
-		String[] wordsTab=content.split("%%%");
-		
-		for(String word:wordsTab){
-			if(!word.equals("") && !(word.length()<2)){
-				System.out.println(word);
-				String[] name = file.getAbsolutePath().split("/");
-				computeWord(word,name[name.length-1]);
+		ArrayList<String> content = getFileContent(file);
+		String[] filename = file.getAbsolutePath().split("/");
+//		content=StringEscapeUtils.escapeJava(content);
+//		content = content.replaceAll("([ \t\n\r\f.'():]|u2019|,)","%%%");
+//		content=StringEscapeUtils.unescapeJava(content);
+//		String[] wordsTab=content.split("%%%");
+
+		for(String wordInfos : content){
+			String[] wordiz=wordInfos.split(" ");
+			if(!wordiz[0].equals("") && !(wordiz[0].length()<2)){
+				//System.out.println(wordiz[0]);
+				computeWord(wordiz,filename[filename.length-1]);
 			}
-		}
+		}		
 	}
 
-	private static void computeWord(String str,String documentPath) {
-		String[] wordProp = str.split("_");
+	private static void computeWord(String[] wordiz,String documentPath) {
+//		String[] wordProp = str.split("_");
 		Words lastWord;
-		String theWord=wordProp[0];
-
-		if(!corpusWords.containsKey(theWord)){
+//		String theWord=wordProp[0];
+		String wordStr = wordiz[0];
+		if(!corpusWords.containsKey(wordStr)){
 			//if(wordProp.length==2){
 			//lastWord = new Words(theWord,wordProp[1],documentPath);
-				lastWord = new Words(theWord,"N",documentPath);
-				corpusWords.put(theWord, lastWord);
+				lastWord = new Words(wordiz,documentPath);
+				corpusWords.put(wordStr, lastWord);
 			//}
 		}
-		corpusWords.get(theWord).updateCorpusFrequency(documentPath);
+		corpusWords.get(wordStr).updateCorpusFrequency(documentPath);
 	
 	}
 
-	private static String getFileContent(File file) throws IOException {
-		Reader reader = new FileReader(file);
-		BufferedReader buffer=new BufferedReader(reader);
-		String line;
-		String content=null;
-		while((line=buffer.readLine())!=null)
-			content+=" "+line;
-		return content;
+	private static ArrayList<String> getFileContent(File file) throws IOException { 
+		String documentPath=file.getAbsolutePath();
+		TaggedDocument taggedDocument = new TaggedDocument(documentPath,corpusWords);
+//		Reader reader = new FileReader(file);
+//		BufferedReader buffer=new BufferedReader(reader);
+//		String line;
+//		String content=null;
+//		while((line=buffer.readLine())!=null)
+//			content+=" "+line;
+		return taggedDocument.getTaggedDocContent();
 	}
 
 	public static void getRepositoryList(String repository) {
