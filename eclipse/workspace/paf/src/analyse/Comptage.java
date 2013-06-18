@@ -3,9 +3,12 @@ package analyse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -13,6 +16,7 @@ import tagger.TaggedDocument;
 
 public class Comptage {
 	private static Map<String,Words> corpusWords=new HashMap<String,Words>();
+	private static List<Lemm> corpusLemms = new ArrayList<Lemm>();
 	private static Set<File> corpus=new HashSet<File>();
 	private static int CORPUS_SIZE;
 	
@@ -26,17 +30,41 @@ public class Comptage {
 	}
 	
 	private static void displayStatistics() {
+		
 		Set<String> clef = corpusWords.keySet();
 		Iterator<String> it = clef.iterator();
 		while (it.hasNext()){
 		   String key =  it.next();
 		   Words word = corpusWords.get(key);
+		   feedCorpusLemms(word);
 		   System.out.println("====================="+key+" "+word.getType()+" "+word.getLemm());
 		   System.out.println("++ Corpus frequency: "+word.getCorpusFrequency());
 		   System.out.println("++ Documents presence: "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
 		}
+		System.out.println("Nombre de mots différents du corpus"+corpusWords.size());
+		System.out.println("Nombre de lemmes différents du corpus"+corpusLemms.size());
+		System.out.println("========================================================");
+		Collections.sort(corpusLemms,new Comparator<Lemm>(){
+			public int compare(Lemm l1,Lemm l2){
+				return l1.getLemmFrequency()-l2.getLemmFrequency();
+			}
+		});
+		for(Lemm lemm:corpusLemms)
+			System.out.println(lemm.getLemm()+" "+lemm.getLemmFrequency());
 		
+	}
+
+	private static void feedCorpusLemms(Words word) {
+		Lemm currentLemm = new Lemm(word.getLemm(),word.getCorpusFrequency());
+		boolean in=false;
+		for(int i=0;i<corpusLemms.size();i++){
+			if(corpusLemms.get(i).getLemm().equals(word.getLemm())){
+				corpusLemms.get(i).updateFrequency(word.getCorpusFrequency());
+				in=true;
+			}
+		}
+		if(!in)corpusLemms.add(currentLemm);
 	}
 
 	private static void getDocPresenceOfTheWord(Words word) {
@@ -62,7 +90,7 @@ public class Comptage {
 
 		for(String wordInfos : content){
 			String[] wordiz=wordInfos.split(" ");
-			if(!wordiz[0].equals("") && !(wordiz[0].length()<2)){
+			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM"))){
 				//System.out.println(wordiz[0]);
 				computeWord(wordiz,filename[filename.length-1]);
 			}
