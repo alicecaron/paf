@@ -24,8 +24,10 @@ public class DocFrequency {
 		this.documentFrequency+=1;
 	}
 	public float computeTFIDF(int CORPUS_SIZE,int nbDoc) {
-		Double tfidf = documentFrequency*log2(CORPUS_SIZE/nbDoc)+1;
-		return tfidf.longValue();
+		System.out.println("doc frequence "+documentFrequency);
+		return tfidf = (float) (documentFrequency*log2((CORPUS_SIZE/nbDoc)+1));
+		//System.out.println(tfidf);
+		//return tfidf.longValue();
 	}
 	private double log2(int i) {
 		return Math.log(i)/Math.log(2);

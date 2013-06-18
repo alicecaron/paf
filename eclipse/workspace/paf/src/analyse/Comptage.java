@@ -103,7 +103,6 @@ public class Comptage {
 		if(repertoire.isDirectory())
 			list = repertoire.listFiles();
 		for(File file:list)
-			//this.corpusFileNames.put(file.getAbsolutePath(), file);
 			corpus.add(file);
 		CORPUS_SIZE=corpus.size();
 	}
