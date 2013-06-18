@@ -2,7 +2,6 @@ package tagger;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Tagged {
@@ -16,19 +15,19 @@ public class Tagged {
 		String ligne;
 		
 		try {
-			System.out.println(System.getProperty("user.dir"));
 		String[] cmd = {"/bin/sh", "-c"," export LIA_TAGG=\""+System.getProperty("user.dir") +"/lia_tagg\" " +
-				"&& export LIA_TAGG_LANG=\"french\" && iconv -c -f UTF-8 -t ISO-8859-15 "+file+" | "+pathToLIA+"/script/lia_clean | " +
+				"&& export LIA_TAGG_LANG=\"french\" " +
+				"&& iconv -c -f UTF-8 -t ISO-8859-15//TRANSLIT "+file+" | "+pathToLIA+"/script/lia_clean | " +
 				pathToLIA+"/script/lia_tagg+lemm | iconv -f ISO-8859-15 -t UTF-8 > "+file+".tagged"};
 
 		Process p =	Runtime.getRuntime().exec(cmd);
 
         p.waitFor();
 			
-			fr = new FileReader(file+".tagged");
-			br = new BufferedReader(fr);
-			while((ligne = br.readLine()) !=null)
-				mots.add(new TaggedWord(ligne));
+		fr = new FileReader(file+".tagged");
+		br = new BufferedReader(fr);
+		while((ligne = br.readLine()) !=null)
+			mots.add(new TaggedWord(ligne));
 			
 		} catch (Exception e) {
 			e.printStackTrace();
