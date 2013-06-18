@@ -62,6 +62,7 @@ public class Comptage {
 			if(corpusLemms.get(i).getLemm().equals(word.getLemm())){
 				corpusLemms.get(i).updateFrequency(word.getCorpusFrequency());
 				in=true;
+				break;
 			}
 		}
 		if(!in)corpusLemms.add(currentLemm);
