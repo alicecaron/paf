@@ -72,6 +72,7 @@ public class Menu {
 		if(choice==1){
 			PDFReader pdfContent=null;
 			for(String link:fileList){
+				if(link.endsWith(".pdf")){
 				pdfContent = new PDFReader(link);
 				String[] st = link.split("\\/");
 				String filename=st[st.length-1];
@@ -84,6 +85,7 @@ public class Menu {
 				System.out.println(filename+" : "+text);
 				writer.write(text);
 				writer.close();
+				}
 			}
 			
 		}

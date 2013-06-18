@@ -34,16 +34,13 @@ public class Comptage {
 		   System.out.println("====================="+key+" "+word.getType()+" "+word.getLemm());
 		   System.out.println("++ Corpus frequency: "+word.getCorpusFrequency());
 		   System.out.println("++ Documents presence: "+word.getDocFrequency().size());
-		   
-		  // System.out.println(key+" |||| "+word.getCorpusFrequency()+" times/corpus |||| type : "+word.getType());
-		   //System.out.println("Nb docs : "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
 		}
 		
 	}
 
 	private static void getDocPresenceOfTheWord(Words word) {
-		System.out.println("-------------------Statistics per document:");
+		System.out.println("---------------------------------Statistics per document:");
 		Set<String> clef = word.getDocFrequency().keySet();
 		Iterator<String> it = clef.iterator();
 		while (it.hasNext()){
@@ -51,9 +48,8 @@ public class Comptage {
 		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
 		   System.out.println("**"+key+": "+documentFrequency+" times");
 		   System.out.println("    TFIDF: "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
-
 		}
-		System.out.println("-------------------------------------------");
+		System.out.println("-----------------------------------------------------------");
 	}
 
 	private static void computeDocument(File file) throws IOException {
