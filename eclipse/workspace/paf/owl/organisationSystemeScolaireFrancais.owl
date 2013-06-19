@@ -1,0 +1,734 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY organisation-systeme-scolaire-francais "http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#" >
+]>
+
+
+<rdf:RDF xmlns="http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#"
+     xml:base="http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:organisation-systeme-scolaire-francais="http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#aCapaciteVisee -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;aCapaciteVisee">
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#aConnaissanceVisee -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;aConnaissanceVisee">
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#aMatiere -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;aMatiere">
+        <rdfs:range rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#hasBloomDescription -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasBloomDescription">
+        <rdfs:subPropertyOf rdf:resource="&organisation-systeme-scolaire-francais;hasDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#hasDescription -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasDescription"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasDuration">
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:range rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#hasNextPeriod -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasNextPeriod">
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:range rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#hasPeriod -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasPeriod">
+        <rdfs:range rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:domain rdf:resource="&organisation-systeme-scolaire-francais;programme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#duration -->
+
+    <owl:DatatypeProperty rdf:about="&organisation-systeme-scolaire-francais;duration">
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE1 -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE1">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCycle2"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE2 -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE2">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM1 -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM1">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM2 -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM2">
+        <rdfs:subClassOf rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCP -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCP">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCycle2"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCycle3 -->
+
+    <owl:Class rdf:about="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCycle3">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePrimaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;curriculum">
+        <rdfs:label xml:lang="en">Curriculum</rdfs:label>
+        <rdfs:label xml:lang="fr">Matière</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#systemeScolaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode1ere -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode1ere">
+        <rdfs:label xml:lang="fr">Classe de 1ère</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+        <owl:disjointWith rdf:resource="&organisation-systeme-scolaire-francais;periode2eme"/>
+        <owl:disjointWith rdf:resource="&organisation-systeme-scolaire-francais;periodeTerminale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode2eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode2eme">
+        <rdfs:label xml:lang="fr">Classe de seconde</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+        <owl:disjointWith rdf:resource="&organisation-systeme-scolaire-francais;periodeTerminale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode3eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode3eme">
+        <rdfs:label xml:lang="fr">Classe de 3ème</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCollege"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode4eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode4eme">
+        <rdfs:label xml:lang="fr">Classe de 4ème</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCollege"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periode3eme"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode5eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode5eme">
+        <rdfs:label xml:lang="fr">Classe de 5ème</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCollege"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periode4eme"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periode6eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode6eme">
+        <rdfs:label xml:lang="fr">Classe de 6ème</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCollege"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;aMatiere"/>
+                <owl:someValuesFrom rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periode5eme"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodeCollege -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeCollege">
+        <rdfs:label xml:lang="fr">Période du collège</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeSecondaire"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodeCycle2 -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeCycle2">
+        <rdfs:label xml:lang="fr">Cycle 2 ou cycle des apprentissages fondamentaux</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePrimaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodeLycee -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeLycee">
+        <rdfs:label xml:lang="fr">Période du lycée</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeSecondaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodePedagogique -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodePedagogique">
+        <rdfs:label rdf:datatype="&xsd;string">Période pédagogique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#systemeScolaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodePrimaire -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodePrimaire">
+        <rdfs:label xml:lang="fr">Période du primaire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periodeSecondaire"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&organisation-systeme-scolaire-francais;periodeSecondaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodeSecondaire -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeSecondaire">
+        <rdfs:label xml:lang="fr">Période du secondaire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasNextPeriod"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#periodeTerminale -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeTerminale">
+        <rdfs:label xml:lang="fr">Classe de terminale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeLycee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#programme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;programme">
+        <rdfs:label xml:lang="fr">Programme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#systemeScolaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#programmeMatiere -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;programmeMatiere">
+        <rdfs:label xml:lang="fr">Programme de matière</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;programme"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;aMatiere"/>
+                <owl:onClass rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#programmePeriode -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;programmePeriode">
+        <rdfs:label xml:lang="fr">Programme de la période</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;programme"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&organisation-systeme-scolaire-francais;hasPeriod"/>
+                <owl:someValuesFrom rdf:resource="&organisation-systeme-scolaire-francais;periodePedagogique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#programmePeriodeMatiere -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;programmePeriodeMatiere">
+        <rdfs:label xml:lang="fr">Programme de la métière pour la période
+</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;programme"/>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;programmeMatiere"/>
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;programmePeriode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#systemeScolaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#systemeScolaire"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#1ereGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;1ereGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode1ere"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;terminaleGenerale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#2ereGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;2ereGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode2eme"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;1ereGenerale"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#3eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;3eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode3eme"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;2ereGenerale"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#4eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;4eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode4eme"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;3eme"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#5eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;5eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode5eme"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;4eme"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#6eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;6eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode6eme"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;5eme"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_french"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_geography"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_history"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_historyOfArt"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_lifeSciences"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_mathematics"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_musicalEducation"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_physicalEducation"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_physics"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#ce1 -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;ce1">
+        <rdf:type rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE1"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;ce2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#ce2 -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;ce2">
+        <rdf:type rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCE2"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;cm1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#cm1 -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;cm1">
+        <rdf:type rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM1"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;cm2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#cm2 -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;cm2">
+        <rdf:type rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCM2"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;6eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#cp -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;cp">
+        <rdf:type rdf:resource="file:/C:/Users/deslis/Desktop/Test-protege/ILOT/programme_histoire_college_france/Programme_Histoire_College_France#periodeCP"/>
+        <hasNextPeriod rdf:resource="&organisation-systeme-scolaire-francais;ce1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_french -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_french">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">French</rdfs:label>
+        <rdfs:label xml:lang="fr">Français</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_geography -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_geography">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">Geography</rdfs:label>
+        <rdfs:label xml:lang="fr">Géographie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_history -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_history">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">History</rdfs:label>
+        <rdfs:label xml:lang="fr">Histoire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_historyOfArt -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_historyOfArt">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">History of Art</rdfs:label>
+        <rdfs:label xml:lang="fr">Histoire de l&apos;Art</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_lifeSciences -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_lifeSciences">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">Life sciences</rdfs:label>
+        <rdfs:label xml:lang="fr">Sciences de la Vie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_mathematics -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_mathematics">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">Mathematics</rdfs:label>
+        <rdfs:label xml:lang="fr">Mathématiques</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_musicalEducation -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_musicalEducation">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_physicalEducation -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_physicalEducation">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">Physical education</rdfs:label>
+        <rdfs:label xml:lang="fr">Education physique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#curriculum_physics -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;curriculum_physics">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;curriculum"/>
+        <rdfs:label xml:lang="en">Physics</rdfs:label>
+        <rdfs:label xml:lang="fr">Physique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#duree1an -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;duree1an">
+        <duration rdf:datatype="&xsd;float">1.0</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#programmeHistoire6eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;programmeHistoire6eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+        <hasPeriod rdf:resource="&organisation-systeme-scolaire-francais;6eme"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_history"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#terminaleGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;terminaleGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periodeTerminale"/>
+        <hasDuration rdf:resource="&organisation-systeme-scolaire-francais;duree1an"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeGeographie5eme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeGeographie5eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+        <hasPeriod rdf:resource="&organisation-systeme-scolaire-francais;5eme"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_geography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeGeographie6eme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeGeographie6eme">
+        <hasPeriod rdf:resource="&organisation-systeme-scolaire-francais;5eme"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_geography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeHistoire5eme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/deslis/ontologies/2013/1/organisation-systeme-scolaire-francais#programmeHistoire5eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+        <hasPeriod rdf:resource="&organisation-systeme-scolaire-francais;5eme"/>
+        <aMatiere rdf:resource="&organisation-systeme-scolaire-francais;curriculum_history"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&organisation-systeme-scolaire-francais;periode3eme"/>
+            <rdf:Description rdf:about="&organisation-systeme-scolaire-francais;periode4eme"/>
+            <rdf:Description rdf:about="&organisation-systeme-scolaire-francais;periode5eme"/>
+            <rdf:Description rdf:about="&organisation-systeme-scolaire-francais;periode6eme"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+

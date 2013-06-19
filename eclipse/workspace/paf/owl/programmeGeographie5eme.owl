@@ -1,0 +1,2050 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY bloom "http://localhost/ilot/OwlProject5/history/resource/Bloom_LRE#" >
+    <!ENTITY Programme_Histoire_College_France "http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#" >
+    <!ENTITY organisation-systeme-scolaire-francais2 "http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#" >
+    <!ENTITY organisation-systeme-scolaire-francais "http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#"
+     xml:base="http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France"
+     xmlns:Programme_Histoire_College_France="http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:organisation-systeme-scolaire-francais2="http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:bloom="http://localhost/ilot/OwlProject5/history/resource/Bloom_LRE#"
+     xmlns:organisation-systeme-scolaire-francais="http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#">
+    <owl:Ontology rdf:about="http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France">
+        <rdfs:label xml:lang="fr">L&apos;Ontologie du programme scolaire en matière Géographie au Collège (niveau 5ème) en France. </rdfs:label>
+        <rdfs:comment xml:lang="fr">Introduction du programme de Géographie 
+Classe de  5ème : 
+
+HUMANITÉ ET DEVELOPPEMENT DURABLE
+
+À l’école primaire, une première approche du développement durable a été opérée dans les enseignements de géographie et de sciences. Une action concrète de développement durable a été étudiée en sixième dans le cadre de l’éducation civique.
+
+Le programme de la classe de 5ème est consacré à la poursuite de l’étude du développement durable. Une étude de cas, placée en tout début de programme permet, en posant les trois dimensions du développement durable, d’appréhender simplement le concept. 
+La première partie du programme s’ouvre sur les hommes, car c’est l’humanité qui est au coeur du développement durable.
+La deuxième partie aborde la question majeure des inégalités des conditions de vie, de richesses et de développement des sociétés, aux différents niveaux de l’échelle géographique. 
+La troisième partie s’attache aux rapports entre les sociétés et les ressources. Ces rapports sont étudiés
+sous l’angle du développement durable à travers les questions d’aménagement et d’usage, de préservation et de partage des ressources entre les territoires et entre les hommes.
+
+La démarche géographique privilégie des études de cas à partir desquelles les élèves constatent les inégalités et les déséquilibres, perçoivent les jeux d’acteurs, les impacts des actions des hommes sur l’environnement et mesurent l’importance des choix politiques. Ces études de cas prennent pleinement leur sens par une mise en perspective à d’autres échelles géographiques et parfois de temps. Elles sont choisies de manière à ce que les élèves puissent poursuivre le parcours des différentes parties du monde.
+
+L’apport majeur de la géographie dans l’approche du développement durable repose, outre sa dimension humaine et sociale, sur la prise en compte des échelles. C’est à travers leur maniement que les élèves
+perçoivent, du local au mondial, l’interdépendance des sociétés comme des territoires.
+
+Au terme de l’année de 5ème les élèves sont capables, confrontés à l’étude d’un territoire, de mobiliser les trois dimensions du développement durable. Ils ont construit une connaissance claire des grandes oppositions du monde et des enjeux auxquels est confrontée l’humanité.
+
+L&apos;analyse de documents et la maîtrise de l&apos;expression écrite et
+orale concernent toutes les parties du programme.
+
+(source : http://cache.media.education.gouv.fr/file/special_6/51/8/Programme_hist_geo_education_civique_5eme_33518.pdf )
+</rdfs:comment>
+        <owl:imports rdf:resource="http://localhost/ilot/OwlProject5/history/resource/Bloom_LRE.owl"/>
+        <owl:imports rdf:resource="http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl"/>
+        <owl:imports rdf:resource="http://localhost/ilot/OwlProject5/history/resource/typology_learning_strategies.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&Programme_Histoire_College_France;faitPartieDe"/>
+    <owl:AnnotationProperty rdf:about="&Programme_Histoire_College_France;travailSurCapaciteDe"/>
+    <owl:AnnotationProperty rdf:about="&Programme_Histoire_College_France;aDureeRelative"/>
+    <owl:AnnotationProperty rdf:about="&Programme_Histoire_College_France;estUnePartieDe"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#contains -->
+
+    <owl:ObjectProperty rdf:about="&Programme_Histoire_College_France;contains">
+        <owl:inverseOf rdf:resource="&Programme_Histoire_College_France;isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#containsKnowledge -->
+
+    <owl:ObjectProperty rdf:about="&Programme_Histoire_College_France;containsKnowledge">
+        <rdfs:subPropertyOf rdf:resource="&Programme_Histoire_College_France;contains"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#elaboratesCapacity -->
+
+    <owl:ObjectProperty rdf:about="&Programme_Histoire_College_France;elaboratesCapacity"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#hasPreviousPeriod -->
+
+    <owl:ObjectProperty rdf:about="&Programme_Histoire_College_France;hasPreviousPeriod">
+        <owl:inverseOf rdf:resource="&organisation-systeme-scolaire-francais;hasNextperiod"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="&Programme_Histoire_College_France;isPartOf">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;isPartOf"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;isPartOf"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;level"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#hasNextperiod -->
+
+    <owl:ObjectProperty rdf:about="&organisation-systeme-scolaire-francais;hasNextperiod"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#hasRelativeDuration -->
+
+    <owl:DatatypeProperty rdf:about="&Programme_Histoire_College_France;hasRelativeDuration">
+        <rdfs:comment xml:lang="fr">Durée exprimée en % de la période dans laquelle le sujet est directement inclus</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#isPartOf -->
+
+    <owl:DatatypeProperty rdf:about="&Programme_Histoire_College_France;isPartOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- bloom:describe -->
+
+    <owl:Class rdf:about="bloom:describe">
+        <owl:equivalentClass rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+    </owl:Class>
+    
+
+
+    <!-- bloom:explain -->
+
+    <owl:Class rdf:about="bloom:explain">
+        <owl:equivalentClass rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#approach -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;approach">
+        <rdfs:label xml:lang="en">Approach</rdfs:label>
+        <rdfs:label xml:lang="fr">Démarche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#college_3eme -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;college_3eme">
+        <owl:equivalentClass rdf:resource="&organisation-systeme-scolaire-francais;periode3eme"/>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#college_4eme -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;college_4eme">
+        <owl:equivalentClass rdf:resource="&organisation-systeme-scolaire-francais;periode4eme"/>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#college_5eme -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;college_5eme">
+        <owl:equivalentClass rdf:resource="&organisation-systeme-scolaire-francais;periode5eme"/>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#college_6eme -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;college_6eme">
+        <owl:equivalentClass rdf:resource="&organisation-systeme-scolaire-francais;periode6eme"/>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#compentancy_identify -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;compentancy_identify">
+        <rdfs:label xml:lang="en">Identify</rdfs:label>
+        <rdfs:label xml:lang="fr">Identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_describe -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_describe">
+        <rdfs:label xml:lang="en">Describe</rdfs:label>
+        <rdfs:label xml:lang="fr">Décrire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_establish -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_establish">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_explain -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_explain">
+        <rdfs:label xml:lang="en">Explain</rdfs:label>
+        <rdfs:label xml:lang="fr">Expliquer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_locate -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_locate">
+        <rdfs:label xml:lang="en">Locate</rdfs:label>
+        <rdfs:label xml:lang="fr">Localiser</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_read -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_read">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_situate -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;competency_situate">
+        <rdfs:label xml:lang="en">Situate</rdfs:label>
+        <rdfs:label xml:lang="fr">Situer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;knowledge">
+        <rdfs:label xml:lang="en">Pioneer Front </rdfs:label>
+        <rdfs:label xml:lang="fr">Des fronts pionniers</rdfs:label>
+        <rdfs:comment xml:lang="fr">Des fronts pionniers étendent le peuplement sur les marges de
+certains foyers de population.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#level -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;level"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCE1 -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCE1">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCycle2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCE2 -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCE2">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCM1 -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCM1">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCM2 -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCM2">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;periodeCycle3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCP -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCP">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodeCycle2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#periodeCycle3 -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;periodeCycle3">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePrimaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programDescription -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;programDescription"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#theme -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;theme">
+        <rdfs:subClassOf rdf:resource="&Programme_Histoire_College_France;programDescription"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic -->
+
+    <owl:Class rdf:about="&Programme_Histoire_College_France;topic">
+        <rdfs:comment xml:lang="en">Topic is a part of Competency phrase (or capacité in Frence) in the educational program. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode1ere -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode1ere"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode2eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode2eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode3eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode3eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode4eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode4eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode5eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode5eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periode6eme -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periode6eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periodeCycle2 -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeCycle2">
+        <rdfs:subClassOf rdf:resource="&organisation-systeme-scolaire-francais;periodePrimaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periodePrimaire -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodePrimaire"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#periodeTerminale -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;periodeTerminale"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#programmePeriodeMatiere -->
+
+    <owl:Class rdf:about="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#1ereGenerale -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;1ereGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode1ere"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;1ereGenerale"/>
+        <owl:sameAs rdf:resource="&organisation-systeme-scolaire-francais;1ereGenerale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#2emeGenerale -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;2emeGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periode2eme"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;2emeGenerale"/>
+        <owl:sameAs rdf:resource="&organisation-systeme-scolaire-francais;2ereGenerale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#ce1 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;ce1">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCE1"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;ce2"/>
+        <owl:sameAs rdf:resource="&organisation-systeme-scolaire-francais;ce1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#ce2 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;ce2">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCE2"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;cm1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#cm1 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;cm1">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCM1"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;cm2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#cm2 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;cm2">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCM2"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&organisation-systeme-scolaire-francais;6eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_describe -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;competency_describe">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+        <rdfs:label xml:lang="en">Describe</rdfs:label>
+        <rdfs:label xml:lang="fr">Décrire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_explain -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;competency_explain">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+        <rdfs:label xml:lang="en">Explain</rdfs:label>
+        <rdfs:label xml:lang="fr">Expliquer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#competency_knowPointsOfReference -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;competency_knowPointsOfReference"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#cp -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;cp">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#cycle2 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;cycle2">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periodeCycle2"/>
+        <rdfs:label xml:lang="fr">Cycle 2 ou cycle des apprentissages fondamentaux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#cycle3 -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;cycle3">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;periodeCycle3"/>
+        <rdfs:label xml:lang="fr">Cycle 3 ou cycle des approfondissements
+</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#geographie3eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;geographie3eme">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;programDescription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#geographie4eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;geographie4eme">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;programDescription"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#geographie5eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;geographie5eme">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;programDescription"/>
+        <owl:sameAs rdf:resource="&Programme_Histoire_College_France;programmeGeographie5eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#geographie6eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;geographie6eme">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;programDescription"/>
+        <owl:sameAs rdf:resource="&organisation-systeme-scolaire-francais;programmeGeographie6eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_challengesOfSustainableDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_challengesOfSustainableDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">The economic, social and environmental challenges of the sustainable developement in a territory</rdfs:label>
+        <rdfs:label xml:lang="fr">Les enjeux économiques, sociaux et environnementaux du développement durable dans un territoire</rdfs:label>
+        <rdfs:comment xml:lang="fr">Les enjeux économiques, sociaux et environnementaux du
+développement durable dans un territoire sont précisés, définis et
+mis en relation.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_challengesOfSustainableDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_demographicGrowthAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_demographicGrowthAndDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Demographic growth and development </rdfs:label>
+        <rdfs:label xml:lang="fr">Croissance démographique et développement</rdfs:label>
+        <rdfs:comment xml:lang="fr">La population mondiale continue d’augmenter même si le rythme de
+cette croissance se ralentit. La croissance démographique est mise en
+relation avec les enjeux du développement durable, aux différentes
+échelles.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_educationAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_educationAndDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Education and development</rdfs:label>
+        <rdfs:label xml:lang="fr">Éducation et développement</rdfs:label>
+        <rdfs:comment xml:lang="fr">L’inégal accès à l’éducation et au savoir représente un frein majeur au développement, en particulier lorsqu’il touche les femmes. Les inégalités en ce domaine sont mises en relation avec les inégalités de développement.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_energyResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_energyResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Energy resources</rdfs:label>
+        <rdfs:label xml:lang="fr">La ressource énergétique</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_globalFoodSecurity -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_globalFoodSecurity">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">The global food security </rdfs:label>
+        <rdfs:label xml:lang="fr">La sécurité alimentaire mondiale</rdfs:label>
+        <rdfs:comment xml:lang="fr">Elle dépend de plusieurs paramètres : l’augmentation des productions
+et leur qualité pour répondre à une demande croissante, les échanges
+des ressources agricoles à travers le monde et la préservation de
+l’environnement.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_healthAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_healthAndDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Health and development</rdfs:label>
+        <rdfs:label xml:lang="fr">Santé et développement </rdfs:label>
+        <rdfs:comment xml:lang="fr">L’amélioration de la santé au niveau mondial coexiste avec des
+inégalités sanitaires à toutes les échelles qui sont mises en relation
+avec les inégalités de développement.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_oceanResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_oceanResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Ocean Resources</rdfs:label>
+        <rdfs:label xml:lang="fr">Les ressources océaniques</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_manageOceansAndTheirResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_pioneerFront -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_pioneerFront">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_povertyAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_povertyAndDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Poverty and development</rdfs:label>
+        <rdfs:label xml:lang="fr">Pauvreté et développement</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_qualityOfAir -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_qualityOfAir">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Quality of air</rdfs:label>
+        <rdfs:label xml:lang="fr">La qualité de l’air</rdfs:label>
+        <rdfs:comment xml:lang="fr">A toutes les échelles, du global (réchauffement climatique) au local
+(pollution de l’air urbain) les activités humaines et économiques ont
+un impact sur l’atmosphère. Des politiques sont mises en oeuvre à tous
+les niveaux d’échelle pour réguler cet impact.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_atmosphereCleaning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_riskAndDeveloment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_riskAndDeveloment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Risk and developement </rdfs:label>
+        <rdfs:label xml:lang="fr">L’inégale vulnérabilité des sociétés face aux risques est le résultat de
+différents facteurs parmi lesquels le niveau de développement occupe
+une place majeure. L’action de l’homme dans l’aménagement des
+territoires et sa perception des risques aggravent ou réduisent
+l’exposition aux risques.</rdfs:label>
+        <rdfs:label xml:lang="fr">Risques et développement</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#knowledge_waterResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;knowledge_waterResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;knowledge"/>
+        <rdfs:label xml:lang="en">Water resources</rdfs:label>
+        <rdfs:label xml:lang="fr">La ressource en eau</rdfs:label>
+        <rdfs:comment xml:lang="fr">L’eau douce est une ressource partiellement renouvelable et
+inégalement répartie. Sa rareté engendre des conflits et nécessite des
+arbitrages. Des aménagements sont nécessaires pour garantir l’accès à
+l’eau.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfWaterAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographie1ere -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographie1ere">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographie2de -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographie2de">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographie3eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographie3eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographie4eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographie4eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographie5eme -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographie5eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#programmeGeographieTerminale -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;programmeGeographieTerminale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#reperePermieresCivilisations -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;reperePermieresCivilisations">
+        <rdfs:label xml:lang="fr">Les premières civilisations (IIIe millénaire av. J.-C.)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#repererSiteEgypte -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;repererSiteEgypte">
+        <rdfs:label xml:lang="fr">Repérer un site d&apos;Egypte sur une carte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#repererSiteMesopotamie -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;repererSiteMesopotamie">
+        <rdfs:label xml:lang="fr">Repérer un site de Mésopotamie sur une carte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#terminaleGenerale -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;terminaleGenerale">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;periodeTerminale"/>
+        <organisation-systeme-scolaire-francais:hasNextperiod rdf:resource="&Programme_Histoire_College_France;terminaleGenerale"/>
+        <owl:sameAs rdf:resource="&organisation-systeme-scolaire-francais;terminaleGenerale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_atmosphereCleaning -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_atmosphereCleaning">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Atmosphere cleaning</rdfs:label>
+        <rdfs:label xml:lang="fr">Ménager l&apos;atmosphère</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_challengesOfSustainableDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_challengesOfSustainableDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Challenges of sustainable development</rdfs:label>
+        <rdfs:label xml:lang="en">Les enjeux du développement durable</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_questionOfSustainableDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_dynamicsOfPopulation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">The dynamics of the population and the sustainable development</rdfs:label>
+        <rdfs:label xml:lang="fr">Les dynaniques de la population et le développement durable</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_questionOfSustainableDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_inequalitiesFacingToTheRisks -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="fr">Des inégalité devant les risques</rdfs:label>
+        <rdfs:label xml:lang="fr">Inequalities facing to the risks</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_inequalitiesOfAlphabetisation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Inequalities of Alphabetisation</rdfs:label>
+        <rdfs:label xml:lang="fr">Des inégalités devant l&apos;alphabétisation </rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_inequalitiesOfHealthCare -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Inequalities of Health Care</rdfs:label>
+        <rdfs:label xml:lang="fr">Des inégalités devant la santé</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_manageOceansAndTheirResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_manageOceansAndTheirResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Manage the oceans and their resources</rdfs:label>
+        <rdfs:label xml:lang="fr">Gérer les océans et leurs resources</rdfs:label>
+        <rdfs:comment xml:lang="fr">La gestion et le partage des ressources océaniques constituent un
+enjeu et une source de rivalités entre les États, en partie régulées par
+le droit international.</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_manAndResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_povertyInTheWorld -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Poverty in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">La pauvreté dans le monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_questionOfEnergy -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">The question of energy</rdfs:label>
+        <rdfs:label xml:lang="fr">La question de l&apos;énergie</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_manAndResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_questionOfFoodResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">The question of Food resources</rdfs:label>
+        <rdfs:label xml:lang="fr">La question des ressources alimentaires</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_manAndResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#themeSpecific_questionOfWaterAccess -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;themeSpecific_questionOfWaterAccess">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">The question of Water access</rdfs:label>
+        <rdfs:label xml:lang="fr">La question de l&apos;accès à l&apos;eau</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;theme_manAndResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#theme_manAndResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;theme_manAndResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Man and Resources</rdfs:label>
+        <rdfs:label xml:lang="fr">Des hommes and des ressources </rdfs:label>
+        <hasRelativeDuration rdf:datatype="&xsd;decimal">35</hasRelativeDuration>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;programmeGeographie5eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#theme_openedQuestionConcerningGeography -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;theme_openedQuestionConcerningGeography">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">A opened question concerning geography</rdfs:label>
+        <rdfs:label xml:lang="fr">Une question géographique au choix</rdfs:label>
+        <hasRelativeDuration rdf:datatype="&xsd;decimal">10</hasRelativeDuration>
+        <isPartOf rdf:resource="&organisation-systeme-scolaire-francais;programmeGeographie6eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#theme_questionOfSustainableDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;theme_questionOfSustainableDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <hasRelativeDuration rdf:datatype="&xsd;decimal">25</hasRelativeDuration>
+        <rdfs:comment xml:lang="en">The question of the sustainable development</rdfs:comment>
+        <rdfs:comment xml:lang="fr">La question du developpement durable</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;programmeGeographie5eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#theme_societiesUnequallyDeveloped -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;theme_societiesUnequallyDeveloped">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;theme"/>
+        <rdfs:label xml:lang="en">Societies unequally developed</rdfs:label>
+        <rdfs:label xml:lang="fr">Des sociétés inégalement développées</rdfs:label>
+        <hasRelativeDuration rdf:datatype="&xsd;decimal">35</hasRelativeDuration>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;programmeGeographie5eme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_challengesAndActorsOfFishingConflict -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_challengesAndActorsOfFishingConflict">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The challenges and actors of a fishing conflict
+</rdfs:label>
+        <rdfs:label xml:lang="fr">Les enjeux et les acteurs d’un conflit lié à la pêche</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_manageOceansAndTheirResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_conditionsOfLifeOfAPoorPopulation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_conditionsOfLifeOfAPoorPopulation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:comment xml:lang="en">The conditions of life of a poor population</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Les conditions de vie d’une population pauvre</rdfs:comment>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_countriesStudiesForFoodResources -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_countriesStudiesForFoodResources">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The countries studied as examples of food resources </rdfs:label>
+        <rdfs:label xml:lang="fr">Les pays étudiés comme exemples des resources alimentaires</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_demographicEvolutionInChina -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_demographicEvolutionInChina">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The demographic evolution in China</rdfs:label>
+        <rdfs:label xml:lang="fr">L’évolution démographique de l’Inde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_demographicEvolutionInIndia -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_demographicEvolutionInIndia">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The demographic evolution in India</rdfs:label>
+        <rdfs:label xml:lang="fr">L’évolution démographique de l’Inde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_differenceOfDisasterConsequences -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_differenceOfDisasterConsequences">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">La différence entre les conséquences d’une catastrophe dans un pays du Nord et dans un pays du Sud.</rdfs:label>
+        <rdfs:label xml:lang="en">The difference between the consequences of a disaster in a country of the North and a country of the South</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_energyChallengesOfHydrocarbonsOfMiddleEast -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_energyChallengesOfHydrocarbonsOfMiddleEast">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The enery challenges of the Middle East</rdfs:label>
+        <rdfs:label xml:lang="fr">Les enjeux énergétiques des hydrocarbures du Moyen-Orient</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_energyChallengesOfHydrocarbonsOfRussia -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_energyChallengesOfHydrocarbonsOfRussia">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The energy challenges of Hydrocarbons of Russia</rdfs:label>
+        <rdfs:label xml:lang="fr">Les enjeux énergétiques des hydrocarbures de la Russie</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_evolutionOfAirQuality -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_evolutionOfAirQuality">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The evolution of air quality in the scale of an agglomeration</rdfs:label>
+        <rdfs:label xml:lang="fr">Les évolutions de la qualité de l’air à l’échelle d’une agglomération</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_atmosphereCleaning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_fishingZone -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_fishingZone">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The fishing zone</rdfs:label>
+        <rdfs:label xml:lang="fr">La zone de pêche</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_manageOceansAndTheirResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_foodSituation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_foodSituation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A food situation </rdfs:label>
+        <rdfs:label xml:lang="fr">Une situation alimentaire</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_healthcareInfrastructuresInTwoCountries -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_healthcareInfrastructuresInTwoCountries">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Healthcare Infrastructures in two countries</rdfs:label>
+        <rdfs:label xml:lang="fr">Les deux pays dont les infrastructures sanitaires ont été étudiées</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_inequalitiesInDifferentScales -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_inequalitiesInDifferentScales">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The inequalities in different scales</rdfs:label>
+        <rdfs:label xml:lang="fr">Les inégalités à différentes échelles</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_landscapeOfPioneerFront -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_landscapeOfPioneerFront">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A landscape of pioneer front</rdfs:label>
+        <rdfs:label xml:lang="fr">Un paysage d’un front pionnier</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_majorAgriculturalProducts -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_majorAgriculturalProducts">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Major agricultural products in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">Produits agricoles majeurs dans le monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_majorRegionsOfConsumption -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_majorRegionsOfConsumption">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The major regions of consumption in the world</rdfs:label>
+        <rdfs:label xml:lang="es">Les grandes régions de consommation dans le monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_majorRegionsOfProduction -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_majorRegionsOfProduction">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The major regions of production in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">Les grandes régions de production dans le monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfFoodResources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_mostPopulousStatesInTheWorld -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_mostPopulousStatesInTheWorld">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The most populous States in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">Les Etats les plus peuplés du monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_naturalDisaster -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_naturalDisaster">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A natural disaster and its consequences</rdfs:label>
+        <rdfs:label xml:lang="fr">Une catastrophe naturelle et ses conséquences</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_pandemic -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_pandemic">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The  pandemic studied</rdfs:label>
+        <rdfs:label xml:lang="fr">La pandémie étudiée</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_pioneerFrontOnThePlanisphere -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_pioneerFrontOnThePlanisphere">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The pionneer front on the planisphere of major center of population</rdfs:label>
+        <rdfs:label xml:lang="fr">Le front pionnier sur le planisphère des grands foyers de peuplement</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_planisphereOfLifeExpectancy -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_planisphereOfLifeExpectancy">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The planisphere of life expectancy</rdfs:label>
+        <rdfs:label xml:lang="fr">Le planisphère de l’espérance de vie</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_planisphereOfThePandemic -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_planisphereOfThePandemic">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The planisphere of the pandemic</rdfs:label>
+        <rdfs:label xml:lang="fr">Le planisphère de la pandémie</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_planisphereOfinfantMortality -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_planisphereOfinfantMortality">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The planisphere of the infant mortality</rdfs:label>
+        <rdfs:label xml:lang="fr">Le planisphère de la mortalité infantile</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_poorestCountriesInTheWorld -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_poorestCountriesInTheWorld">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The poorest countries in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">Les pays les plus pauvres du monde</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principalProducerCountriesOfFossilFuel -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principalProducerCountriesOfFossilFuel">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The principal producer countries of fossil fuel</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principaux pays producteurs d’énergie fossile</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principaleConsumerCountriesOfEnergy -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principaleConsumerCountriesOfEnergy">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The principle consumer countries of energy</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principaux pays consommateurs d’énergie</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principaleCountriesOfGreenhouseGasEmission -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principaleCountriesOfGreenhouseGasEmission">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The principales countries of Greenhouse Gas emission</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principaux pays émetteurs de gaz à effet de serre</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_atmosphereCleaning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principaleInequalitiesOnThePlanisphereOfAlphabetisation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principaleInequalitiesOnThePlanisphereOfAlphabetisation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The principale inequalities on the planisphere of alphabetisation</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principales inégalités sur un planisphère de l’alphabétisation</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principalesInequalityOfHealthcareAccess -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principalesInequalityOfHealthcareAccess">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdfs:label xml:lang="en">The principale inequalities of healthcare access</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principales inégalités dans l’accès aux soins</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfHealthCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principleChallengesOfsustainableDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principleChallengesOfsustainableDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;compentancy_identify"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">the principale challenges of sustainable developement in the studied territory</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principaux enjeux du développement durable dans le territoire étudié</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_challengesOfSustainableDevelopment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_principlesInequalitiesOfEducationAccess -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_principlesInequalitiesOfEducationAccess">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The principale inequalities of education access</rdfs:label>
+        <rdfs:label xml:lang="fr">Les principales inégalités de l’accès à l’éducation</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_regionsWhereFreshWateIsPlentiful -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_regionsWhereFreshWateIsPlentiful">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The regions where fresh water is plentiful. </rdfs:label>
+        <rdfs:label xml:lang="fr">Les régions où l’eau douce est abondante.</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfWaterAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_regionsWhereFreshWaterIsRare -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_regionsWhereFreshWaterIsRare">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The regions where fresh water is rare. </rdfs:label>
+        <rdfs:label xml:lang="fr">Les régions où l’eau douce est rare.</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfWaterAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_relationshipBetweenDemographicGrowthAndNeedsOfPopulation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_relationshipBetweenDemographicGrowthAndNeedsOfPopulation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The relationship between demographic growth and needs of population</rdfs:label>
+        <rdfs:label xml:lang="fr">La relation entre croissance démographique et besoins des populations</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_relationshipBetweenLevelOfDevelopmentAndChoicesOfEnergy -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_relationshipBetweenLevelOfDevelopmentAndChoicesOfEnergy">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_establish"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A relationship between the level of developement and the choices of energy</rdfs:label>
+        <rdfs:label xml:lang="fr">Une relation avec le niveau de développement et les choix
+énergétiques</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_atmosphereCleaning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_relationshipBetweenTheGrowthOfEnergyNeedAndTheGrowthOfEconomy -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_relationshipBetweenTheGrowthOfEnergyNeedAndTheGrowthOfEconomy">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The relationship between the growth of energy need and the growth of economy</rdfs:label>
+        <rdfs:label xml:lang="fr">Le lien entre croissance des besoins en énergie et croissance économique</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfEnergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_relationshipBetweenVulnerabilityAndDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_relationshipBetweenVulnerabilityAndDevelopment">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_explain"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The relationaship of vulnerability and development </rdfs:label>
+        <rdfs:label xml:lang="fr">La relation entre vulnérabilité et développement</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_significantMapOfTheWealthAndThePoverty -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_significantMapOfTheWealthAndThePoverty">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_read"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A significant map of the wealth and the poverty in the world</rdfs:label>
+        <rdfs:label xml:lang="fr">Une carte significative de la richesse et de la pauvreté dans l’espace mondial</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_povertyInTheWorld"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_situationOfAlphabetisationInADevelopedCountry -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_situationOfAlphabetisationInADevelopedCountry">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The situation of alphabetisation in a developed country</rdfs:label>
+        <rdfs:label xml:lang="fr">La situation de l’alphabétisation dans un pays développé</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_situationOfAlphabetisationInAPoorCountry -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_situationOfAlphabetisationInAPoorCountry">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The situation of alphabetisation and the access of education in a poor country </rdfs:label>
+        <rdfs:label xml:lang="fr">La situation de l’alphabétisation dans un pays pauvre</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_situationOfEducationAccessInADevelopedCountry -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_situationOfEducationAccessInADevelopedCountry">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The situation of education access in a developed country</rdfs:label>
+        <rdfs:label xml:lang="fr">La situation de l’accès à l’éducation dans un pays développé</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_situationOfEducationAccessInAPoorCountry -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_situationOfEducationAccessInAPoorCountry">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">The situation of education access in a poor country</rdfs:label>
+        <rdfs:label xml:lang="fr">La situation de l’accès à l’éducation dans un pays pauvre</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_threeMajorTypesOfDemographicEvolution -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_threeMajorTypesOfDemographicEvolution">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;compentancy_identify"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Three major types of demographic evolution</rdfs:label>
+        <rdfs:label xml:lang="fr">Trois grands types d’évolution démographique à partir du planisphère de la croissance démographique</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_dynamicsOfPopulation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_twoCountriesStudiedForInequalitiesFacingToTheRisks -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_twoCountriesStudiedForInequalitiesFacingToTheRisks">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Two countries studied as examples of inequalities facing to the risks</rdfs:label>
+        <rdfs:label xml:lang="fr">Deux pays étudiés comme exemples des inégalités devant les risques</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesFacingToTheRisks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_twoCountriesStudiedForInequalitiesOfAlphabetisation -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_twoCountriesStudiedForInequalitiesOfAlphabetisation">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_locate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_situate"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">Two countries studied as examples of the inequalities of alphabetisation </rdfs:label>
+        <rdfs:label xml:lang="fr">Les deux pays étudiés comme exemples des inégalités de l&apos;alphabétisation </rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_inequalitiesOfAlphabetisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France#topic_waterConflict -->
+
+    <owl:NamedIndividual rdf:about="&Programme_Histoire_College_France;topic_waterConflict">
+        <rdf:type rdf:resource="&Programme_Histoire_College_France;topic"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Programme_Histoire_College_France;elaboratesCapacity"/>
+                <owl:someValuesFrom rdf:resource="&Programme_Histoire_College_France;competency_describe"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">A conflict for water</rdfs:label>
+        <rdfs:label xml:lang="fr">Un conflit pour l’eau</rdfs:label>
+        <isPartOf rdf:resource="&Programme_Histoire_College_France;themeSpecific_questionOfWaterAccess"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#1ereGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;1ereGenerale"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#2ereGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;2ereGenerale"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#6eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;6eme"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#ce1 -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;ce1"/>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#programmeGeographie6eme -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;programmeGeographie6eme">
+        <rdf:type rdf:resource="&organisation-systeme-scolaire-francais;programmePeriodeMatiere"/>
+        <organisation-systeme-scolaire-francais2:aMatiere rdf:resource="&organisation-systeme-scolaire-francais2;6eme"/>
+        <organisation-systeme-scolaire-francais2:aMatiere rdf:resource="&organisation-systeme-scolaire-francais2;curriculum_geography"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl#terminaleGenerale -->
+
+    <owl:NamedIndividual rdf:about="&organisation-systeme-scolaire-francais;terminaleGenerale"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;college_3eme"/>
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;college_4eme"/>
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;college_5eme"/>
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;college_6eme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;competency"/>
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;knowledge"/>
+            <rdf:Description rdf:about="&Programme_Histoire_College_France;level"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

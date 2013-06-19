@@ -22,7 +22,8 @@ public class TaggedDocument {
 		
 		try {
 			String[] cmd = {"/bin/sh", "-c"," export LIA_TAGG=\""+System.getProperty("user.dir") +"/lia_tagg\" " +
-				"&& export LIA_TAGG_LANG=\"french\" && iconv -c -f UTF-8 -t ISO-8859-15//TRANSLIT "+file+" | "+pathToLIA+"/script/lia_clean | " +
+				"&& export LIA_TAGG_LANG=\"french\" && iconv -c -f UTF-8 -t ISO-8859-15//TRANSLIT "+file+
+				" | "+pathToLIA+"/script/lia_clean | " +
 				pathToLIA+"/script/lia_tagg+lemm | iconv -f ISO-8859-15 -t UTF-8 "};
 			
 			Process p =	Runtime.getRuntime().exec(cmd);

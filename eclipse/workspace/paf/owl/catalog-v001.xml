@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://localhost/ilot/OwlProject5/history/resource/organisationSystemeScolaireFrancais.owl" uri="organisationSystemeScolaireFrancais.owl"/>
+    <uri id="User Entered Import Resolution" name="http://localhost/ilot/OwlProject5/history/resource/Bloom_LRE.owl" uri="Bloom_LRE.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1371630661064" name="duplicate:http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France" uri="programmeGeographie5eme.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1371630661064" name="duplicate:http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France" uri="programmeHistoire5eme.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1371630661064" name="duplicate:http://localhost/ilot/OwlProject5/history/resource/Programme_Histoire_College_France" uri="programmeHistoire6eme.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1371630661064" name="http://localhost/ilot/OwlProject5/history/resource/organisation-systeme-scolaire-francais" uri="organisationSystemeScolaireFrancais.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1371630661064" name="http://www.semanticweb.org/deslis/ontologies/2013/1/LRE-BloomActionValues" uri="Bloom_LRE.owl"/>
+    </group>
+</catalog>
