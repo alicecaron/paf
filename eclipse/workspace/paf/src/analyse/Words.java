@@ -2,15 +2,23 @@ package analyse;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Words {
 	private int corpusFrequency;
+	private MyDocument doc;
 	private String word;
 	private String type;
 	private String lemm;
 	private Map<String,DocFrequency> docFrequency = new HashMap<String,DocFrequency>();
 
 	
+	public MyDocument getDoc() {
+		return doc;
+	}
+	public void setDoc(MyDocument doc) {
+		this.doc = doc;
+	}
 	public Map<String, DocFrequency> getDocFrequency() {
 		return docFrequency;
 	}
@@ -41,12 +49,23 @@ public class Words {
 	public void setLemm(String lemm) {
 		this.lemm = lemm;
 	}
-	public Words(String[] wordiz,String documentPath){
+	public Words(String[] wordiz,String documentPath,Set<MyDocument> corpus){
 		this.corpusFrequency=0;
 		this.word=wordiz[0];
 		this.type=wordiz[1];
 		this.lemm=wordiz[2];
-		this.docFrequency.put(documentPath, new DocFrequency());
+		this.docFrequency.put(documentPath, new DocFrequency(documentPath));
+		linkToDoc(corpus,documentPath);
+	}
+
+	private void linkToDoc(Set<MyDocument> corpus,String documentPath) {
+		for(MyDocument document:corpus){
+			if(document.getFilename().equals(documentPath)){
+				this.doc=document;
+				return;
+			}
+				
+		}
 	}
 	public void updateCorpusFrequency(String documentPath) {
 		this.corpusFrequency+=1;
@@ -54,7 +73,7 @@ public class Words {
 	}
 	private void updateDocumentFrequency(String documentPath) {
 		if(!this.docFrequency.containsKey(documentPath))
-			this.docFrequency.put(documentPath, new DocFrequency());
+			this.docFrequency.put(documentPath, new DocFrequency(documentPath));
 		this.docFrequency.get(documentPath).updateDocFrequency();
 	}
 }

@@ -3,7 +3,7 @@ package analyse;
 public class DocFrequency {
 	private int documentFrequency;
 	private float tfidf;
-	
+
 	public float getTfidf() {
 		return tfidf;
 	}
@@ -16,7 +16,7 @@ public class DocFrequency {
 	public void setDocumentFrequency(int documentFrequency) {
 		this.documentFrequency = documentFrequency;
 	}
-	public DocFrequency(){
+	public DocFrequency(String documentPath){
 		this.documentFrequency=0;
 	}
 	public void updateDocFrequency(){

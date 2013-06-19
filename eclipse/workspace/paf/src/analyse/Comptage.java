@@ -17,20 +17,19 @@ import tagger.TaggedDocument;
 public class Comptage {
 	private static Map<String,Words> corpusWords=new HashMap<String,Words>();
 	private static List<Lemm> corpusLemms = new ArrayList<Lemm>();
-	private static Set<File> corpus=new HashSet<File>();
+	private static Set<MyDocument> corpus=new HashSet<MyDocument>();
 	private static int CORPUS_SIZE;
 	
 	public static void main(String[] args) throws IOException{
 		String repository="test/";
 		getRepositoryList(repository);
-		for(File file:corpus)
-			computeDocument(file);
+		for(MyDocument file:corpus)
+			computeDocument(file.getFile());
 		displayStatistics();
-		System.out.println(CORPUS_SIZE);
+		System.out.println("Nombre de documents dans le corpus: "+CORPUS_SIZE);
 	}
 	
 	private static void displayStatistics() {
-		
 		Set<String> clef = corpusWords.keySet();
 		Iterator<String> it = clef.iterator();
 		while (it.hasNext()){
@@ -42,8 +41,10 @@ public class Comptage {
 		   System.out.println("++ Documents presence: "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
 		}
-		System.out.println("Nombre de mots différents du corpus"+corpusWords.size());
-		System.out.println("Nombre de lemmes différents du corpus"+corpusLemms.size());
+		displayLemms();
+	}
+
+	private static void displayLemms() {
 		System.out.println("========================================================");
 		Collections.sort(corpusLemms,new Comparator<Lemm>(){
 			public int compare(Lemm l1,Lemm l2){
@@ -52,7 +53,9 @@ public class Comptage {
 		});
 		for(Lemm lemm:corpusLemms)
 			System.out.println(lemm.getLemm()+" "+lemm.getLemmFrequency());
-		
+			System.out.println("========================================================");
+			System.out.println("Nombre de mots différents du corpus: "+corpusWords.size());
+			System.out.println("Nombre de lemmes différents du corpus: "+corpusLemms.size());
 	}
 
 	private static void feedCorpusLemms(Words word) {
@@ -75,7 +78,9 @@ public class Comptage {
 		while (it.hasNext()){
 		   String key =  it.next();
 		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
-		   System.out.println("**"+key+": "+documentFrequency+" times");
+		   System.out.println("**"+key+": "+documentFrequency+" times ");
+		   try{System.out.print("("+word.getDoc().getClasse()+","+word.getDoc().getMatiere()+","+word.getDoc().getGroupe()+")");}
+		   catch(Exception e){}
 		   System.out.println("    TFIDF: "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
 		}
 		System.out.println("-----------------------------------------------------------");
@@ -84,45 +89,26 @@ public class Comptage {
 	private static void computeDocument(File file) throws IOException {
 		ArrayList<String> content = getFileContent(file);
 		String[] filename = file.getAbsolutePath().split("/");
-//		content=StringEscapeUtils.escapeJava(content);
-//		content = content.replaceAll("([ \t\n\r\f.'():]|u2019|,)","%%%");
-//		content=StringEscapeUtils.unescapeJava(content);
-//		String[] wordsTab=content.split("%%%");
-
 		for(String wordInfos : content){
 			String[] wordiz=wordInfos.split(" ");
-			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM"))){
-				//System.out.println(wordiz[0]);
+			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM")))
 				computeWord(wordiz,filename[filename.length-1]);
-			}
-		}		
+		}
 	}
 
 	private static void computeWord(String[] wordiz,String documentPath) {
-//		String[] wordProp = str.split("_");
 		Words lastWord;
-//		String theWord=wordProp[0];
 		String wordStr = wordiz[0];
 		if(!corpusWords.containsKey(wordStr)){
-			//if(wordProp.length==2){
-			//lastWord = new Words(theWord,wordProp[1],documentPath);
-				lastWord = new Words(wordiz,documentPath);
+				lastWord = new Words(wordiz,documentPath,corpus);
 				corpusWords.put(wordStr, lastWord);
-			//}
 		}
 		corpusWords.get(wordStr).updateCorpusFrequency(documentPath);
-	
 	}
 
 	private static ArrayList<String> getFileContent(File file) throws IOException { 
 		String documentPath=file.getAbsolutePath();
 		TaggedDocument taggedDocument = new TaggedDocument(documentPath,corpusWords);
-//		Reader reader = new FileReader(file);
-//		BufferedReader buffer=new BufferedReader(reader);
-//		String line;
-//		String content=null;
-//		while((line=buffer.readLine())!=null)
-//			content+=" "+line;
 		return taggedDocument.getTaggedDocContent();
 	}
 
@@ -132,7 +118,7 @@ public class Comptage {
 		if(repertoire.isDirectory())
 			list = repertoire.listFiles();
 		for(File file:list)
-			corpus.add(file);
+			corpus.add(new MyDocument(file));
 		CORPUS_SIZE=corpus.size();
 	}
 }
