@@ -16,7 +16,7 @@ public class DocFrequency {
 	public void setDocumentFrequency(int documentFrequency) {
 		this.documentFrequency = documentFrequency;
 	}
-	public DocFrequency(String documentPath){
+	public DocFrequency(){
 		this.documentFrequency=0;
 	}
 	public void updateDocFrequency(){

@@ -15,34 +15,54 @@ import java.util.Set;
 import tagger.TaggedDocument;
 
 public class Comptage {
-	private static Map<String,Words> corpusWords=new HashMap<String,Words>();
+	private static Set<Words> corpusWords=new HashSet<Words>();
 	private static List<Lemm> corpusLemms = new ArrayList<Lemm>();
 	private static Set<MyDocument> corpus=new HashSet<MyDocument>();
 	private static int CORPUS_SIZE;
+	private static DocumentDifferences docDiff;
 	
 	public static void main(String[] args) throws IOException{
 		String repository="test/";
 		getRepositoryList(repository);
-		for(MyDocument file:corpus)
-			computeDocument(file.getFile());
+		for(MyDocument document:corpus)
+			computeDocument(document);
 		//Compute document differences
 		for(MyDocument doc:corpus)
 			doc.setDocumentWords(corpusWords);
-		DocumentDifferences docDiff = new DocumentDifferences(corpus);
+		docDiff = new DocumentDifferences(corpus);
 		
-		displayStatistics();
+		//displayStatistics();
+		displayDocumentSimilarities();
 		System.out.println("Nombre de documents dans le corpus: "+CORPUS_SIZE);
 	}
 	
 
+	private static void displayDocumentSimilarities() {
+		for(MyDocument doc:corpus){
+			String filename=doc.getFilename();
+			String closeDocuments="";
+			Set<TripletDistance> diff = docDiff.getDifferenceMatrix();
+			Map<String,Float> distancesToSort = new HashMap<String, Float>();
+			for(TripletDistance triplet:diff){
+				if(triplet.getDoc1().getFilename().equals(doc.getFilename())){
+					distancesToSort.put(triplet.getDoc2().getFilename(),triplet.getDistance());
+					closeDocuments+=triplet.getDoc2().getFilename()+" "+triplet.getDistance()+", ";
+				}
+				else if(triplet.getDoc2().getFilename().equals(doc.getFilename())){
+					distancesToSort.put(triplet.getDoc1().getFilename(),triplet.getDistance());
+					closeDocuments+=triplet.getDoc1().getFilename()+" "+triplet.getDistance()+", ";
+				}
+			}
+			
+			System.out.println(filename+" proche de: "+closeDocuments);
+		}
+	}
+
+
 	private static void displayStatistics() {
-		Set<String> clef = corpusWords.keySet();
-		Iterator<String> it = clef.iterator();
-		while (it.hasNext()){
-		   String key =  it.next();
-		   Words word = corpusWords.get(key);
+		for(Words word:corpusWords){
 		   feedCorpusLemms(word);
-		   System.out.println("====================="+key+" "+word.getType()+" "+word.getLemm());
+		   System.out.println("====================="+word.getWord()+" "+word.getType()+" "+word.getLemm());
 		   System.out.println("++ Corpus frequency: "+word.getCorpusFrequency());
 		   System.out.println("++ Documents presence: "+word.getDocFrequency().size());
 		   getDocPresenceOfTheWord(word);
@@ -79,37 +99,38 @@ public class Comptage {
 
 	private static void getDocPresenceOfTheWord(Words word) {
 		System.out.println("---------------------------------Statistics per document:");
-		Set<String> clef = word.getDocFrequency().keySet();
-		Iterator<String> it = clef.iterator();
+		Set<MyDocument> clef = word.getDocFrequency().keySet();
+		Iterator<MyDocument> it = clef.iterator();
 		while (it.hasNext()){
-		   String key =  it.next();
+			MyDocument key =  it.next();
 		   int documentFrequency = word.getDocFrequency().get(key).getDocumentFrequency();
 		   System.out.println("**"+key+": "+documentFrequency+" times ");
-		   try{System.out.print("("+word.getDoc().getClasse()+","+word.getDoc().getMatiere()+","+word.getDoc().getGroupe()+")");}
+		   try{System.out.print("("+key.getClasse()+","+key.getMatiere()+","+key.getGroupe()+")");}
 		   catch(Exception e){}
 		   System.out.println("    TFIDF: "+word.getDocFrequency().get(key).computeTFIDF(CORPUS_SIZE,word.getDocFrequency().size()));
 		}
 		System.out.println("-----------------------------------------------------------");
 	}
 
-	private static void computeDocument(File file) throws IOException {
-		ArrayList<String> content = getFileContent(file);
-		String[] filename = file.getAbsolutePath().split("/");
+	private static void computeDocument(MyDocument document) throws IOException {
+		ArrayList<String> content = getFileContent(document.getFile());
+		//String[] filename = file.getAbsolutePath().split("/");
 		for(String wordInfos : content){
 			String[] wordiz=wordInfos.split(" ");
 			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM")))
-				computeWord(wordiz,filename[filename.length-1]);
+				computeWord(wordiz,document);
 		}
 	}
 
-	private static void computeWord(String[] wordiz,String documentPath) {
-		Words lastWord;
-		String wordStr = wordiz[0];
-		if(!corpusWords.containsKey(wordStr)){
-				lastWord = new Words(wordiz,documentPath,corpus);
-				corpusWords.put(wordStr, lastWord);
+	private static void computeWord(String[] wordiz,MyDocument document) {
+		String wordStr=wordiz[0];
+		for(Words word:corpusWords){
+			if(word.getWord().equals(wordStr)){
+				word.updateCorpusFrequency(document);
+				return;
+			}
 		}
-		corpusWords.get(wordStr).updateCorpusFrequency(documentPath);
+		corpusWords.add(new Words(wordiz,document));
 	}
 
 	private static ArrayList<String> getFileContent(File file) throws IOException { 

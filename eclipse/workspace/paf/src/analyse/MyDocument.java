@@ -1,11 +1,7 @@
 package analyse;
 
-
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public class MyDocument {
@@ -15,9 +11,7 @@ public class MyDocument {
 	private String classe;
 	private String groupe;
 	private String matiere;
-	//private Map<String,Float> documentWords = new HashMap<String,Float>();
 	private ArrayList<Words> docWords = new ArrayList<Words>();
-	private Map<MyDocument,Float> distances;
 	private Double sumCarreeOccurences;
 
 	
@@ -33,17 +27,6 @@ public class MyDocument {
 	public void setSumCarreeOccurences(Double sumCarreeOccurences) {
 		this.sumCarreeOccurences = sumCarreeOccurences;
 	}
-	public Map<MyDocument, Float> getDistances() {
-		return distances;
-	}
-	public void setDistances(Map<MyDocument, Float> distances) {
-		this.distances = distances;
-	}
-	/*
-	public Map<String, Float> getDocumentWords() {
-		return documentWords;
-	}
-	*/
 	public File getFile() {
 		return file;
 	}
@@ -108,23 +91,16 @@ public class MyDocument {
 		catch(Exception e){System.err.println("Impossible de définir la matière du document "+this.filename);return;}
 	}
 	
-	public void setDocumentWords(Map<String,Words> corpus){
-		Set<String> clef = corpus.keySet();
-		Iterator<String> it = clef.iterator();
-		while (it.hasNext()){
-		   String key =  it.next();
-		   Words word = corpus.get(key);
-		   if(word.getDoc()==this){
-			  // this.documentWords.put(word.getWord(), word.getDocFrequency().get(this.filename).getTfidf());
-			   this.docWords.add(word);
-		   }
+	public void setDocumentWords(Set<Words> corpusWords){
+		for(Words word:corpusWords){
+			if(word.getDocFrequency().containsKey(this))
+				this.docWords.add(word);
 		}
 		computeSumOccurencePerWord();
 	}
 	private void computeSumOccurencePerWord() {
 		for(Words word:this.docWords){
-			int x = word.getDocFrequency().get(this.filename).getDocumentFrequency();
-			System.out.println(x);
+			int x = word.getDocFrequency().get(this).getDocumentFrequency();
 			this.sumCarreeOccurences+=x*x;
 		}
 	}

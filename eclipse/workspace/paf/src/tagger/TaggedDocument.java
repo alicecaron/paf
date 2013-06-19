@@ -3,7 +3,7 @@ package tagger;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.Set;
 
 import analyse.Words;
 
@@ -16,7 +16,7 @@ public class TaggedDocument {
 		return taggedDocContent;
 	}	
 	
-	public TaggedDocument (String file, Map<String,Words> corpusWords){
+	public TaggedDocument (String file, Set<Words> corpusWords){
 		BufferedReader br;
 		String ligne;
 		

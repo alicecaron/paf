@@ -6,23 +6,17 @@ import java.util.Set;
 
 public class Words {
 	private int corpusFrequency;
-	private MyDocument doc;
+	//private Set<MyDocument> docs;
 	private String word;
 	private String type;
 	private String lemm;
-	private Map<String,DocFrequency> docFrequency = new HashMap<String,DocFrequency>();
+	private Map<MyDocument,DocFrequency> docFrequency = new HashMap<MyDocument,DocFrequency>();
 
 	
-	public MyDocument getDoc() {
-		return doc;
-	}
-	public void setDoc(MyDocument doc) {
-		this.doc = doc;
-	}
-	public Map<String, DocFrequency> getDocFrequency() {
+	public Map<MyDocument, DocFrequency> getDocFrequency() {
 		return docFrequency;
 	}
-	public void setDocFrequency(Map<String, DocFrequency> docFrequency) {
+	public void setDocFrequency(Map<MyDocument, DocFrequency> docFrequency) {
 		this.docFrequency = docFrequency;
 	}
 	public int getCorpusFrequency() {
@@ -49,31 +43,33 @@ public class Words {
 	public void setLemm(String lemm) {
 		this.lemm = lemm;
 	}
-	public Words(String[] wordiz,String documentPath,Set<MyDocument> corpus){
+	public Words(String[] wordiz,MyDocument document){
 		this.corpusFrequency=0;
 		this.word=wordiz[0];
 		this.type=wordiz[1];
 		this.lemm=wordiz[2];
-		this.docFrequency.put(documentPath, new DocFrequency(documentPath));
-		linkToDoc(corpus,documentPath);
+		this.docFrequency.put(document, new DocFrequency());
+		updateCorpusFrequency(document);
+		//linkToDoc(corpus,document);
 	}
 
-	private void linkToDoc(Set<MyDocument> corpus,String documentPath) {
+	/*
+	 private void linkToDoc(Set<MyDocument> corpus,String documentPath) {
 		for(MyDocument document:corpus){
 			if(document.getFilename().equals(documentPath)){
 				this.doc=document;
 				return;
-			}
-				
+			}		
 		}
 	}
-	public void updateCorpusFrequency(String documentPath) {
+	*/
+	public void updateCorpusFrequency(MyDocument document) {
 		this.corpusFrequency+=1;
-		updateDocumentFrequency(documentPath);
+		updateDocumentFrequency(document);
 	}
-	private void updateDocumentFrequency(String documentPath) {
-		if(!this.docFrequency.containsKey(documentPath))
-			this.docFrequency.put(documentPath, new DocFrequency(documentPath));
-		this.docFrequency.get(documentPath).updateDocFrequency();
+	private void updateDocumentFrequency(MyDocument document) {
+		if(!this.docFrequency.containsKey(document))
+			this.docFrequency.put(document, new DocFrequency());
+		this.docFrequency.get(document).updateDocFrequency();
 	}
 }
