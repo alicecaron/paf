@@ -25,10 +25,16 @@ public class Comptage {
 		getRepositoryList(repository);
 		for(MyDocument file:corpus)
 			computeDocument(file.getFile());
+		//Compute document differences
+		for(MyDocument doc:corpus)
+			doc.setDocumentWords(corpusWords);
+		DocumentDifferences docDiff = new DocumentDifferences(corpus);
+		
 		displayStatistics();
 		System.out.println("Nombre de documents dans le corpus: "+CORPUS_SIZE);
 	}
 	
+
 	private static void displayStatistics() {
 		Set<String> clef = corpusWords.keySet();
 		Iterator<String> it = clef.iterator();
