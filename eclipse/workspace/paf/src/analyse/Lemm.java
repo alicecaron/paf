@@ -1,27 +1,20 @@
 package analyse;
 
-public class Lemm {
+import java.util.Set;
+
+public class Lemm extends Mots {
 	private String lemm;
-	private int lemmFrequency;
-	
+
 	public String getLemm() {
 		return lemm;
 	}
 	public void setLemm(String lemm) {
 		this.lemm = lemm;
 	}
-	public int getLemmFrequency() {
-		return lemmFrequency;
-	}
-	public void setLemmFrequency(int lemmFrequency) {
-		this.lemmFrequency = lemmFrequency;
-	}
 
-	public Lemm(String lemm,int freq){
-		this.lemm=lemm;
-		this.lemmFrequency=freq;
+	public Lemm(String[] wordiz,MyDocument document){
+		super(wordiz[1],document);
+		this.lemm=wordiz[2];
 	}
-	public void updateFrequency(int occ){
-		this.lemmFrequency+=occ;
-	}
+	
 }
