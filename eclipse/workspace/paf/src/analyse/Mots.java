@@ -8,7 +8,11 @@ public class Mots {
 	protected int corpusFrequency;
 	protected String type;
 	protected Map<MyDocument,DocFrequency> docFrequency = new HashMap<MyDocument,DocFrequency>();
+	private boolean filtered;
 	
+	public boolean getFiltered() {
+		return this.filtered;
+	}
 	public String getType() {
 		return type;
 	}
@@ -31,6 +35,7 @@ public class Mots {
 	public Mots(String type, MyDocument doc){
 		this.type = type;
 		this.corpusFrequency=0;
+		this.filtered=false;
 		updateCorpusFrequency(doc);
 	}
 	public void updateFrequency(){
@@ -52,5 +57,8 @@ public class Mots {
 			if(this.docFrequency.containsKey(document))
 				this.docFrequency.get(document).computeTFIDF(corpusSize,this.docFrequency.size());
 		}
+	}
+	public void setFiltered(boolean filtered) {
+		this.filtered=filtered;
 	}
 }
