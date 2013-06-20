@@ -33,77 +33,48 @@ public class Comptage {
 		
 		//tfidfs des mots par document
 		for(Words word:corpusWords)
+			//System.out.println("Corpus word: "+word+" "+word.getWord()+" "+word.getType());
 			word.computeTFIDF(corpus);
 		for(Lemm lemm:corpusLemms)
 			lemm.computeTFIDF(corpus);
 		
 		//Document differences
-		for(MyDocument doc:corpus)
-			doc.setDocumentWords(corpusWords);
+//		for(MyDocument doc:corpus){
+//			doc.computeSumPerWord();
+//			doc.computeSumPerLemm();
+//		}
 		docDiff = new DocumentDifferences(corpus);
 		
 		//displayWordStatistics();
-		displayLemmStatistics();
-		//displayDocumentSimilarities();
+		//displayLemmStatistics();
+		displayDocumentSimilarities();
 		System.out.println("Nombre de documents dans le corpus: "+CORPUS_SIZE);
 	}
 
 	private static void displayDocumentSimilarities() {
 		for(MyDocument doc:corpus){
-			String filename=doc.getFilename();
+			//String filename=doc.getFilename();
 			String closeDocuments="";
 			Set<TripletDistance> diff = docDiff.getDifferenceMatrix();
 			Map<String,Float> distancesToSort = new HashMap<String, Float>();
+			
 			for(TripletDistance triplet:diff){
+				//System.out.println("Diff: "+triplet.getDistance());
 				if(triplet.getDoc1().getFilename().equals(doc.getFilename())){
 					distancesToSort.put(triplet.getDoc2().getFilename(),triplet.getDistance());
-					closeDocuments+=triplet.getDoc2().getFilename()+" "+triplet.getDistance()+", ";
+					closeDocuments+=triplet.getDoc2().getMatiere()+" "+triplet.getDistance()+", ";
 				}
 				else if(triplet.getDoc2().getFilename().equals(doc.getFilename())){
 					distancesToSort.put(triplet.getDoc1().getFilename(),triplet.getDistance());
-					closeDocuments+=triplet.getDoc1().getFilename()+" "+triplet.getDistance()+", ";
+					closeDocuments+=triplet.getDoc1().getMatiere()+" "+triplet.getDistance()+", ";
 				}
-			}
-			
-			System.out.println(filename+" proche de: "+closeDocuments);
+			}			
+			System.out.println(doc.getMatiere()+" proche de: "+closeDocuments);
 		}
 	}
 
-
-	
-
-//	private static void displayLemms() {
-//		System.out.println("========================================================");
-//		Collections.sort(corpusLemms,new Comparator<Lemm>(){
-//			public int compare(Lemm l1,Lemm l2){
-//				return l1.getLemmFrequency()-l2.getLemmFrequency();
-//			}
-//		});
-//		for(Lemm lemm:corpusLemms)
-//			System.out.println(lemm.getLemm()+" "+lemm.getLemmFrequency());
-//			System.out.println("========================================================");
-//			System.out.println("Nombre de mots différents du corpus: "+corpusWords.size());
-//			System.out.println("Nombre de lemmes différents du corpus: "+corpusLemms.size());
-//	}
-//
-//	private static void feedCorpusLemms(Words word) {
-//		Lemm currentLemm = new Lemm(word.getLemm(),word.getCorpusFrequency());
-//		boolean in=false;
-//		for(int i=0;i<corpusLemms.size();i++){
-//			if(corpusLemms.get(i).getLemm().equals(word.getLemm())){
-//				corpusLemms.get(i).updateFrequency(word.getCorpusFrequency());
-//				in=true;
-//				break;
-//			}
-//		}
-//		if(!in)corpusLemms.add(currentLemm);
-//	}
-
-	
-
 	private static void computeDocument(MyDocument document) throws IOException {
 		ArrayList<String> content = getFileContent(document.getFile());
-		//String[] filename = file.getAbsolutePath().split("/");
 		for(String wordInfos : content){
 			String[] wordiz=wordInfos.split(" ");
 			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM")))
@@ -121,6 +92,7 @@ public class Comptage {
 				found = true;
 				foundWord=word;
 				word.updateCorpusFrequency(document);
+				document.addWord(foundWord);
 				break;
 			}
 		}
@@ -133,6 +105,7 @@ public class Comptage {
 			if(lemm.getLemm().equals(wordiz[2])){
 				foundWord.setLemm(lemm);
 				lemm.updateCorpusFrequency(document);
+				document.addLemm(lemm);
 				return;
 			}
 		}
@@ -162,6 +135,8 @@ public class Comptage {
 	/**************************************
 	 * Display Word and Lemm statistics
 	 **************************************/
+	
+	
 	private static void displayWordStatistics() {
 		for(Words word:corpusWords){
 		   System.out.println("====================="+word.getWord()+" "+word.getType()+" "+word.getLemm());

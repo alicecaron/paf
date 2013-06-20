@@ -1,7 +1,5 @@
 package analyse;
 
-import java.util.Set;
-
 
 public class Words extends Mots{
 	private Lemm lemm;
@@ -23,5 +21,7 @@ public class Words extends Mots{
 	public Words(String[] wordiz,MyDocument document){
 		super(wordiz[1], document);
 		this.word=wordiz[0];
+		if(!document.getDocWords().contains(this))
+			document.addWord(this);
 	}
 }

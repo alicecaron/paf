@@ -1,6 +1,7 @@
 package analyse;
 
 import java.io.File;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -13,8 +14,36 @@ public class MyDocument {
 	private String matiere;
 	private ArrayList<Words> docWords = new ArrayList<Words>();
 	private Double sumCarreeOccurences;
-
+	private Double sumCarreeTFIDF;
+	private ArrayList<Lemm> docLemms = new ArrayList<Lemm>();
+	private Double sumCarreeOccurencesLemm;
+	private Double sumCarreeTFIDFLemm;
 	
+	
+	public Double getSumCarreeTFIDF() {
+		return sumCarreeTFIDF;
+	}
+	public void setSumCarreeTFIDF(Double sumCarreeTFIDF) {
+		this.sumCarreeTFIDF = sumCarreeTFIDF;
+	}
+	public ArrayList<Lemm> getDocLemms() {
+		return docLemms;
+	}
+	public void setDocLemms(ArrayList<Lemm> docLemms) {
+		this.docLemms = docLemms;
+	}
+	public Double getSumCarreeOccurencesLemm() {
+		return sumCarreeOccurencesLemm;
+	}
+	public void setSumCarreeOccurencesLemm(Double sumCarreeOccurencesLemm) {
+		this.sumCarreeOccurencesLemm = sumCarreeOccurencesLemm;
+	}
+	public Double getSumCarreeTFIDFLemm() {
+		return sumCarreeTFIDFLemm;
+	}
+	public void setSumCarreeTFIDFLemm(Double sumCarreeTFIDFLemm) {
+		this.sumCarreeTFIDFLemm = sumCarreeTFIDFLemm;
+	}
 	public ArrayList<Words> getDocWords() {
 		return docWords;
 	}
@@ -63,6 +92,9 @@ public class MyDocument {
 		String[] f=file.getAbsolutePath().split("/");
 		this.filename=f[f.length-1];
 		this.sumCarreeOccurences=0.0;
+		this.sumCarreeTFIDF=0.0;
+		this.sumCarreeOccurencesLemm=0.0;
+		this.sumCarreeTFIDFLemm=0.0;
 		setWordAppartenance(this.filename);
 	}
 	private void setWordAppartenance(String documentPath){
@@ -79,29 +111,38 @@ public class MyDocument {
 		catch(Exception e){System.err.println("Impossible de définir le groupe, la matière et la classe du document "+this.filename);return;}
 		try{
 			if(nameCompo[1]!=null)
-				this.classe=nameCompo[1];
+				this.matiere=nameCompo[1];
 		}
 		catch(Exception e){System.err.println("Impossible de définir la classe et la matière du document "+this.filename);return;}
 		try{
 			if(nameCompo[2] != null){
 				//intro, general
-				this.matiere=nameCompo[2];
+				this.classe=nameCompo[2];
 			}
 		}
-		catch(Exception e){System.err.println("Impossible de définir la matière du document "+this.filename);return;}
+		catch(Exception e){System.err.println("Impossible de définir la classe du document "+this.filename);return;}
 	}
 	
-	public void setDocumentWords(Set<Words> corpusWords){
-		for(Words word:corpusWords){
-			if(word.getDocFrequency().containsKey(this))
-				this.docWords.add(word);
+	public void computeSumPerWord(ArrayList<Words> commons) {
+		for(Words word:commons){
+				Double x =  (double)(word.getDocFrequency().get(this).getDocumentFrequency());
+				this.sumCarreeOccurences+=x*x;
+				float y = word.getDocFrequency().get(this).getTfidf();
+				this.sumCarreeTFIDF+=y*y;
 		}
-		computeSumOccurencePerWord();
 	}
-	private void computeSumOccurencePerWord() {
-		for(Words word:this.docWords){
-			int x = word.getDocFrequency().get(this).getDocumentFrequency();
-			this.sumCarreeOccurences+=x*x;
+	public void computeSumPerLemm(ArrayList<Lemm> commons) {
+		for(Lemm lemm:commons){
+			Double x = (double)(lemm.getDocFrequency().get(this).getDocumentFrequency());
+			this.sumCarreeOccurencesLemm+=x*x;
+			float y = lemm.getDocFrequency().get(this).getTfidf();
+			this.sumCarreeTFIDFLemm+=y*y;
 		}
+	}
+	public void addLemm(Lemm lemm) {
+		this.docLemms.add(lemm);		
+	}
+	public void addWord(Words words) {
+		this.docWords.add(words);
 	}
 }

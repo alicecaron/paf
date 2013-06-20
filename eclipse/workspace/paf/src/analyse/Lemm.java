@@ -15,6 +15,8 @@ public class Lemm extends Mots {
 	public Lemm(String[] wordiz,MyDocument document){
 		super(wordiz[1],document);
 		this.lemm=wordiz[2];
+		if(!document.getDocLemms().contains(this))
+			document.addLemm(this);
 	}
 	
 }

@@ -27,31 +27,92 @@ public class DocumentDifferences {
 			otherDoc.add(adoc);
 		for(MyDocument currentDoc:corpus){
 			otherDoc.remove(currentDoc);
-			for(MyDocument doc2:otherDoc){
+			for(MyDocument doc2:otherDoc)
 				computeDistance(currentDoc,doc2);
-			}
 		}
 	}
-
+	
 	private void computeDistance(MyDocument currentDoc, MyDocument doc2) {
-		ArrayList<Words> documentWords1=currentDoc.getDocWords();
-		Double sumCarree1=currentDoc.getSumCarreeOccurences();
-		Double sumCarree2=doc2.getSumCarreeOccurences();
-		ArrayList<Words> documentWords2=doc2.getDocWords();
 		float distance=0;
-		for(Words word1:documentWords1){
-			int index;
-			Double num;
-			Double denom;
-			System.out.println(word1+" "+word1.getWord()+" text1: "+word1.getDocFrequency().get("text1.txt")+" texte2: "+word1.getDocFrequency().get("text2.txt"));
-			if((index=documentWords2.indexOf(word1))!=-1){
-				num=(double) (word1.getDocFrequency().get(currentDoc).getDocumentFrequency()*word1.getDocFrequency().get(doc2).getDocumentFrequency());
-				denom=Math.sqrt(sumCarree1*sumCarree2);
-				distance+=num/denom;
+		int index;
+		
+		/*********************************************
+		 * Similarités par 	MOTS 1:occurence 2:TFIDF
+		 * 					LEMM 3:occurence 4:TFIDF
+		 *********************************************/
+		int comptageChoice=4;
+
+		if(comptageChoice==1 || comptageChoice==2){
+			ArrayList<Words> commons=new ArrayList<Words>();
+			for(Words word:currentDoc.getDocWords())
+				if(doc2.getDocWords().contains(word))
+					commons.add(word);
+			currentDoc.computeSumPerWord(commons);
+			doc2.computeSumPerWord(commons);
+			Double sumCarree1;
+			Double sumCarree2;
+			
+			switch(comptageChoice){
+			case 1:
+				sumCarree1=currentDoc.getSumCarreeOccurences();
+				sumCarree2=doc2.getSumCarreeOccurences();
+				for(Words word1:commons){
+					Double num;
+					Double denom;
+					num=(double)(word1.getDocFrequency().get(currentDoc).getDocumentFrequency()*word1.getDocFrequency().get(doc2).getDocumentFrequency());
+					denom=Math.sqrt(sumCarree1*sumCarree2);
+					distance+=num/denom;
+				}		
+				break;
+			case 2:
+				sumCarree1=currentDoc.getSumCarreeTFIDF();
+				sumCarree2=doc2.getSumCarreeTFIDF();
+				for(Words word1:commons){
+					Double num;
+					Double denom;
+					num=(double)(word1.getDocFrequency().get(currentDoc).getTfidf()*word1.getDocFrequency().get(doc2).getTfidf());
+					denom=Math.sqrt(sumCarree1*sumCarree2);
+					distance+=num/denom;
+				}
+				break;
+			}
+		}
+		else if(comptageChoice==3 || comptageChoice==4){
+			ArrayList<Lemm> commons=new ArrayList<Lemm>();
+			for(Lemm lemm:currentDoc.getDocLemms())
+				if(doc2.getDocLemms().contains(lemm))
+					commons.add(lemm);
+			currentDoc.computeSumPerLemm(commons);
+			doc2.computeSumPerLemm(commons);
+			Double sumCarree1=currentDoc.getSumCarreeOccurencesLemm();
+			Double sumCarree2=doc2.getSumCarreeOccurencesLemm();
+			
+			switch(comptageChoice){
+			case 3:
+				sumCarree1=currentDoc.getSumCarreeOccurencesLemm();
+				sumCarree2=doc2.getSumCarreeOccurencesLemm();
+				for(Lemm lemm:commons){
+					Double num;
+					Double denom;
+					num=(double)(lemm.getDocFrequency().get(currentDoc).getDocumentFrequency()*lemm.getDocFrequency().get(doc2).getDocumentFrequency());
+					denom=Math.sqrt(sumCarree1*sumCarree2);
+					distance+=num/denom;
+				}
+				break;
+			case 4:
+				sumCarree1=currentDoc.getSumCarreeTFIDFLemm();
+				sumCarree2=doc2.getSumCarreeTFIDFLemm();
+				for(Lemm lemm:commons){
+					Double num;
+					Double denom;
+					num=(double)(lemm.getDocFrequency().get(currentDoc).getTfidf()*lemm.getDocFrequency().get(doc2).getTfidf());
+					denom=Math.sqrt(sumCarree1*sumCarree2);
+					distance+=num/denom;
+				}
+				break;
 			}
 		}
 		TripletDistance triplet = new TripletDistance(currentDoc,doc2,distance);
 		differenceMatrix.add(triplet);
 	}
-
 }
