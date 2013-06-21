@@ -42,7 +42,6 @@ public class DocumentDifferences {
 			for(Words word:currentDoc.getDocWords())
 				if(doc2.getDocWords().contains(word) && !word.getFiltered())
 					commons.add(word);
-					//System.out.println(word.getWord());
 				
 			currentDoc.computeSumPerWord(commons);
 			doc2.computeSumPerWord(commons);

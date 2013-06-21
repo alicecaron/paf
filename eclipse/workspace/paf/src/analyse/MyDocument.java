@@ -108,19 +108,25 @@ public class MyDocument {
 				//en 0:tout college lycee
 				this.groupe=nameCompo[0];
 		}
-		catch(Exception e){System.err.println("Impossible de définir le groupe, la matière et la classe du document "+this.filename);return;}
+		catch(Exception e){
+			this.groupe=this.matiere=this.classe=this.filename;
+			System.err.println("Impossible de définir le groupe, la matière et la classe du document "+this.filename);return;}
 		try{
 			if(nameCompo[1]!=null)
 				this.matiere=nameCompo[1];
 		}
-		catch(Exception e){System.err.println("Impossible de définir la classe et la matière du document "+this.filename);return;}
+		catch(Exception e){
+			this.matiere=this.classe=this.filename;
+			System.err.println("Impossible de définir la classe et la matière du document "+this.filename);return;}
 		try{
 			if(nameCompo[2] != null){
 				//intro, general
 				this.classe=nameCompo[2];
 			}
 		}
-		catch(Exception e){System.err.println("Impossible de définir la classe du document "+this.filename);return;}
+		catch(Exception e){
+			this.classe=this.filename;
+			System.err.println("Impossible de définir la classe du document "+this.filename);return;}
 	}
 	
 	public void computeSumPerWord(ArrayList<Words> commons) {

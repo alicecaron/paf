@@ -22,9 +22,12 @@ public class JsonCreator {
 		
 		for(MyDocument doc:corpus){
 			ArrayList<Words> docWords = doc.getDocWords();
-			String groupe = doc.getGroupe();
-			String classe = doc.getClasse();
-			String matiere = doc.getMatiere();
+			String matiere;
+			String classe;
+			if((matiere=doc.getMatiere())==null)
+				matiere="Matiere inconnue";
+			if((classe=doc.getClasse())==null)
+				classe="Classe inconnue";
 			
 			JSONObject docObject;
 			JSONArray docArray = null;
@@ -45,18 +48,20 @@ public class JsonCreator {
 				jsonObjectList.add(docObject);
 			}
 			
-			JSONObject docClasse = new JSONObject();
-			JSONArray docClasseArray = new JSONArray();
-			docClasse.put("name", classe);
-			docClasse.put("children", docClasseArray);
-			docArray.add(docClasse);
 			
+			JSONArray docClasseArray = new JSONArray();
 			for(Words word:docWords){
 				if(word.getType().equals("VINF")){
 					JSONObject verbe = new JSONObject();
 					verbe.put("name", word.getWord());
 					docClasseArray.add(verbe);
 				}
+			}
+			if(docClasseArray!=null){
+				JSONObject docClasse = new JSONObject();	
+				docClasse.put("name", classe);
+				docClasse.put("children", docClasseArray);
+				docArray.add(docClasse);
 			}
 		}		
 		try {
