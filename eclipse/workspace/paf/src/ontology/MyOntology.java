@@ -46,7 +46,7 @@ public class MyOntology {
 
         fillOntology(m,verbes);
         
-        new ClassHierarchy().showHierarchy( System.out, m );
+  //      new ClassHierarchy().showHierarchy( System.out, m );
         
         File file= new File("myonto.xml");
         try {
@@ -54,6 +54,8 @@ public class MyOntology {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+        
+        HTMLTagger.tagHTML(docs);
         
     } 
 

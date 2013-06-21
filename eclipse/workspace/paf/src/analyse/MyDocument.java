@@ -125,10 +125,10 @@ public class MyDocument {
 	
 	public void computeSumPerWord(ArrayList<Words> commons) {
 		for(Words word:commons){
-				Double x =  (double)(word.getDocFrequency().get(this).getDocumentFrequency());
-				this.sumCarreeOccurences+=x*x;
-				float y = word.getDocFrequency().get(this).getTfidf();
-				this.sumCarreeTFIDF+=y*y;
+			Double x =  (double)(word.getDocFrequency().get(this).getDocumentFrequency());
+			this.sumCarreeOccurences+=x*x;
+			float y = word.getDocFrequency().get(this).getTfidf();
+			this.sumCarreeTFIDF+=y*y;
 		}
 	}
 	public void computeSumPerLemm(ArrayList<Lemm> commons) {

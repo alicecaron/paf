@@ -11,11 +11,9 @@ public class DocumentDifferences {
 
 	private Set<TripletDistance> differenceMatrix;
 	
-	
 	public Set<TripletDistance> getDifferenceMatrix() {
 		return differenceMatrix;
 	}
-
 	public void setDifferenceMatrix(Set<TripletDistance> differenceMatrix) {
 		this.differenceMatrix = differenceMatrix;
 	}
@@ -44,8 +42,10 @@ public class DocumentDifferences {
 		if(comptageChoice==1 || comptageChoice==2){
 			ArrayList<Words> commons=new ArrayList<Words>();
 			for(Words word:currentDoc.getDocWords())
-				if(doc2.getDocWords().contains(word))
+				if(doc2.getDocWords().contains(word) && !word.getFiltered())
 					commons.add(word);
+					//System.out.println(word.getWord());
+				
 			currentDoc.computeSumPerWord(commons);
 			doc2.computeSumPerWord(commons);
 			Double sumCarree1;
@@ -79,8 +79,10 @@ public class DocumentDifferences {
 		else if(comptageChoice==3 || comptageChoice==4){
 			ArrayList<Lemm> commons=new ArrayList<Lemm>();
 			for(Lemm lemm:currentDoc.getDocLemms())
-				if(doc2.getDocLemms().contains(lemm))
+				if(doc2.getDocLemms().contains(lemm) && !lemm.getFiltered()){
 					commons.add(lemm);
+					System.out.println(lemm.getFiltered()+" "+lemm.getLemm()+" "+lemm.getType());
+				}
 			currentDoc.computeSumPerLemm(commons);
 			doc2.computeSumPerLemm(commons);
 			Double sumCarree1=currentDoc.getSumCarreeOccurencesLemm();
