@@ -39,12 +39,12 @@ public class MyOntology {
     		docs.put(doc,(new LinkedDocument(doc)));
     		
     	
-    	Set<Words> verbes = Comptage.getCorpusWords();
+    	Set<Words> mots = Comptage.getCorpusWords();
     	
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
 
-        fillOntology(m,verbes);
+        fillOntology(m,mots);
         
   //      new ClassHierarchy().showHierarchy( System.out, m );
         
@@ -60,7 +60,7 @@ public class MyOntology {
     } 
 
 
-   public static void fillOntology(OntModel onto, Set<Words> verbes){
+   public static void fillOntology(OntModel onto, Set<Words> mots){
 	   
    	   OntClass cl;
 	   Iterator<OntClass> it = onto.listClasses();
@@ -70,14 +70,17 @@ public class MyOntology {
 		   classes.put(cl.getLabel("fr"), cl);
 	   }
 	   
-	   for(Words w : verbes){
-		   String lemm = w.getLemm().getLemm(); 
-		   if (classes.containsKey(lemm)){
-			   System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
-			   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
-			   ind.setLabel(w.getWord(), "fr");
-			   linkDocuments(w);
-		   }
+	   for(Words w : mots){
+		  if (w.isVerb()) {
+			   String lemm = w.getLemm().getLemm(); 
+			   if (classes.containsKey(lemm)){
+				   System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
+				   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
+				   ind.setLabel(w.getWord(), "fr");
+				   linkDocuments(w,true);
+			   }
+			   else linkDocuments(w,false);
+		  }
 			  
 	   }
 	   
@@ -86,9 +89,10 @@ public class MyOntology {
    }
 
 
-private static void linkDocuments(Words w) {
+private static void linkDocuments(Words w,boolean inOnto) {
 	for (MyDocument doc : w.getDocFrequency().keySet())
-		docs.get(doc).addWord(w.getWord());
+		if(inOnto)docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
+		else docs.get(doc).addWordToSuggest(w.getWord().toLowerCase());
 	
 }
 

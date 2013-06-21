@@ -24,4 +24,5 @@ public class Words extends Mots{
 		if(!document.getDocWords().contains(this))
 			document.addWord(this);
 	}
+	
 }
