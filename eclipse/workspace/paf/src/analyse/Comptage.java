@@ -85,7 +85,6 @@ public class Comptage {
 			}
 		}
 	}
-		
 
 	//rendre le corpus accessible à l'ontologie
 	public static Set<MyDocument> getCorpus() {
@@ -116,8 +115,7 @@ public class Comptage {
 		Words foundWord = null;
 		Lemm foundLemm;
 		for (Words word : corpusWords) {
-			if (word.getWord().equals(wordStr)
-					&& word.getType().equals(wordiz[1])) {
+			if (word.getWord().equals(wordStr) && word.getType().equals(wordiz[1])) {
 				found = true;
 				foundWord = word;
 				word.updateCorpusFrequency(document);
@@ -133,7 +131,7 @@ public class Comptage {
 			if (lemm.getLemm().equals(wordiz[2])) {
 				foundWord.setLemm(lemm);
 				lemm.updateCorpusFrequency(document);
-				document.addLemm(lemm);
+				//document.addLemm(lemm);
 				return;
 			}
 		}

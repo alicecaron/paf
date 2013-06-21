@@ -140,9 +140,15 @@ public class MyDocument {
 		}
 	}
 	public void addLemm(Lemm lemm) {
+		for(Lemm l:docLemms)
+			if(l.getLemm().equals(lemm.getLemm()))
+				return;
 		this.docLemms.add(lemm);		
 	}
 	public void addWord(Words words) {
+		for(Words w:docWords)
+			if(w.getWord().equals(words.getWord()))
+				return;
 		this.docWords.add(words);
 	}
 }
