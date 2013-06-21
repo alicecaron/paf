@@ -7,8 +7,11 @@ import analyse.Words;
 
 public class LinkedDocument {
 	
-	HashSet<String> wordsToEnhance;
+	private HashSet<String> wordsToEnhance; // mots du doc appartenant à l'ontologie
+	private HashSet<String> wordsToSuggest; // les autres verbes
+	
 	MyDocument document;
+
 	String HTMLfile;
 
 	public String getHTMLfile() {
@@ -18,11 +21,28 @@ public class LinkedDocument {
 	public LinkedDocument(MyDocument doc) {
 		document = doc;
 		wordsToEnhance = new HashSet<String>();
+		wordsToSuggest = new HashSet<String>();
 		HTMLfile = doc.getFilename().replace(".txt", ".html");
 	}
 
-	public void addWord(String word) {
+	public void addWordToEnhance(String word) {
 		wordsToEnhance.add(word);		
+	}
+	
+	public void addWordToSuggest(String word) {
+		wordsToSuggest.add(word);		
+	}
+	
+	public MyDocument getDocument() {
+		return document;
+	}
+	
+	public HashSet<String> getWordsToEnhance() {
+		return wordsToEnhance;
+	}
+
+	public HashSet<String> getWordsToSuggest() {
+		return wordsToSuggest;
 	}
 
 }

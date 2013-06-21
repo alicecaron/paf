@@ -35,6 +35,7 @@ public class MyOntology {
 		}
     	for (MyDocument doc : Comptage.getCorpus())
     		docs.put(doc,(new LinkedDocument(doc)));
+    	
     	Set<Words> verbes = Comptage.getCorpusWords();
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
@@ -50,8 +51,7 @@ public class MyOntology {
         HTMLTagger.tagHTML(docs);
     } 
 
-   public static void fillOntology(OntModel onto, Set<Words> verbes){
-	   
+   public static void fillOntology(OntModel onto, Set<Words> mots){
    	   OntClass cl;
 	   Iterator<OntClass> it = onto.listClasses();
 	   Map<String,OntClass> classes = new HashMap<String,OntClass>();
@@ -59,21 +59,24 @@ public class MyOntology {
 		   cl = it.next();
 		   classes.put(cl.getLabel("fr"), cl);
 	   }
-	   
-	   for(Words w : verbes){
-		   if(w.isVerb()){
+	   for(Words w : mots){
+		  if (w.isVerb()) {
 			   String lemm = w.getLemm().getLemm(); 
-			   if(classes.containsKey(lemm)){
+			   if (classes.containsKey(lemm)){
 				   System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
 				   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
 				   ind.setLabel(w.getWord(), "fr");
-				   linkDocuments(w);
+				   linkDocuments(w,true);
 			   }
-		   }
+			   else linkDocuments(w,false);
+		  }
 	   }
    }
-	private static void linkDocuments(Words w) {
+
+	private static void linkDocuments(Words w,boolean inOnto) {
 		for (MyDocument doc : w.getDocFrequency().keySet())
-			docs.get(doc).addWord(w.getWord());
+			if(inOnto)docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
+			else docs.get(doc).addWordToSuggest(w.getWord().toLowerCase());
+		
 	}
 }
