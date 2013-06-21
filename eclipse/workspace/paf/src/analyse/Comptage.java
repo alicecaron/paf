@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import ontology.LinkedDocument;
+
 import tagger.TaggedDocument;
 
 public class Comptage {
@@ -48,7 +50,16 @@ public class Comptage {
 		//displayWordStatistics();
 		//displayLemmStatistics();
 		displayDocumentSimilarities();
+
 		System.out.println("Nombre de documents dans le corpus: "+CORPUS_SIZE);
+	}
+
+	public static Set<MyDocument> getCorpus() {
+		return corpus;
+	}
+
+	public static Set<Words> getCorpusWords() {
+		return corpusWords;
 	}
 
 	private static void displayDocumentSimilarities() {
@@ -77,7 +88,7 @@ public class Comptage {
 		ArrayList<String> content = getFileContent(document.getFile());
 		for(String wordInfos : content){
 			String[] wordiz=wordInfos.split(" ");
-			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && !(wordiz[1].equals("ZTRM")))
+			if(!wordiz[0].equals("") && !(wordiz[0].length()<2) && (wordiz[1].startsWith("V")))
 				computeWord(wordiz,document);
 		}
 	}
@@ -87,31 +98,31 @@ public class Comptage {
 		boolean found = false;
 		Words foundWord=null;
 		Lemm foundLemm;
-		for(Words word:corpusWords){
-			if(word.getWord().equals(wordStr) && word.getType().equals(wordiz[1])){
-				found = true;
-				foundWord=word;
-				word.updateCorpusFrequency(document);
-				document.addWord(foundWord);
-				break;
+			for(Words word:corpusWords){
+				if(word.getWord().equals(wordStr) && word.getType().equals(wordiz[1])){
+					found = true;
+					foundWord=word;
+					word.updateCorpusFrequency(document);
+					document.addWord(foundWord);
+					break;
+				}
 			}
-		}
-		if(!found) {
-			foundWord = new Words(wordiz,document);
-			corpusWords.add(foundWord);
-		}
-		
-		for(Lemm lemm:corpusLemms){
-			if(lemm.getLemm().equals(wordiz[2])){
-				foundWord.setLemm(lemm);
-				lemm.updateCorpusFrequency(document);
-				document.addLemm(lemm);
-				return;
+			if(!found) {
+				foundWord = new Words(wordiz,document);
+				corpusWords.add(foundWord);
 			}
-		}
-		foundLemm = new Lemm(wordiz,document);
-		corpusLemms.add(foundLemm);
-		foundWord.setLemm(foundLemm);
+			
+			for(Lemm lemm:corpusLemms){
+				if(lemm.getLemm().equals(wordiz[2])){
+					foundWord.setLemm(lemm);
+					lemm.updateCorpusFrequency(document);
+					document.addLemm(lemm);
+					return;
+				}
+			}
+			foundLemm = new Lemm(wordiz,document);
+			corpusLemms.add(foundLemm);
+			foundWord.setLemm(foundLemm);
 		
 	}
 
