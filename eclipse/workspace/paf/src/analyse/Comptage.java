@@ -36,7 +36,7 @@ public class Comptage {
 		// tri des mots inutiles
 		sortUselessWords(corpusWords);
 		//tri des lemmes inutiles
-		sortUselessLemms(corpusLemms);
+		//sortUselessLemms(corpusLemms);
 
 		// tfidfs des mots par document
 		for (Words word : corpusWords)
@@ -52,9 +52,10 @@ public class Comptage {
 		//displayFiltered();
 		System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);
 		
-		for(Words word:corpusWords)
+	/*	for(Words word:corpusWords)
 			if(!word.getFiltered())
 				System.out.println(word.getWord()+" "+word.getCorpusFrequency()+" times in corpus");
+				*/
 	}
 
 
@@ -131,8 +132,7 @@ public class Comptage {
 		ArrayList<String> content = getFileContent(document.getFile());
 		for (String wordInfos : content) {
 			String[] wordiz = wordInfos.split(" ");
-			if (!wordiz[0].equals("") && !(wordiz[0].length() < 2)
-					&& !(wordiz[1].equals("ZTRM")))
+			if (!wordiz[0].equals("") && !(wordiz[0].length() < 2) && !(wordiz[1].equals("ZTRM")))
 				computeWord(wordiz, document);
 		}
 	}

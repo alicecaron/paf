@@ -38,7 +38,7 @@ public class DocumentDifferences {
 		 * Similarités par 	MOTS 1:occurence 2:TFIDF
 		 * 					LEMM 3:occurence 4:TFIDF
 		 *********************************************/
-		int comptageChoice=4;
+		int comptageChoice=2;
 
 		if(comptageChoice==1 || comptageChoice==2){
 			ArrayList<Words> commons=new ArrayList<Words>();
