@@ -1,11 +1,9 @@
 package analyse;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.hp.hpl.jena.tdb.store.Hash;
 
 public class DocumentDifferences {
 
@@ -32,7 +30,6 @@ public class DocumentDifferences {
 	
 	private void computeDistance(MyDocument currentDoc, MyDocument doc2) {
 		float distance=0;
-		int index;
 		
 		/*********************************************
 		 * Similarités par 	MOTS 1:occurence 2:TFIDF

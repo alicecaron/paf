@@ -61,4 +61,7 @@ public class Mots {
 	public void setFiltered(boolean filtered) {
 		this.filtered=filtered;
 	}
+	public boolean isVerb(){
+		return this.getType().startsWith("V");
+	}
 }
