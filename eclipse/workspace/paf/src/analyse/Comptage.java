@@ -53,7 +53,7 @@ public class Comptage {
 		/*****************************************************
 		 * Création du JSON pour la visualisation
 		 *****************************************************/
-		//JsonCreator json=new JsonCreator(corpus);
+		JsonCreator json=new JsonCreator(corpus);
 		
 		
 		/*****************************************************
@@ -61,11 +61,9 @@ public class Comptage {
 		 *****************************************************/
 		// displayWordStatistics();
 		// displayLemmStatistics();
-		//displayDocumentSimilarities();
+		displayDocumentSimilarities();
 		//displayFiltered();
-		//System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);
-
-	
+		System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);	
 	}
 
 	//Tris
@@ -73,7 +71,9 @@ public class Comptage {
 		for (Words word : corpusWords) {
 			if (word.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")){
 				word.setFiltered(true);
-				//System.out.println(word.getWord()+" "+word.getType()+" is now filtered");
+			//if (word.getType().matches("(^(X).*)")){
+				//word.setFiltered(false);
+					//System.out.println(word.getWord()+" "+word.getType());
 			}
 		}
 	}

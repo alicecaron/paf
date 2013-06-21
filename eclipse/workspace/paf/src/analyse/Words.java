@@ -21,8 +21,17 @@ public class Words extends Mots{
 	public Words(String[] wordiz,MyDocument document){
 		super(wordiz[1], document);
 		this.word=wordiz[0];
-		if(!document.getDocWords().contains(this))
-			document.addWord(this);
+		boolean b= false;
+		for(Words w:document.getDocWords()){
+			b=false;
+			if(w.getWord().equals(this.word)){
+				b=true;
+				System.out.println(this.word);
+				return;
+			}
+		}
+		System.out.println(this.word+" "+b);
+		document.addWord(this);
 	}
 	
 }
