@@ -3,6 +3,7 @@ package analyse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -50,7 +51,13 @@ public class Comptage {
 		displayDocumentSimilarities();
 		//displayFiltered();
 		System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);
+		
+		for(Words word:corpusWords)
+			if(!word.getFiltered())
+				System.out.println(word.getWord()+" "+word.getCorpusFrequency()+" times in corpus");
 	}
+
+
 
 	private static void sortUselessWords(Set<Words> corpusWords2) {
 		for (Words word : corpusWords) {
@@ -93,6 +100,10 @@ public class Comptage {
 					closeDocuments += triplet.getDoc1().getMatiere() + " "+ triplet.getDistance() + ", ";
 				}
 			}
+			
+			
+//			Collection<Float> unsorted = distancesToSort.values();
+//			List<Float> sorted = Util.asSortedList(unsorted);
 			
 		/*	distancesToSort = sortByComparator(distancesToSort);
 			Set<String> clef = distancesToSort.keySet();
