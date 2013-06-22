@@ -22,65 +22,63 @@ public class HTMLTagger {
 		
 		
 		for (LinkedDocument doc : docs.values()){
-			InputStream file = null;
+				InputStream file = null;
+				try {
+					file = new FileInputStream("htmlTxt/htmlSaved/"+doc.getHTMLfile());
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				}
+				BufferedReader br = new BufferedReader(new InputStreamReader(file));
+				
 			try {
-				file = new FileInputStream("htmlTxt/htmlSaved/"+doc.getHTMLfile());
-			} catch (FileNotFoundException e) {
+				while((line = br.readLine()) !=null){
+					lignes.add(line);	
+				}
+				br.close();
+				file.close();
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			BufferedReader br = new BufferedReader(new InputStreamReader(file));
 			
-		try {
-			while((line = br.readLine()) !=null){
-				lignes.add(line);	
-			}
-			br.close();
-			file.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		for(int n =0;n<lignes.size();n++){
-			ArrayList<String> newline = new ArrayList<String>();
-			String s = lignes.get(n);
-			int i=0,j=0;
-			while(i<s.length()){
-				char c = s.charAt(i);
-				if (c=='<' || c=='>' || c==' ' || c=='\''||c==8217 || c==';' || c=='.' || c==',' || c=='(' || c==')'){
-				//	System.out.println("caractère stop : "+c+" i="+i+" j="+j);
-				//	System.out.println((int)s.charAt(j+1));
-					newline.add(testMot(s.substring(j,i),doc));
-					j=i+1;
-					newline.add(s.substring(i,j));
+			for(int n =0;n<lignes.size();n++){
+				ArrayList<String> newline = new ArrayList<String>();
+				String s = lignes.get(n);
+				int i=0,j=0;
+				while(i<s.length()){
+					char c = s.charAt(i);
+					if (c=='<' || c=='>' || c==' ' || c=='\''||c==8217 || c==';' || c=='.' || c==',' || c=='(' || c==')'){
+					//	System.out.println("caractère stop : "+c+" i="+i+" j="+j);
+					//	System.out.println((int)s.charAt(j+1));
+						newline.add(testMot(s.substring(j,i),doc));
+						j=i+1;
+						newline.add(s.substring(i,j));
+					}
+					i++;
 				}
-				i++;
+				newline.add(s.substring(j,s.length()));		
+				lignes.set(n, append(newline));
 			}
-			newline.add(s.substring(j,s.length()));		
-			lignes.set(n, append(newline));
-		}
-		
-		try {
-			FileWriter fw = new FileWriter("htmlTxt/htmlTagged/"+doc.HTMLfile);
-			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for(String s: lignes){
-				System.out.println(s);
-				bw.write(s+"\n");
+			try {
+				FileWriter fw = new FileWriter("htmlTxt/htmlTagged/"+doc.HTMLfile);
+				BufferedWriter bw = new BufferedWriter(fw);
+				
+				for(String s: lignes){
+					//System.out.println(s);
+					bw.write(s+"\n");
+				}
+				bw.close();
+				fw.close();
+				
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-			bw.close();
-			fw.close();
+		
+			lignes.clear();
 			
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
 		
 			
-			
-		}
-			
-			
-		
-		
 	}
 
 	private static String append(ArrayList<String> newline) {
