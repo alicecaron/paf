@@ -152,7 +152,7 @@ function update(source) {
 
 // Toggle children on click.
 function click(d) {
-  $("#info").html(d.name+" "+d.size+" "+d.popo);
+  $("#info").html(d.name);
   if (d.children) {
     d._children = d.children;
     d.children = null;

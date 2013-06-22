@@ -3,6 +3,7 @@ package jsonCreator;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.json.simple.JSONArray;
@@ -31,7 +32,6 @@ public class JsonCreator {
 			
 			JSONObject docObject;
 			JSONArray docArray = null;
-			
 						
 			for(JSONObject j :this.matiereList){
 				if(j.get("name").equals(matiere)){
@@ -54,6 +54,17 @@ public class JsonCreator {
 				if(word.getType().equals("VINF")){
 					JSONObject verbe = new JSONObject();
 					verbe.put("name", word.getWord());
+					verbe.put("tfidf",word.getDocFrequency().get(doc).getTfidf());
+					verbe.put("corpusFreq", word.getCorpusFrequency());
+
+					String otherDocs="";
+					Set<MyDocument> clef = word.getDocFrequency().keySet();
+					Iterator<MyDocument> it = clef.iterator();
+					while (it.hasNext()) {
+						MyDocument key = it.next();
+						otherDocs+="<br><span class=\"other\">"+key.getMatiere()+" ("+key.getClasse()+")</span>";
+					}
+					verbe.put("otherDocs",otherDocs);
 					docClasseArray.add(verbe);
 				}
 			}

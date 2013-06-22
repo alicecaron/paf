@@ -56,7 +56,7 @@
 Modify this configuration object to fine-tune the visualisation of the jOWL browser.
 */
 	var configuration = {
-		ontology : "data/Bloom_LRE.owl", //the ontology to load
+		ontology : "data/programmeHistoire6eme.owl", //the ontology to load
 		owlClass       : null, //The class to show when loading
 		classOverview  : true, //show or hide the class overview list.
 		propertiesTab  : true, //show or hide the properties panel
@@ -115,13 +115,13 @@ function initjOWL(){
 	</head>
 	<body>
 	<div id="d3visu" style="width:50%;float:left">
-	    <div id="chart" style="width:80%;float:left;overflow:auto"></div>
-    <div style="float:right;width:20%" id="info"></div>
+	    <div id="chart" style="float:left;overflow:auto"></div>
+    	    <div style="float:right" id="info"></div>
 
 	
 <script type="text/javascript">
 //script de la visu d3
-var w = 500,
+var w = 250,
     h = 5000,
     i = 0,
     barHeight = 20,
@@ -141,7 +141,7 @@ var vis = d3.select("#chart").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(20,30)");
 
-d3.json("../../eclipse/workspace/paf/json/tt.json", function(json) {
+d3.json("../../eclipse/workspace/paf/json/test.json", function(json) {
   json.x0 = 0;
   json.y0 = 0;
   update(root = json);
@@ -237,7 +237,12 @@ function update(source) {
 
 // Toggle children on click.
 function click(d) {
-  $("#info").html(d.name+" "+d.size+" "+d.popo);
+  $("#info").html("Mot sélectionné: "+d.name);
+  if(d.tfidf!=undefined)
+	$("#info").html($("#info").html()+"<br>TFIDF: "+d.tfidf);
+  if(d.otherDocs!=undefined)
+	$("#info").html($("#info").html()+"<br><u>Autres documents du corpus ayant ce mot:</u><br>"+d.otherDocs);
+
   if (d.children) {
     d._children = d.children;
     d.children = null;
