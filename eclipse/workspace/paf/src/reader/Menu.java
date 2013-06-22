@@ -34,6 +34,8 @@ public class Menu {
 			return true;
 		case 2:computeHTML();
 			return true;
+		/*case 3:saveHTML();
+			return true;*/
 		case 3:System.exit(0);return false;
 		default:
 			System.out.println("Bad choice, try again!");
@@ -41,17 +43,52 @@ public class Menu {
 		
 		}
 	}
+	/*
+	private static void saveHTML() throws Exception {
+		ArrayList<String> HTMLLinks=getList("src/list.txt");
+		saveHTMLContent(HTMLLinks,"htmlSaved/");		
+	}
+
+private static void saveHTMLContent(ArrayList<String> fileList,String repository) throws Exception {
+		int i=1;
+		for(String link : fileList){
+			String filename=link.replaceAll("http:\\/\\/", "");
+			filename=filename.replaceAll("\\/", "_");
+			filename=filename.replaceAll("?","-");
+			String suffix=".html";
+			if(filename.endsWith(".htm"))
+				filename+="l";
+			else if(!filename.endsWith(suffix))
+				filename+=suffix;
+			MyHTMLReader HTMLText = new MyHTMLReader(link);
+			String text=HTMLText.getText();
+			if(!text.equals("")){
+				String path = repository+filename;
+				System.out.println(path);
+				File file = new File(path);
+				file.createNewFile();
+				Writer out = new FileWriter(path);
+				BufferedWriter writer = new BufferedWriter(out);
+				if(text.startsWith("null"))
+					text=text.substring(4,text.length());
+				writer.write(text);
+				writer.close();
+			}
+			i++;
+		}
+		
+	}*/
 
 	private static void computeHTML() throws Exception {
 		ArrayList<String> HTMLLinks=getList("src/list.txt");
-		makeTXTFile(HTMLLinks,"txt/");
+		makeTXTFile(HTMLLinks,"htmlTxt/");
 	}
 
 	private static void computePDF() throws Exception {
-		String repositoryCollege="pdfSources/college/";
+		String repositoryCollege="pdfTxt/college/";
 		ArrayList<String> pathListCollege = getRepositoryList(repositoryCollege);
 		makeTXTFile(pathListCollege,repositoryCollege);
-		String repositoryLycee="pdfSources/lycee/";
+		String repositoryLycee="pdfTxt/lycee/";
 		ArrayList<String> pathListLycee = getRepositoryList(repositoryLycee);
 		makeTXTFile(pathListLycee,repositoryLycee);
 	}
@@ -90,18 +127,43 @@ public class Menu {
 		}
 		
 		else  if(choice==2){
-			int i=1;
+			//int i=1;
 			for(String link : fileList){
-				String filename=link.replaceAll(".html", "");
-				filename=filename.replaceAll(".htm", "");
-				filename=filename.replaceAll("http:\\/\\/", "");
+				//String filename=link.replaceAll(".html", "");
+				//filename=filename.replaceAll(".htm", "");
+				String filename=link.replaceAll("http:\\/\\/", "");
 				filename=filename.replaceAll("\\/", "_");
-				filename+=".txt";
+				filename=filename.replaceAll("\\?","-");
+				String suffix=".html";
+				if(filename.endsWith(".htm"))
+					filename+="l";
+				else if(!filename.endsWith(suffix))
+					filename+=suffix;
+				//filename+=".txt";
 				System.out.println(filename);
+				
 				MyHTMLReader textFromHTML = new MyHTMLReader(link);
+				String HTMLText=textFromHTML.getText();
 				String text=extractHTMLText(textFromHTML.getText(),link);
+				
+				//save html content
+				if(!HTMLText.equals("")){
+					String path = repository+"htmlSaved/"+filename;
+					System.out.println(path);
+					File file = new File(path);
+					file.createNewFile();
+					Writer out = new FileWriter(path);
+					BufferedWriter writer = new BufferedWriter(out);
+					if(HTMLText.startsWith("null"))
+						HTMLText=HTMLText.substring(4,HTMLText.length());
+					writer.write(HTMLText);
+					writer.close();
+				}
+				//save text brut
 				if(text!=null){
 					String path = repository+filename;
+					path=path.substring(0,path.length()-5);
+					path+=".txt";
 					System.out.println(path);
 					File file = new File(path);
 					file.createNewFile();
@@ -109,10 +171,12 @@ public class Menu {
 					BufferedWriter writer = new BufferedWriter(out);
 					System.out.println(filename+" : "+text);
 					System.out.println(text.length());
+					if(text.startsWith("null"))
+						text=text.substring(4,text.length());
 					writer.write(text);
 					writer.close();
 				}
-				i++;
+				//i++;
 			}
 		}
 	}

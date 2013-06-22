@@ -24,7 +24,7 @@ public class HTMLTagger {
 		for (LinkedDocument doc : docs.values()){
 			InputStream file = null;
 			try {
-				file = new FileInputStream("html/"+doc.getHTMLfile());
+				file = new FileInputStream("htmlTxt/htmlSaved/"+doc.getHTMLfile());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -60,7 +60,7 @@ public class HTMLTagger {
 		}
 		
 		try {
-			FileWriter fw = new FileWriter("html/out_"+doc.HTMLfile);
+			FileWriter fw = new FileWriter("htmlTxt/htmlTagged/"+doc.HTMLfile);
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 			for(String s: lignes){

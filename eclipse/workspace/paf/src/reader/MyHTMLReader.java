@@ -27,8 +27,8 @@ public class MyHTMLReader {
         URLConnection yc = oracle.openConnection();
         BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
         String inputLine;
-        while ((inputLine = in.readLine()) != null)
-        	setText(getText()+inputLine);
+        while ((inputLine = in.readLine())!=null)
+        	this.text+=inputLine;
         in.close();
     }
 }
