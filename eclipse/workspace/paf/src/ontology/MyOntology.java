@@ -27,28 +27,26 @@ public class MyOntology {
 	public static String URI = "http://www.semanticweb.org/deslis/ontologies/2013/1/LRE-BloomActionValues#";
 	public static HashMap<MyDocument,LinkedDocument> docs = new HashMap<MyDocument,LinkedDocument>();
 	
-    public static void main( String[] args ) {
-    	try {
-			Comptage.main(null);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-    	for (MyDocument doc : Comptage.getCorpus())
+    public static void main( String[] args ) throws IOException {
+		Comptage comptage =new Comptage();
+		comptage.main(null);
+    	for (MyDocument doc : comptage.getCorpus())
     		docs.put(doc,(new LinkedDocument(doc)));
     	
-    	Set<Words> verbes = Comptage.getCorpusWords();
+    	Set<Words> verbes = comptage.getCorpusWords();
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
         fillOntology(m,verbes);
         
   //      new ClassHierarchy().showHierarchy( System.out, m );
         File file= new File("myonto.xml");
-        try {
+/*        try {
 			m.write(new FileOutputStream(file));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
-        HTMLTagger.tagHTML(docs);
+		}*/
+        HTMLTagger htmlTagger = new HTMLTagger();
+        htmlTagger.tagHTML(docs);
     } 
 
    public static void fillOntology(OntModel onto, Set<Words> mots){

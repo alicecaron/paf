@@ -16,71 +16,73 @@ import analyse.MyDocument;
 
 public class HTMLTagger {
 
-	public static void tagHTML(HashMap<MyDocument, LinkedDocument> docs) {
-		String line;
-		ArrayList<String> lignes = new ArrayList<String>();
-		
-		
+	public static void tagHTML(HashMap<MyDocument, LinkedDocument> docs) {		
 		for (LinkedDocument doc : docs.values()){
+			String line;
+			ArrayList<String> lignes = new ArrayList<String>();
 			InputStream file = null;
+			
+			String repoSaved = null;
+			String repoTagged = null;;
+			//sources pdf:1 sources html:2
+			int source=1;
+			switch(source){
+			case 1:
+				repoSaved="pdfTxt/pdfSaved/";
+				repoTagged="pdfTxt/pdfTagged/";
+				break;
+			case 2:
+				repoSaved="htmlTxt/htmlSaved/";
+				repoTagged="htmlTxt/htmlTagged/";
+				break;			
+			}
+			
 			try {
-				file = new FileInputStream("htmlTxt/htmlSaved/"+doc.getHTMLfile());
+				file = new FileInputStream(repoSaved+doc.getHTMLfile());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
 			BufferedReader br = new BufferedReader(new InputStreamReader(file));
 			
-		try {
-			while((line = br.readLine()) !=null){
-				lignes.add(line);	
-			}
-			br.close();
-			file.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		for(int n =0;n<lignes.size();n++){
-			ArrayList<String> newline = new ArrayList<String>();
-			String s = lignes.get(n);
-			int i=0,j=0;
-			while(i<s.length()){
-				char c = s.charAt(i);
-				if (c=='<' || c=='>' || c==' ' || c=='\''||c==8217 || c==';' || c=='.' || c==',' || c=='(' || c==')'){
-				//	System.out.println("caractère stop : "+c+" i="+i+" j="+j);
-				//	System.out.println((int)s.charAt(j+1));
-					newline.add(testMot(s.substring(j,i),doc));
-					j=i+1;
-					newline.add(s.substring(i,j));
+			try {
+				while((line = br.readLine()) !=null){
+					lignes.add(line);	
 				}
-				i++;
+				br.close();
+				file.close();
+			} catch (IOException e) {e.printStackTrace();}
+		
+			for(int n =0;n<lignes.size();n++){
+				ArrayList<String> newline = new ArrayList<String>();
+				String s = lignes.get(n);
+				int i=0,j=0;
+				while(i<s.length()){
+					char c = s.charAt(i);
+					if (c=='<' || c=='>' || c==' ' || c=='\''||c==8217 || c==';' || c=='.' || c==',' || c=='(' || c==')'){
+					//	System.out.println("caractère stop : "+c+" i="+i+" j="+j);
+					//	System.out.println((int)s.charAt(j+1));
+						newline.add(testMot(s.substring(j,i),doc));
+						j=i+1;
+						newline.add(s.substring(i,j));
+					}
+					i++;
+				}
+				newline.add(s.substring(j,s.length()));		
+				lignes.set(n, append(newline));
 			}
-			newline.add(s.substring(j,s.length()));		
-			lignes.set(n, append(newline));
+		
+			try {
+				FileWriter fw = new FileWriter(repoTagged+doc.HTMLfile);
+				BufferedWriter bw = new BufferedWriter(fw);
+				
+				for(String s: lignes){
+					System.out.println(s);
+					bw.write(s+"\n");
+				}
+				bw.close();
+				fw.close();
+			} catch (IOException e) {e.printStackTrace();}			
 		}
-		
-		try {
-			FileWriter fw = new FileWriter("htmlTxt/htmlTagged/"+doc.HTMLfile);
-			BufferedWriter bw = new BufferedWriter(fw);
-			
-			for(String s: lignes){
-				System.out.println(s);
-				bw.write(s+"\n");
-			}
-			bw.close();
-			fw.close();
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-			
-			
-		}
-			
-			
-		
-		
 	}
 
 	private static String append(ArrayList<String> newline) {
@@ -91,14 +93,10 @@ public class HTMLTagger {
 	}
 
 	private static String testMot(String mot, LinkedDocument doc) {
-	//	System.out.println("mot testé : "+mot);
 		if (doc.getWordsToEnhance().contains(mot.toLowerCase()))
 			return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
 			return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else return mot;
 	}
-	
-	
-
 }

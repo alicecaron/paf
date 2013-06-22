@@ -1,0 +1,657 @@
+
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+
+Annexe
+PROGRAMME
+
+  OBSERVER
+                                                  Couleurs et images
+Comment l’œil fonctionne-t-il ? D’où vient la lumière colorée ? Comment créer de la couleur ?  
+
+    Notions et contenus  
+  Compétences attendues
+    Couleur, vision et image
+L’œil ; modèle de l’œil réduit.
+
+Lentilles   minces   convergentes :   images   réelle   et
+virtuelle.
+Distance focale, vergence.
+Relation de conjugaison ; grandissement.
+
+
+
+
+Accommodation.
+
+Fonctionnements comparés de l’œil et d’un appareil
+photographique.
+
+
+Couleur des objets.
+Synthèse additive, synthèse soustractive.
+Absorption, diffusion, transmission.
+
+
+
+
+
+
+
+
+Vision des couleurs et trichromie. Daltonisme.
+Principe de la restitution des couleurs par un écran plat
+(ordinateur, téléphone portable, etc.).
+Décrire   le   modèle   de   l’œil   réduit   et   le   mettre   en
+correspondance avec l’œil réel.
+Déterminer graphiquement la position, la grandeur et le sens
+de   l’image   d’un   objet-plan   donnée   par   une   lentille
+convergente.
+Modéliser le comportement d’une lentille mince convergente
+à partir d’une série de mesures.
+Utiliser les relations de conjugaison et de grandissement
+d’une lentille mince convergente.
+
+Modéliser l’accommodation du cristallin.
+
+Pratiquer une démarche expérimentale pour comparer les
+fonctionnements    optiques   de    l’œil    et    de   l’appareil
+photographique.
+
+Interpréter la couleur observée d’un objet éclairé à partir de
+celle  de  la lumière  incidente ainsi que des phénomènes
+d’absorption, de diffusion et de transmission.
+Utiliser  les  notions  de  couleur  blanche  et  de  couleurs
+complémentaires.
+Prévoir le résultat de la superposition de lumières colorées et
+l’effet  d’un  ou  plusieurs  filtres  colorés  sur  une  lumière
+incidente.
+Pratiquer une démarche expérimentale permettant d’illustrer et
+comprendre les notions de couleurs des objets.
+
+Distinguer couleur perçue et couleur spectrale.
+Recueillir et exploiter des informations sur le principe de
+restitution des couleurs par un écran plat.
+    Sources de lumière colorée
+Différentes   sources   de   lumière :   étoiles,   lampes
+variées, laser, DEL, etc.
+Domaines des ondes électromagnétiques.
+
+
+
+
+Couleur des corps chauffés. Loi de Wien.
+
+
+
+
+Interaction lumière-matière : émission et absorption.
+Quantification des niveaux d’énergie de la matière.
+Modèle corpusculaire de la lumière : le photon. Énergie
+d’un photon.
+Relation   E = h  dans les échanges d’énergie.
+Spectre solaire.
+Distinguer   une   source   polychromatique   d’une   source
+monochromatique  caractérisée  par  une  longueur  d’onde
+dans le vide.
+Connaître les limites en longueur d’onde dans le vide du
+domaine visible et situer les rayonnements infrarouges et
+ultraviolets.
+
+Exploiter la loi de Wien, son expression étant donnée.
+
+Pratiquer une démarche expérimentale permettant d’illustrer
+et de comprendre la notion de lumière colorée.
+
+Interpréter les échanges d’énergie entre lumière et matière à
+l’aide du modèle corpusculaire de la lumière.
+Connaître les relations   = c/  et   E = h  et les utiliser pour
+exploiter un diagramme de niveaux d’énergie.
+
+Expliquer  les  caractéristiques  (forme,  raies)  du  spectre
+solaire.
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               1 / 6
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+    Matières colorées
+Synthèse soustractive.
+
+Colorants, pigments ; extraction et synthèse.
+
+
+Réaction chimique : réactif limitant, stœchiométrie, notion
+d’avancement.
+
+
+
+
+
+Dosage de solutions colorées par étalonnage.
+Loi de Beer-Lambert.
+Interpréter la couleur d’un mélange obtenu à partir de
+matières colorées.
+Pratiquer  une  démarche  expérimentale  mettant  en
+œuvre     une     extraction,     une     synthèse,     une
+chromatographie.
+Identifier le réactif limitant, décrire quantitativement l’état
+final d’un système chimique.
+Interpréter en fonction des conditions initiales la couleur
+à   l’état  final   d’une  solution   siège  d’une  réaction
+chimique mettant en jeu un réactif ou un produit coloré.
+Pratiquer une démarche expérimentale pour déterminer
+la concentration d'une espèce  colorée à partir d'une
+courbe d'étalonnage en utilisant la loi de Beer-Lambert.
+Molécules  organiques  colorées :  structures  moléculaires,
+molécules à liaisons conjuguées.
+
+
+
+Indicateurs colorés.
+
+
+
+
+
+
+Liaison covalente.
+Formules de Lewis ; géométrie des molécules.
+Rôle des doublets non liants.
+Isomérie Z/E.
+Savoir que les molécules de la chimie organique sont
+constituées principalement des éléments C et H.
+Reconnaître si deux doubles liaisons sont en position
+conjuguée dans une chaîne carbonée.
+Établir  un  lien  entre  la  structure  moléculaire  et  le
+caractère coloré ou non coloré d’une molécule.
+
+Repérer expérimentalement des paramètres influençant
+la couleur d’une substance (pH, solvant,etc.).
+
+Décrire à l’aide des règles du « duet » et de l’octet les
+liaisons que peut établir un atome (C, N, O, H) avec les
+atomes voisins.
+Interpréter  la  représentation  de  Lewis  de  quelques
+molécules simples.
+Mettre en relation la formule de Lewis et la géométrie de
+quelques molécules simples.
+Prévoir si une molécule présente une isomérie Z/E.
+Savoir que l'isomérisation photochimique d'une double
+liaison est à l'origine du processus de la vision.
+Mettre    en    œuvre    le    protocole    d’une    réaction
+photochimique.
+Utiliser des modèles moléculaires et des logiciels de
+modélisation.
+Recueillir et exploiter des informations sur les colorants,
+leur   utilisation   dans   différents   domaines,   et   les
+méthodes de détermination des structures (molécules
+photochromes, indicateurs colorés, peintures, etc.).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               2 / 6
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+    COMPRENDRE
+                                                  Lois et modèles
+Quelles sont les causes physiques à l’œuvre dans l’Univers ? Quelles interactions expliquent à la fois les stabilités et
+les évolutions physiques et chimiques de la matière ? Quels modèles utilise-t-on pour les décrire ? Quelles énergies
+                                                  leur sont associées ?  
+
+    Notions et contenus  
+  Compétences attendues
+  Cohésion et transformations de la matière
+La matière à différentes échelles : du noyau à la galaxie.
+
+Particules élémentaires : électrons, neutrons, protons.
+Charge élémentaire e.
+
+
+Interactions    fondamentales :    interactions    forte    et    faible,
+électromagnétique, gravitationnelle.
+
+Cohésion du noyau, stabilité.
+
+Radioactivité naturelle et artificielle. Activité.
+
+Réactions de fission et de fusion.
+
+
+
+
+
+Lois de conservation dans les réactions nucléaires.
+
+Défaut de masse, énergie libérée.
+Réactions nucléaires et aspects énergétiques associés.
+Ordre de grandeur des énergies mises en jeu.
+Solide ionique. Interaction électrostatique ; loi de Coulomb.
+Solide   moléculaire.   Interaction   de   Van   der   Waals,   liaison
+hydrogène.
+Électronégativité.
+
+Effet du caractère polaire d’un solvant lors d’une dissolution.
+Conservation de la matière lors d’une dissolution.
+
+
+
+
+
+
+Variation de température et transformation physique d’un système
+par transfert thermique.
+
+
+
+Nomenclature   des   alcanes   et   des   alcools ;   formule   semi-
+développée.
+
+
+Lien entre les températures de changement d’état et la structure
+moléculaire dans le cas de l’eau, des alcools et des alcanes.
+Miscibilité des alcools avec l’eau.
+
+
+
+Réactions chimiques et aspects énergétiques associés : énergie
+libérée lors de la combustion d’un hydrocarbure ou d’un alcool ;
+ordres de grandeur.
+Connaître  les  ordres  de  grandeur  des  dimensions  des
+différentes structures des édifices organisés.
+Connaître l’ordre de grandeur des valeurs des masses d’un
+nucléon et de l’électron.
+Savoir que toute charge électrique peut s’exprimer en fonction
+de la charge élémentaire e.
+Associer, à chaque édifice organisé, la ou les interactions
+fondamentales prédominantes.
+
+                                                  A
+Utiliser la représentation symbolique ZX ; définir l’isotopie et
+reconnaître des isotopes.
+Recueillir et exploiter des informations sur la découverte de la
+radioactivité naturelle et de la radioactivité artificielle.
+Connaître la définition et des ordres de grandeur de l’activité
+exprimée en becquerel.
+Utiliser les lois de conservation pour écrire l’équation d’une
+réaction nucléaire.
+Utiliser la relation Elibérée = │∆m│c2.
+
+
+Recueillir  et  exploiter  des  informations  sur  les  réactions
+nucléaires (domaine médical, domaine énergétique, domaine
+astronomique, etc.).
+Interpréter la cohésion des solides ioniques et moléculaires.
+Réaliser et interpréter des expériences simples d’électrisation.
+Recueillir et exploiter des informations sur les applications de
+la structure de certaines molécules (super absorbants,
+tensioactifs, alginates, etc.).
+Prévoir si un solvant est polaire.
+Écrire l’équation de la réaction associée à la dissolution dans
+l’eau d’un solide ionique.
+Savoir qu’une solution est électriquement neutre.
+Élaborer et réaliser un protocole de préparation d’une solution
+ionique de concentration donnée en ions.
+Mettre en œuvre un protocole pour extraire une espèce
+chimique d’un solvant.
+Interpréter à l’échelle microscopique les aspects énergétiques
+d’une variation de température et d’un changement d’état.
+Pratiquer une démarche expérimentale pour mesurer une
+énergie de changement d’état.
+Reconnaître une chaîne carbonée linéaire, ramifiée ou
+cyclique. Nommer un alcane et un alcool.
+Donner les formules semi-développées correspondant à une
+formule brute donnée dans le cas de molécules simples.
+Interpréter :
+- l’évolution des températures de changement d’état au sein
+d’une famille de composés ;
+- les différences de température de changement d’état entre
+les alcanes et les alcools ;
+- la plus ou moins grande miscibilité des alcools avec l’eau.
+Réaliser une distillation fractionnée.
+Écrire une équation de combustion.
+Mettre en œuvre un protocole pour estimer la valeur de
+l’énergie libérée lors d’une combustion.
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               3 / 6
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+
+  Champs et forces  
+
+Exemples  de  champs  scalaires  et  vectoriels :  pression,
+température, vitesse dans un fluide.
+
+
+
+Champ magnétique : sources de champ magnétique (Terre,
+aimant, courant).
+
+                                                  
+F
+Champ électrostatique : E
+                                                  q
+                                                  
+P
+Champ de pesanteur local : g
+                                                  m
+
+
+
+
+
+
+
+Loi de la gravitation ; champ de gravitation.
+Lien entre le champ de gravitation et le champ de pesanteur.
+Recueillir et exploiter des informations (météorologie,
+téléphone portable, etc.) sur un phénomène pour avoir
+une première approche de la notion de champ.
+Décrire le champ associé à des propriétés physiques
+qui se manifestent en un point de l’espace.
+Comprendre comment la notion de champ a émergé
+historiquement d’observations expérimentales.
+Pratiquer une démarche expérimentale pour
+cartographier un champ magnétique ou
+électrostatique.
+Connaître les caractéristiques :
+- des lignes de champ vectoriel ;
+- d’un champ uniforme ;
+- du champ magnétique terrestre ;
+- du champ électrostatique dans un condensateur
+plan ;
+- du champ de pesanteur local.
+
+Identifier localement le champ de pesanteur au champ
+de gravitation, en première approximation.
+
+  Formes et principe de conservation de l’énergie  
+
+Énergie d’un point matériel en mouvement dans le champ
+de    pesanteur   uniforme :    énergie    cinétique,    énergie
+potentielle de pesanteur, conservation ou non conservation
+de l’énergie mécanique.
+Frottements ; transferts thermiques ; dissipation d’énergie.
+
+
+
+Formes d’énergie
+
+Principe de conservation de l’énergie.
+Application   à   la   découverte   du   neutrino   dans   la
+désintégration  .
+Connaître et utiliser l’expression de l’énergie cinétique
+d’un solide en translation et de l’énergie potentielle de
+pesanteur d’un solide au voisinage de la Terre.
+Réaliser et exploiter un enregistrement pour étudier
+l’évolution    de    l’énergie    cinétique,    de    l’énergie
+potentielle et de l’énergie mécanique d’un système au
+cours d’un mouvement.
+
+Connaître diverses formes d’énergie.
+
+Exploiter le principe de conservation de l’énergie dans
+des  situations  mettant  en  jeu  différentes  formes
+d’énergie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               4 / 6
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+
+  AGIR
+                                                  Défis du XXIème siècle
+En quoi la science permet-elle de répondre aux défis rencontrés par l’Homme dans sa volonté de développement tout
+                                                  en préservant la planète ?  
+
+  
+  Notions et contenus      Compétences attendues  
+  
+
+  Convertir l’énergie et économiser les ressources
+Ressources énergétiques renouvelables ou non ; durées
+caractéristiques associées.
+Transport et stockage de l’énergie ; énergie électrique.
+
+
+
+
+Production de l’énergie électrique ; puissance.
+Conversion d’énergie dans un générateur, un récepteur.
+Loi d’Ohm. Effet Joule.
+Notion de rendement de conversion.
+Recueillir et exploiter des informations pour identifier des
+problématiques :
+- d'utilisation des ressources énergétiques ;
+- du stockage et du transport de l’énergie.
+Argumenter   en   utilisant   le   vocabulaire   scientifique
+adéquat.
+
+Distinguer puissance et énergie.
+Connaître et utiliser la relation liant puissance et énergie.
+Connaître  et  comparer  des  ordres  de  grandeur  de
+puissances.
+Schématiser une chaîne énergétique pour interpréter les
+conversions d’énergie en termes de conservation, de
+dégradation.
+
+Pratiquer une démarche expérimentale pour :
+- mettre en évidence l’effet Joule ;
+- exprimer la tension aux bornes d’un générateur et d’un
+récepteur en fonction de l’intensité du courant électrique.
+
+Recueillir et exploiter des informations portant sur un
+système électrique à basse consommation.
+Stockage et conversion de l’énergie chimique.
+Énergie libérée lors de la combustion d’un hydrocarbure ou
+d’un alcool.
+
+
+
+
+Piles salines, piles alcalines, piles à combustible.
+Accumulateurs.
+Polarité des électrodes, réactions aux électrodes.
+
+Oxydant,  réducteur,  couple  oxydant/réducteur,  réaction
+d’oxydo-réduction.
+Modèle par transfert d’électrons.
+Recueillir et exploiter des informations sur le stockage et
+la conversion d’énergie chimique.
+Écrire  une  équation  de  combustion.  Argumenter  sur
+l’impact environnemental des transformations mises en
+jeu. Déterminer l’ordre de grandeur de la masse de CO2
+produit lors du déplacement d’un véhicule.
+
+Pratiquer une démarche expérimentale pour réaliser une
+pile et modéliser son fonctionnement. Relier la polarité
+de la pile aux réactions mises en jeu aux électrodes.
+Recueillir et exploiter des informations sur les piles ou
+les   accumulateurs   dans   la   perspective   du   défi
+énergétique.
+Reconnaître l’oxydant et le réducteur dans un couple.
+Écrire  l’équation  d’une  réaction  d’oxydo-réduction  en
+utilisant les demi-équations redox.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               5 / 6
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+
+  Synthétiser des molécules et fabriquer de nouveaux matériaux  
+
+Nanochimie.
+
+
+Synthèse  ou  hémisynthèse  de  molécules  complexes,
+biologiquement actives.
+
+
+Alcools, aldéhydes, cétones : nomenclature, oxydations.
+
+
+
+
+Acides  carboxyliques :  nomenclature,  caractère  acide,
+solubilité et pH.
+Obtention  d’un  acide  carboxylique  ou  d’une  cétone ;
+rendement d’une synthèse.
+
+
+
+
+
+
+
+
+
+
+
+
+Synthèses et propriétés de matériaux amorphes (verres),
+de matériaux organisés (solides cristallins, céramiques) et
+de matières plastiques.
+Recueillir et exploiter des informations sur un aspect de la
+nanochimie (nanotubes de carbone, nanomédicaments,
+nanoparticules métalliques, etc.).
+
+Recueillir et exploiter des informations sur une synthèse
+d’une molécule biologiquement active en identifiant les
+groupes caractéristiques.
+
+Nommer des alcools, aldéhydes, cétones et acides
+carboxyliques.
+Reconnaître la classe d’un alcool.
+Écrire l’équation de la réaction d’oxydation d’un alcool et
+d’un aldéhyde.
+
+Pratiquer une démarche expérimentale pour :
+- extraire un acide carboxylique d’un mélange ;
+- oxyder un alcool ou un aldéhyde ;
+- mettre en évidence par des tests caractéristiques ou
+une CCM un ou des produits issus de l’oxydation d’un
+alcool ;
+- déterminer la valeur du rendement d’une synthèse.
+
+Réaliser une extraction par solvant, un chauffage à
+reflux, une filtration sous vide, une CCM, une distillation
+en justifiant du choix du matériel à utiliser.
+Argumenter à propos d’une synthèse en utilisant des
+données physico-chimiques et de sécurité.
+
+Recueillir et exploiter des informations pour relier les
+propriétés physiques d’un matériau à sa structure
+microscopique.
+    Créer et innover
+Culture scientifique et technique ; relation science-société.
+Métiers  de  l’activité  scientifique  (partenariat  avec  une
+institution de recherche, une entreprise, etc.).
+Réinvestir la démarche scientifique sur des projets de
+classe ou de groupes.
+Comprendre  les  interactions  entre  la  science  et  la
+société sur quelques exemples.
+Communiquer sur la science par exemple en participant
+à des actions de promotion de la culture scientifique et
+technique.
+Recueillir  et  exploiter  des  informations  sur  l’actualité
+scientifique et technologique, sur des métiers ou des
+formations scientifiques et techniques en lien avec des
+ressources locales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                               6 / 6

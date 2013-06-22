@@ -1,0 +1,646 @@
+
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Annexe
+SCIENCES DE L’INGÉNIEUR
+CYCLE TERMINAL DE LA SÉRIE SCIENTIFIQUE
+
+I - Objectifs généraux
+Notre société devra relever de nombreux défis dans les prochaines décennies. Les démographes annoncent une forte
+croissance de la population mondiale, répartie inégalement sur les territoires. Il faudra donc proposer des réponses
+aux besoins fondamentaux des hommes, tels que l’accès à l’eau, à l’énergie, à l’alimentation, à l’habitat, au transport,
+à la santé, à l’éducation et à l’information.
+Pour satisfaire ces besoins, la recherche de solutions devra se faire dans un contexte environnemental contraint, au
+sein d’une concurrence économique internationale et avec la nécessité d’assurer un développement durable pour tous.
+La réponse à ces défis passe inévitablement par la formation d’ingénieurs et de chercheurs aux compétences
+scientifiques et technologiques pluridisciplinaires de haut niveau, capables d’innover, de prévoir et maîtriser les performances
+des systèmes(1) complexes, en intégrant les grandes questions sociétales et environnementales.
+L’enseignement des sciences de l’ingénieur, dans le cycle terminal du lycée, a pour objectif d’aborder la démarche de
+l’ingénieur qui permet, en particulier :
+- de vérifier les performances attendues d’un système, par l’évaluation de l’écart entre un cahier des charges et les
+réponses expérimentales (figure1, écart 1) ;
+- de proposer et de valider des modèles d’un système à partir d’essais, par l’évaluation de l’écart entre les performances
+mesurées et les performances simulées (figure 1, écart 2) ;
+- de prévoir les performances d’un système à partir de modélisations, par l’évaluation de l’écart entre les performances
+simulées et les performances attendues au cahier des charges (figure 1, écart 3) ;
+- de proposer des architectures de solutions, sous forme de schémas ou d’algorigrammes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1 : représentation des différents écarts
+
+L’identification et l’analyse de ces écarts peuvent mobiliser des compétences pluridisciplinaires, en particulier celles
+développées en mathématiques et en sciences physiques-chimiques fondamentales et appliquées. Les sciences de
+l’ingénieur renforcent les liens entre les disciplines et participent à la poursuite d’études dans l’enseignement supérieur.
+Les sciences de l’ingénieur développent des démarches pour analyser des systèmes complexes pluri-technologiques.
+Les compétences acquises sont ainsi transposables à l’ensemble des domaines scientifiques et technologiques, et
+permettent d’appréhender des situations inédites.
+
+(1) Un système est une association structurée d’éléments ayant des relations entre eux. Il a été conçu dans le but de répondre à un besoin. Il est
+caractérisé par la nature de :
+- ses éléments constitutifs et des interactions entre ceux-ci ;
+- ses éléments environnants et des interactions de ceux-ci avec le système.
+Dans ce programme, le terme « système » recouvre tout le champ des produits manufacturés et des ouvrages, intégrés dans leur environnement.
+Le système peut être matériel, virtuel ou souhaité.
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  1 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Interdisciplinarité
+En classe de première, les travaux personnels encadrés sont intégrés dans l’horaire de sciences de l’ingénieur. Le
+principe de base est la pluridisciplinarité, deux disciplines au moins doivent être impliquées : la discipline caractéristique
+de la série ainsi que, par exemple, les mathématiques, la physique-chimie ou encore les sciences de la vie et de la
+Terre.
+En classe terminale, un projet interdisciplinaire sera également mis en place dans un volume horaire d’environ 70
+heures en collaboration avec les disciplines scientifiques ou encore les disciplines de l’enseignement commun.
+Tice
+Les technologies de l’information et de la communication sont systématiquement mises en œuvre dans cet enseignement.
+Elles accompagnent toutes les activités proposées :
+- recherche et exploitation de dossiers numériques ;
+- analyse structurelle des systèmes ;
+- simulation de comportement des systèmes ;
+- expérimentations assistées par ordinateur locales ou à distance et matérialisation d’idées (maquette numérique,
+programmation et prototypage rapide) ;
+- suivi et comptes rendus d’activités d’analyse et de projet ;
+- archivage et consultation des productions des élèves.
+Toutes ces activités, individuelles et en équipes, s’inscrivent naturellement dans le contexte d’un environnement
+numérique de travail (ENT) et participent à la préparation du B2i niveau lycée.
+Compétences terminales visées
+L’enseignement des sciences de l’ingénieur a pour objectif de développer les compétences présentées sur la figure 2
+ci-dessous :
+
+ANALYSER
+
+Analyser le besoin
+Analyser le système
+Caractériser des écarts
+
+
+
+SYSTÈME
+
+
+
+Rechercher et traiter des informations
+Mettre en œuvre une communication
+COMMUNIQUER
+
+MODÉLISER
+
+               Identifier et caractériser les grandeurs
+          agissant sur un système
+        Proposer ou justifier un modèle
+    Résoudre et simuler
+Valider un modèle
+
+
+
+
+Justifier le choix d’un protocole expérimental
+    Mettre en œuvre un protocole expérimental
+
+EXPÉRIMENTER
+
+
+
+Figure 2 : compétences développées en sciences de l’ingénieur
+
+Les systèmes complexes choisis peuvent relever des grands domaines suivants : énergie, information et communication,
+transport, production de biens et de services, bâtiments et travaux publics, santé, agroalimentaire. Cette liste n’est pas
+exhaustive et les enseignants ont la possibilité de s’appuyer sur d’autres domaines qu’ils jugent pertinents.
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  2 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+II - Programme
+A - Analyser
+A1 Analyser le besoin
+A2 Analyser le système
+A3 Caractériser des écarts
+B - Modéliser
+B1 Identifier et caractériser les grandeurs agissant sur un système
+B2 Proposer ou justifier un modèle
+B3 Résoudre et simuler
+B4 Valider un modèle
+C - Expérimenter
+C1 Justifier le choix d’un protocole expérimental
+C2 Mettre en œuvre un protocole expérimental
+D - Communiquer
+D1 Rechercher et traiter des informations
+D2 Mettre en œuvre une communication
+La représentation des systèmes, si elle s’avère nécessaire, se fera avec des outils numériques. L’utilisation des logiciels
+retenus n’implique pas la maîtrise de leurs fonctionnalités.
+Chaque compétence est présentée avec les connaissances et les capacités associées :
+- un premier tableau définit les compétences terminales attendues, spécifiant le contrat d’évaluation ;
+- un second tableau présente les connaissances et les capacités associées ainsi que le niveau de maîtrise des capacités.
+Les capacités associées aux connaissances seront dispensées à partir de tout ou partie d’un système, disponible sous
+forme matérielle ou virtuelle, instrumenté si nécessaire, défini par un dossier technique.
+La maîtrise des capacités est définie selon les trois niveaux suivants :
+Niveau A - Les concepts sont abordés dans un contexte d’application adapté. Les élèves découvrent la définition et
+les caractéristiques de chaque concept.
+Niveau B - Les activités proposées sont simples et variées. Elles mobilisent des outils et des méthodes dans un contexte
+connu. La démarche est donnée, la résolution est guidée et le choix de la méthode est toujours précisé.
+Niveau C - Les situations proposées exigent la mise en œuvre de démarches mobilisant des outils et des méthodes
+dans un contexte nouveau. Les élèves doivent pouvoir justifier ces démarches et interpréter tout ou partie des résultats
+obtenus par rapport au problème posé.
+Lorsque le niveau est précisé en classe de première, cela signifie qu’il est atteint en fin de classe de première et qu’il
+peut être utilisé en classe de terminale.
+Lorsque le niveau n’est précisé qu’en classe de terminale, cela signifie qu’il est atteint en fin de classe de terminale
+mais qu’il peut être introduit en classe de première.
+
+A - Analyser
+A1. Analyser le besoin
+Compétences attendues
+- définir le besoin ;
+- définir les fonctions de service ;
+- identifier les contraintes ;
+- traduire un besoin fonctionnel en problématique technique.
+Connaissances    Capacités    1re    T  
+Besoin, finalités, contraintes,
+cahier des charges
+Décrire le besoin
+Présenter la fonction globale
+Identifier les contraintes (fonctionnelles, sociétales, environnementales,
+etc.)
+Ordonner les contraintes (critère, niveau, flexibilité)     C  
+Analyse fonctionnelle externe
+Expression fonctionnelle du besoin
+Présenter à l’aide d’un diagramme des interacteurs une réponse
+technique à un besoin     C  
+Fonctions d’usage, de service,
+d’estime     Identifier et caractériser les fonctions de service     C  
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  3 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+A2. Analyser le système
+Compétences attendues
+- identifier et ordonner les fonctions techniques qui réalisent les fonctions de services et respectent les contraintes ;
+- identifier les éléments transformés et les flux ;
+- décrire les liaisons entre les blocs fonctionnels ;
+- identifier l’organisation structurelle ;
+- identifier les matériaux des constituants et leurs propriétés en relation avec les fonctions et les contraintes.
+Connaissances    Capacités    1re    T
+Système
+Frontière d’étude
+Environnement
+Définir le système et sa frontière d’étude
+Analyser l’environnement d’un système, ses contraintes
+Décrire le fonctionnement d’un système
+Identifier des évolutions possibles d’un système     C  
+Architectures fonctionnelle
+et organique d’un système
+Identifier les fonctions techniques
+Déterminer les constituants dédiés aux fonctions d’un système et en justifier le choix
+Identifier les niveaux fonctionnels et organiques d’un système
+Présenter les architectures fonctionnelle et organique d’un système à l’aide d’un
+diagramme FAST
+Proposer des évolutions sous forme fonctionnelle     C  
+Relier le coût d’une solution technique au besoin exprimé     A  
+Impact environnemental     Évaluer l’impact environnemental (matériaux, énergie, nuisances)     A  
+Matière d’œuvre, valeur
+ajoutée, flux
+Identifier la matière d’œuvre et la valeur ajoutée
+Représenter les flux (matière, énergie, information) à l’aide d’un actigramme A-0 de la
+méthode SADT     C  
+Chaîne d’information     Identifier et décrire la chaîne d’information du système     C  
+Chaîne d’énergie
+Identifier et décrire la chaîne d’énergie du système
+Analyser les apports d’énergie, les transferts, le stockage, les pertes énergétiques     C  
+Réaliser le bilan énergétique d’un système    C
+Systèmes logiques
+évènementiels
+Langage de description :
+graphe d’états,
+logigramme, GRAFCET,
+algorigramme     Décrire et analyser le comportement d’un système     C  
+Systèmes asservis     Différencier un système asservi d’un système non asservi    B
+Composants réalisant les
+fonctions de la chaîne
+d’énergie
+Identifier les composants réalisant les fonctions Alimenter, Distribuer, Convertir,
+Transmettre     C  
+Justifier la solution choisie    B
+Composants réalisant les
+fonctions de la chaîne
+d’information     Identifier les composants réalisant les fonctions Acquérir, Traiter, Communiquer     C  
+Justifier la solution choisie    B
+Réversibilité d’une source,
+d’un actionneur, d’une
+chaîne de transmission     Analyser la réversibilité d’un composant dans une chaîne d’énergie    B
+Système de numération,
+codage     Analyser et interpréter une information numérique     C  
+Modèle OSI     Décrire l’organisation des principaux protocoles    A
+Réseaux de communication
+Support de communication,
+notion de protocole,
+paramètres de configuration
+Notion de trame, liaisons
+série et parallèle
+Analyser les formats et les flux d’information
+Identifier les architectures fonctionnelle et matérielle
+Identifier les supports de communication
+Identifier et analyser le message transmis, notion de protocole, paramètres de
+configuration    B
+Architecture d’un réseau
+(topologie, mode de
+communication, type de
+transmission, méthode
+d’accès au support,
+techniques de
+commutation)     Identifier les architectures fonctionnelle et matérielle d’un réseau    B
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  4 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Matériaux
+Identifier la famille d’un matériau
+Mettre en relation les propriétés du matériau avec les performances du système     C  
+Comportement du solide
+déformable     Analyser les sollicitations dans les composants    C
+Analyser les déformations des composants    C
+Analyser les contraintes mécaniques dans un composant    C
+Commentaires :
+L’analyse d’un système se fait en le recontextualisant et en prenant en compte son environnement.
+L’étude des systèmes logiques évènementiels intègre les systèmes à logique combinatoire et séquentielle.
+L’étude de la logique combinatoire se limite aux fonctions logiques NON, ET, OU, Non ET, Non OU.
+La présentation du modèle OSI se limite à la couche application et à la couche transport.
+Les familles de matériaux retenues sont les métalliques, les céramiques, les organiques et les composites. Une présentation
+des propriétés communes à chaque famille est privilégiée à une connaissance livresque des matériaux.
+Il est utile de proposer une vision globale de la géo-économie des matériaux : où sont les ressources ? Quels sont les coûts
+et l’empreinte carbone dus au transport et ceux liés à la mise en œuvre ?
+En ce qui concerne le comportement du solide déformable, l’étude s’appuie sur des résultats obtenus à l’aide d’outils
+numériques.
+
+A3. Caractériser des écarts
+Compétences attendues
+- comparer les résultats expérimentaux avec les critères du cahier des charges et interpréter les écarts ;
+- comparer les résultats expérimentaux avec les résultats simulés et interpréter les écarts ;
+- comparer les résultats simulés avec les critères du cahier des charges et interpréter les écarts.
+Connaissances    Capacités    1re    T
+Analyse des écarts
+Traiter des données de mesures (valeur moyenne, médiane, caractéristique, etc.)
+Identifier des valeurs erronées
+Quantifier des écarts entre des valeurs attendues et des valeurs mesurées
+Quantifier des écarts entre des valeurs attendues et des valeurs obtenues
+par simulation
+Quantifier des écarts entre des valeurs mesurées et des valeurs obtenues
+par simulation     C  
+Rechercher et proposer des causes aux écarts constatés    C
+
+
+B - Modéliser
+B1. Identifier et caractériser les grandeurs agissant sur un système
+Compétences attendues
+- définir, justifier la frontière de tout ou partie d’un système et répertorier les interactions ;
+- choisir les grandeurs et les paramètres influents en vue de les modéliser.
+Connaissances    Capacités    1re    T
+Frontière de l’étude
+Isoler un système et justifier l’isolement
+Identifier les grandeurs traversant la frontière d’étude     C  
+Caractéristiques des grandeurs
+physiques (mécaniques,
+électriques, thermiques,
+acoustiques, lumineuses, etc.)
+Qualifier les grandeurs d’entrée et de sortie d’un système isolé
+Identifier la nature (grandeur effort, grandeur flux)
+Décrire les lois d’évolution des grandeurs
+Utiliser les lois et relations entre les grandeurs    C
+Matériaux
+Identifier les propriétés des matériaux des composants qui influent sur le
+système    C
+Énergie et puissances
+Notion de pertes
+Associer les grandeurs physiques aux échanges d’énergie et à la
+transmission de puissance
+Identifier les pertes d’énergie    C
+Flux d’information     Identifier la nature de l’information et la nature du signal    C
+Flux de matière     Qualifier la nature des matières, quantifier les volumes et les masses     C  
+Commentaires :
+La puissance est toujours égale au produit d'une grandeur d'effort (force, couple, pression, tension, etc.) par une grandeur
+de flux (vitesse, vitesse angulaire, débit, intensité du courant, etc.).
+Le point de vue de l’étude conditionne le choix de la grandeur d’effort ou de la grandeur de flux à utiliser.
+Pour les matériaux, sont étudiés la masse volumique, la rigidité, la résistance, la ténacité, la température de fusion, les
+conductivités électrique et thermique, et le coefficient de dilatation.
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  5 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+B2. Proposer ou justifier un modèle
+Compétences attendues
+- associer un modèle à un système ou à son comportement ;
+- préciser ou justifier les limites de validité du modèle envisagé.
+Connaissances    Capacités    1re    T
+Chaîne d’énergie     Associer un modèle à une source d’énergie     C  
+Associer un modèle aux composants d’une chaîne d’énergie
+Déterminer les points de fonctionnement du régime permanent d’un
+actionneur au sein d’un procédé    C
+Chaîne d’information     Associer un modèle aux composants d’une chaîne d’information    C
+Ordre d’un système
+Identifier les paramètres à partir d’une réponse indicielle
+Associer un modèle de comportement (1er et 2nd ordre) à une réponse
+indicielle    B
+Systèmes logiques à évènements
+discrets
+Langage de description : graphe
+d’états, logigramme, GRAFCET,
+algorigramme     Traduire le comportement d’un système    C
+Liaisons
+Construire un modèle et le représenter à l’aide de schémas
+Préciser les paramètres géométriques
+Établir la réciprocité mouvement relatif/actions mécaniques associées     C  
+Graphe de liaisons     Construire un graphe de liaisons (avec ou sans les efforts)     C  
+Modèle du solide
+Choisir le modèle de solide, déformable ou indéformable selon le point
+de vue    C
+Modéliser et représenter géométriquement le réel    C
+Action mécanique     Modéliser les actions mécaniques de contact ou à distance    C
+Modèle de matériau     Choisir ou justifier un modèle comportemental de matériau     C  
+Comportement du solide
+déformable     Caractériser les sollicitations dans les composants    B
+Caractériser les déformations des composants    B
+Caractériser les contraintes mécaniques dans un composant    B
+Modélisation plane     Justifier la pertinence de la modélisation plane     C  
+Commentaires :
+L’outil torseur peut être utilisé pour la résolution des problèmes en trois dimensions.
+Les liaisons sont considérées sans jeu, avec ou sans frottement, élastiques ou rigides.
+Pour les matériaux, les modèles comportementaux étudiés sont l’homogénéité, l’isotropie et l’élasticité.
+En ce qui concerne le comportement du solide déformable, l’étude s’appuie essentiellement sur les outils numériques.
+En modélisation plane, on se limite aux modèles des liaisons retenues (pivot, glissière et ponctuelle).
+
+B3. Résoudre et simuler
+Compétences attendues
+- choisir et mettre en œuvre une méthode de résolution ;
+- simuler le fonctionnement de tout ou partie d’un système à l’aide d’un modèle fourni.
+Connaissances    Capacités    1re    T
+Principe fondamental de la
+dynamique (PFD)
+Établir de façon analytique les expressions d’efforts (force, couple,
+pression, tension, etc.) et de flux (vitesse, fréquence de rotation, débit,
+intensité du courant, etc.)
+Traduire de façon analytique le comportement d’un système    C
+Principes fondamentaux d’étude des
+circuits
+Paramètres d’une simulation
+Adapter les paramètres de simulation, durée, incrément temporel, choix
+des grandeurs affichées, échelles, à l’amplitude et la dynamique de
+grandeurs simulées    C
+Ordre d’un système
+Interpréter les résultats d’une simulation fréquentielle des systèmes du
+1er et du 2nd ordre    B
+Comportement du solide déformable     Déterminer les parties les plus sollicitées dans un composant    C
+Déterminer les valeurs extrêmes des déformations
+Déterminer des concentrations de contraintes dans un composant
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  6 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+Modélisation plane     Déterminer le champ des vecteurs vitesses des points d’un solide     C  
+Commentaires :
+Les méthodes graphiques peuvent être utilisées mais leur maîtrise n’est pas exigée.
+Pour le comportement du solide déformable, les déterminations se feront à partir des résultats de simulation.
+Le PFD s’applique aux solides en translation par rapport à un référentiel, ou en rotation autour d’un axe fixe.
+Le Principe Fondamental de la Statique est présenté comme un cas particulier du Principe Fondamental de la Dynamique.
+En classe de première, l’application du PFD se limite à des problèmes plans.
+La résolution des problèmes de statique plane est conduite à l’aide du Principe Fondamental de la Dynamique.
+L’application du PFD en référentiel non galiléen est présentée, en précisant les termes dus aux effets d’inertie.
+
+B4. Valider un modèle
+Compétences attendues
+- interpréter les résultats obtenus ;
+- préciser les limites de validité du modèle utilisé ;
+- modifier les paramètres du modèle pour répondre au cahier des charges ou aux résultats expérimentaux ;
+- valider un modèle optimisé fourni.
+Connaissances    Capacités    1re    T
+Modèle de connaissance
+Vérifier la compatibilité des résultats obtenus (amplitudes et variations)
+avec les lois et principes physiques d’évolution des grandeurs    C
+Comparer les résultats obtenus (amplitudes et variations) avec les
+données du cahier des charges fonctionnel     C  
+Matériaux
+Identifier l’influence des propriétés des matériaux sur les performances du
+système
+Proposer des matériaux de substitution pour améliorer les performances du
+système    B
+Structures
+Valider l’influence de la structure sur les performances du système
+Proposer des modifications structurelles pour améliorer les performances du
+système    C
+Grandeurs influentes d’un modèle     Modifier les paramètres d’un modèle    C
+Commentaires :
+Quelques exemples d’utilisation de nouveaux matériaux sont présentés, comme les nano matériaux qui permettent de
+modifier fortement les propriétés non mécaniques comme la conductivité.
+
+C - Expérimenter
+C1. Justifier le choix d’un protocole expérimental
+Compétences attendues
+- identifier les grandeurs physiques à mesurer ;
+- décrire une chaîne d’acquisition ;
+- identifier le comportement des composants ;
+- justifier le choix des essais réalisés.
+Connaissances    Capacités    1re    T
+Capteurs
+Qualifier les caractéristiques d’entrée - sortie d’un capteur
+Justifier le choix d’un capteur ou d’un appareil de mesure vis-à-vis de la
+grandeur physique à mesurer
+Justifier les caractéristiques (calibre, position, etc.) d’un appareil de mesure    C
+Prévision quantitative de la
+réponse du système
+Identifier le comportement des composants du système
+Prévoir l’ordre de grandeur de la mesure    C
+Chaîne d’information, structure et
+fonctionnement
+Identifier la nature et les caractéristiques des grandeurs en divers points
+de la chaîne d’information    C
+Maîtriser les fonctions des appareils de mesures et leurs mises en
+œuvre    C
+Commentaires :
+Dans ce programme, le terme « capteur » regroupe les capteurs (information analogique), les détecteurs (information TOR)
+et les codeurs (information numérique).
+Pour justifier le choix des grandeurs à mesurer et un protocole expérimental, il est nécessaire de savoir prévoir quantitativement le
+comportement du système, l’influence des composants et l’ordre de grandeur de la réponse.
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  7 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+C2. Mettre en œuvre un protocole expérimental
+Compétences attendues
+- conduire les essais en respectant les consignes de sécurité à partir d’un protocole fourni ;
+- traiter les données mesurées en vue d’analyser les écarts.
+Connaissances    Capacités    1re    T
+Appareils de mesures, règles
+d’utilisation
+Mettre en œuvre un appareil de mesure
+Paramétrer une chaîne d’acquisition    C
+Paramètres de configuration du
+système     Régler les paramètres de fonctionnement d’un système    C
+Paramètres de configuration d’un
+réseau     Paramétrer un protocole de communication    C
+Routines, procédures, etc.
+Systèmes logiques à évènements
+discrets     Générer un programme et l’implanter dans le système cible    C
+Modèles de comportement
+Analyser les résultats expérimentaux
+Traiter les résultats expérimentaux, et extraire la ou les grandeurs
+désirée(s)    C
+Commentaires :
+Le traitement des mesures et la présentation des résultats mobilisent systématiquement les outils numériques.
+
+D - Communiquer
+D1. Rechercher et traiter des informations
+Compétences attendues
+- rechercher des informations ;
+- analyser, choisir et classer des informations.
+Connaissances    Capacités    1re    T
+Dossier technique
+Rechercher une information dans un dossier technique
+Effectuer la synthèse des informations disponibles dans un dossier
+technique    C
+Bases de données,
+sélection, tri, classement de
+données
+Optimiser les paramètres et les critères de recherche en vue de
+répondre au problème posé     C  
+Internet, outil de travail collaboratif,
+blogs, forums, moteur de
+recherche
+Rechercher des informations
+Vérifier la nature de l’information
+Trier des informations selon des critères
+Utiliser des outils adaptés pour rechercher l’information
+Mettre à jour l’information     C  
+
+D2. Mettre en œuvre une communication
+Compétences attendues
+- choisir un support de communication et un média adapté, argumenter ;
+- produire un support de communication ;
+- adapter sa stratégie de communication au contexte.
+Connaissances    Capacités    1re    T
+Croquis, schémas     Réaliser un croquis ou un schéma dans un objectif de communication     C  
+Production de documents
+Distinguer les différents types de documents en fonction de leurs usages
+Choisir l’outil bureautique adapté à l’objectif
+Réaliser un document numérique
+Réaliser et scénariser un document multimédia     C  
+Commentaires :
+Les normes des croquis et schémas ne font pas l’objet de cours spécifiques et sont à la disposition des élèves.
+La mise en œuvre de la communication n’est pas une finalité. Elle est liée à l’ensemble des activités et notamment au projet.
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  8 / 9
+Bulletin officiel spécial n° 9 du 30 septembre 2010
+III - Projet
+Le projet mobilise des compétences pluridisciplinaires, en particulier celles développées en sciences de l’ingénieur, en
+mathématiques, en sciences physiques-chimiques fondamentales et appliquées, en sciences de la vie et de la Terre, et
+sollicite des démarches de créativité pour imaginer des solutions qui répondent à un besoin.
+Les activités des élèves sont organisées, par groupes, autour d’une démarche qui consiste à :
+- analyser le problème à résoudre ;
+- imaginer des solutions ;
+- choisir une solution et justifier le choix d’un point de vue scientifique, technologique, socio-économique ;
+- formaliser la solution ;
+- réaliser tout ou partie de la solution ;
+- évaluer les performances de la solution ;
+- présenter la démarche suivie.
+Dans le cadre de ces activités, les productions attendues peuvent être :
+- des justifications scientifiques, technologiques, socio-économiques, etc., validant la solution proposée ;
+- des architectures de solutions sous forme de schémas, croquis, blocs diagrammes fonctionnels et structurels ou
+d’algorithmes ;
+- des documents de formalisation de la solution imaginée ;
+- des supports de communication ;
+- un prototype ou une maquette numérique ou matérielle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© Ministère de l'Éducation nationale > www.education.gouv.fr                                                                                                  9 / 9

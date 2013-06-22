@@ -6,8 +6,8 @@
 	<meta name="DC.publisher" content="Ontology Online" />
     <meta name="Keywords" content="OWL, Ubiquity, jQuery, jOWL, ontology, semantic web"/>
     <meta name="Description" content="jOWL Ontology Browser, visualizes ontologies loaded with the ubiquity command 'view_ontology'"/>
-    <title>jOWL Ontology Browser - Ubiquity</title>
-	<link rel="stylesheet" href="http://ontologyonline.org/css/blueprint/screen.css" type="text/css" media="screen, projection"/>
+    <title>Mise en relation d'un corpus de programmes scolaire avec des ontologies de domaine</title>
+	<!--link rel="stylesheet" href="http://ontologyonline.org/css/blueprint/screen.css" type="text/css" media="screen, projection"/-->
 	<link rel="stylesheet" href="css/jOWL.css" type="text/css"/>
 	<link type="text/css" rel="stylesheet" href="css/jq/custom-theme/jquery-ui-1.7.custom.css"></link>
 	<style type="text/css">
@@ -36,7 +36,7 @@
 		.node rect {
 		cursor: pointer;
 		fill: #fff;
-		fill-opacity: .5;
+		fill-opacity: 1;
 		stroke: #3182bd;
 		stroke-width: 1.5px;
 		}
@@ -56,7 +56,7 @@
 Modify this configuration object to fine-tune the visualisation of the jOWL browser.
 */
 	var configuration = {
-		ontology : "data/programmeHistoire6eme.owl", //the ontology to load
+		ontology : "data/transport.owl", //the ontology to load
 		owlClass       : null, //The class to show when loading
 		classOverview  : true, //show or hide the class overview list.
 		propertiesTab  : true, //show or hide the properties panel
@@ -114,15 +114,17 @@ function initjOWL(){
 </script>
 	</head>
 	<body>
-	<div id="d3visu" style="width:50%;float:left">
-	    <div id="chart" style="float:left;overflow:auto"></div>
-    	    <div style="float:right" id="info"></div>
+	<center><h1 style="background:#3182bd;width:70%;right:0">Mise en relation d'un corpus de programmes scolaire avec des ontologies de domaine</h1></center></div>
+	
+	<div id="d3visu" style="width:28%;padding-right:2%;float:left">
+	    <div id="chart" style="float:left"></div>
+    	  <!--   <div style="float:right" id="info"></div> -->
 
 	
 <script type="text/javascript">
 //script de la visu d3
 var w = 250,
-    h = 5000,
+    h = 2000,
     i = 0,
     barHeight = 20,
     barWidth = w * .8,
@@ -148,6 +150,21 @@ d3.json("../../eclipse/workspace/paf/json/test.json", function(json) {
 });
 
 function update(source) {
+	/*$(".other").each(function(){
+		$(this).on("click", function(event){
+			var txt=$(this).text();
+			var link=txt.split(" ");
+			var matiere="";
+			for(var i=0;i<link.length;i++){
+				if(i<link.length-1)
+					matiere+=link[i];
+				else
+					var classe=link[i];
+			}
+		//	$("html, body").animate({ scrollTop: $("g node text").offset().top }, 1000);
+		});
+		//$(this).attr("background-color","green");
+	});*/
 
   // Compute the flattened node list. TODO use d3.layout.hierarchy.
   var nodes = tree.nodes(root);
@@ -171,7 +188,7 @@ function update(source) {
       .attr("y", -barHeight / 2)
       .attr("height", barHeight)
       .attr("width", barWidth)
-      .style("fill", color)
+      .style("fill", "#000")
       .on("click", click);
   
   nodeEnter.append("svg:text")
@@ -192,6 +209,13 @@ function update(source) {
     .select("rect")
       .style("fill", color);
   
+  	$("g .node text").each(function(){
+		$(this).css({"fill": "#000","font-weight": "normal","text-transform":"lowercase"});
+		if($(this).text()==$("#selectedWord").text()){
+			$(this).css({"fill": "green","font-weight": "bold","text-transform":"uppercase"});
+			$("#owlauto").val($(this).text());
+		}
+	});
   // Transition exiting nodes to the parent's new position.
   node.exit().transition()
       .duration(duration)
@@ -237,12 +261,16 @@ function update(source) {
 
 // Toggle children on click.
 function click(d) {
-  $("#info").html("Mot sélectionné: "+d.name);
+  $("#info").html("<br><b>Mot:</b> <span id=\"selectedWord\">"+d.name+"</span>");
+  if(d.corpusFreq!=undefined)
+	$("#info").html($("#info").html()+"<br><br><b>Fréquence dans le corpus:</b> "+d.corpusFreq);
   if(d.tfidf!=undefined)
-	$("#info").html($("#info").html()+"<br>TFIDF: "+d.tfidf);
+	$("#info").html($("#info").html()+"<br><br><b>TFIDF:</b> "+d.tfidf);
   if(d.otherDocs!=undefined)
-	$("#info").html($("#info").html()+"<br><u>Autres documents du corpus ayant ce mot:</u><br>"+d.otherDocs);
+	$("#info").html($("#info").html()+"<br><br><b>Documents possédant ce mot:</b><br>"+d.otherDocs);
 
+	
+	
   if (d.children) {
     d._children = d.children;
     d.children = null;
@@ -253,14 +281,16 @@ function click(d) {
   update(d);
 }
 
+
+
+
 function color(d) {
   return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
 }
 
     </script>
 	</div>
-	
-	<div class="container" style="width:50%;float:right">
+	<div class="container" style="right:0;top:100px;width:70%;float:right;overflow:auto">
 		<!--div class="column span-24" style="width:100%">
 			<div class="resourcebox owl_UI" data-jowl="owl:Ontology" id="title" style="min-height:50px;">
 				<h2 class="propertybox title" data-jowl="rdfs:label">${rdfs:label}</h2>
@@ -281,16 +311,22 @@ function color(d) {
 					<hr class="space"/>
 					<div id="conceptwidget">
 						<form action="">
-							Treeview: <input type="radio" name="visualisation" value="treeview" checked="checked"/>
-							Navigation Bar: <input type="radio" name="visualisation" value="navbar"/>
+							Arbre: <input type="radio" name="visualisation" value="treeview" checked="checked"/>
+							Barre de navigation: <input type="radio" name="visualisation" value="navbar"/>
 						</form>
 						<table id="browser" style="width:100%"><tr>
-							<td style="width:50%;">
+							<td style="width:33%;">
+								<div class="ui-widget-content">
+									<h4 class="ui-dialog-titlebar ui-state-default">Mot sélectionné dans le graphe</h4>
+										<div style="text-align:left;padding:2%" id="info"class="ui-widget-content" ></div>
+								</div>
+							</td>
+							<td style="width:33%;">
 								<div id="treeview" class="ui-widget-content">
-									<h4 class="ui-dialog-titlebar ui-state-default">Treeview</h4>
+									<h4 class="ui-dialog-titlebar ui-state-default">Vue en arbre de l'ontologie</h4>
 								</div>
 								<div id="navbar" style="display:none" class="ui-widget-content">
-									<h4 class="ui-dialog-titlebar ui-state-default">Navbar</h4>
+									<h4 class="ui-dialog-titlebar ui-state-default">Barre de navigation de l'ontologie</h4>
 								</div>
 								Rechercher un verbe: 
 								<input id="owlauto" type="text" size="40" style="display:block;width:99%;margin:5px 0px;" title="enter a search term"/>
@@ -298,7 +334,7 @@ function color(d) {
 							</td>
 							<td>
 								<div id="description" class="resourcebox ui-widget-content" data-jowl="owl:Class">
-									<h4 class="ui-dialog-titlebar  ui-state-default propertybox" data-jowl="rdfs:label">Description of <span>${rdfs:label}</span></h4>
+									<h4 class="ui-dialog-titlebar  ui-state-default propertybox" data-jowl="rdfs:label">Description de <span>${rdfs:label}</span></h4>
 									<div class="jowl-content">
 										<div class="propertybox" data-jowl="rdfs:comment">${rdfs:comment}</div>
 										<div class="propertybox">

@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 
@@ -79,21 +81,108 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 		
 	}*/
 
+	/*******************************************
+	 * Traitement des fichiers HTML 
+	 *******************************************/
+	
 	private static void computeHTML() throws Exception {
-		ArrayList<String> HTMLLinks=getList("src/list.txt");
-		makeTXTFile(HTMLLinks,"htmlTxt/");
+		//ArrayList<String> HTMLLinks=getList("src/list.txt");
+		//makeTXTFile(HTMLLinks,"htmlTxt/");
+		Set<HTMLLink> HTMLLinks=getListUp("src/list.txt");
+		makeHTMLFile(HTMLLinks,"htmlTxt/");
+	}
+	private static Set<HTMLLink> getListUp(String list) throws IOException {
+		Set<HTMLLink> liste=new HashSet<HTMLLink>();
+		Reader reader = new FileReader(list);
+		BufferedReader buffer = new BufferedReader(reader);
+		String line;
+		while((line=buffer.readLine())!=null){
+			System.out.println(line);
+			liste.add(new HTMLLink(line));		
+		}
+		buffer.close();
+		return liste;
+	}
+	private static void makeHTMLFile(Set<HTMLLink> hTMLLinks, String repository) throws Exception {
+		for(HTMLLink htmlLink:hTMLLinks){
+			String link=htmlLink.link;
+			String filename=htmlLink.filename;
+
+//			filename=link.replaceAll("http:\\/\\/", "");
+//			filename=filename.replaceAll("\\/", "_");
+//			filename=filename.replaceAll("\\?","-");
+//			String suffix=".html";
+//			if(filename.endsWith(".htm"))
+//				filename+="l";
+//			else if(!filename.endsWith(suffix))
+//				filename+=suffix;
+			
+			MyHTMLReader textFromHTML = new MyHTMLReader(link);
+			String HTMLText=textFromHTML.getText();
+			String text=extractHTMLText(textFromHTML.getText(),link);
+			
+			//save html content
+			if(!HTMLText.equals("")){
+				String path = repository+"htmlSaved/"+filename+".html";
+				System.out.println(path);
+				//System.out.println(path);
+				File file = new File(path);
+				file.createNewFile();
+				Writer out = new FileWriter(path);
+				BufferedWriter writer = new BufferedWriter(out);
+				if(HTMLText.startsWith("null"))
+					HTMLText=HTMLText.substring(4,HTMLText.length());
+				writer.write(HTMLText);
+				writer.close();
+			}
+			//save text brut
+			if(text!=null){
+				String path = repository+filename+".txt";
+				System.out.println(path);
+				File file = new File(path);
+				file.createNewFile();
+				Writer out = new FileWriter(path);
+				BufferedWriter writer = new BufferedWriter(out);
+				if(text.startsWith("null"))
+					text=text.substring(4,text.length());
+				writer.write(text);
+				writer.close();
+			}
+		}		
 	}
 
+	private static String extractHTMLText(String text,String link) {
+		if(!link.startsWith("http://www.education.gouv.fr/bo/")){
+			String[] text2 = text.split("<h2");
+			if(text2[2]!=null){
+				String text3 = null;
+				for(int i=2;i<text2.length;i++)
+					text3+=text2[i];
+				String[] text4 = text3.split("<div id=\"bookmarks\">");
+				if(text4[0]!=null){
+					String text5 = text4[0].replaceAll("<[^>]*>", "");
+					text5=text5.split(">")[1];
+					return StringEscapeUtils.unescapeHtml3(text5);
+				}
+			}
+		}
+		else
+			System.out.println("Mauvais modèle.");
+		return null;
+	}
+	
+	/*******************************************
+	 * Traitement des fichiers PDF 
+	 *******************************************/
+	
 	private static void computePDF() throws Exception {
-		String repositoryCollege="pdfTxt/college/";
-		ArrayList<String> pathListCollege = getRepositoryList(repositoryCollege);
-		makeTXTFile(pathListCollege,repositoryCollege);
-		String repositoryLycee="pdfTxt/lycee/";
-		ArrayList<String> pathListLycee = getRepositoryList(repositoryLycee);
-		makeTXTFile(pathListLycee,repositoryLycee);
+		String repository="pdfTxt/";
+		ArrayList<String> pathToPDFFiles = getRepositoryList(repository+"pdf/");
+		makeTXTFile(pathToPDFFiles,repository);
 	}
 	
 	public static ArrayList<String> getRepositoryList(String repository) {
+		System.out.println(repository);
 		File[] list=null;
 		File repertoire =  new File(repository);
 		if(repertoire.isDirectory())
@@ -105,14 +194,15 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 	}
 	
 	private static void makeTXTFile(ArrayList<String> fileList, String repository) throws Exception {
-		if(choice==1){
+		//if(choice==1){
 			MyPDFReader pdfContent=null;
 			for(String link:fileList){
 				if(link.endsWith(".pdf")){
-				pdfContent = new MyPDFReader(link);
+					pdfContent = new MyPDFReader(link);
 				String[] st = link.split("\\/");
 				String filename=st[st.length-1];
 				filename=repository+filename.subSequence(0, filename.length()-4)+".txt";
+				System.out.println(filename);
 				File file = new File(filename);
 				file.createNewFile();
 				Writer out = new FileWriter(filename);
@@ -124,9 +214,9 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 				}
 			}
 			
-		}
-		
-		else  if(choice==2){
+		//}
+		/*
+		else if(choice==2){
 			//int i=1;
 			for(String link : fileList){
 				//String filename=link.replaceAll(".html", "");
@@ -178,46 +268,11 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 				}
 				//i++;
 			}
-		}
+		}*/
 	}
 
-	private static String extractHTMLText(String text,String link) {
-		
-		if(!link.startsWith("http://www.education.gouv.fr/bo/")){
-			String[] text2 = text.split("<h2");
-			if(text2[2]!=null){
-				String text3 = null;
-				for(int i=2;i<text2.length;i++)
-					text3+=text2[i];
-				String[] text4 = text3.split("<div id=\"bookmarks\">");
-				if(text4[0]!=null){
-					String text5 = text4[0].replaceAll("<[^>]*>", "");
-					text5=text5.split(">")[1];
-					return StringEscapeUtils.unescapeHtml3(text5);
-				}
-			}
-		}
-		else{
-			System.out.println("Mauvais modèle.");
-			//    <a href="#top">
-//			String[] text2 = text.split("<span class=\"TIT\">");
-//			if(text2[1]!=null){
-//				String text3 = null;
-//				for(int i=1;i<text2.length;i++)
-//					text3+=text2[i];
-//				String[] text4 = text3.split("<a href=\"#top\">");
-//				if(text4[0]!=null){
-//					String text5 = text4[0].replaceAll("<[^>]*>", "");
-//					//text5=text5.split(">")[1];
-//					return text5;
-//				}
-//			}
-//			
-			
-		}
-		return null;
-	}
-
+	
+/*
 	private static ArrayList<String> getList(String list) throws IOException {
 		ArrayList<String> liste=new ArrayList<String>();
 		Reader reader = new FileReader(list);
@@ -229,5 +284,7 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 		}
 		buffer.close();
 		return liste;
-	}
+	}*/
+	
+	
 }
