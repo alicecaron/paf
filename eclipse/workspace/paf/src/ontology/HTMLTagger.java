@@ -39,11 +39,9 @@ public class HTMLTagger {
 			
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			}
+			} catch (FileNotFoundException e) {}
+				
 			BufferedReader br = new BufferedReader(new InputStreamReader(file));
-			
 			try {
 				while((line = br.readLine()) !=null){
 					lignes.add(line);	
@@ -81,8 +79,10 @@ public class HTMLTagger {
 				}
 				bw.close();
 				fw.close();
-			} catch (IOException e) {e.printStackTrace();}			
+			} catch (IOException e) {e.printStackTrace();}
+			lignes.clear();
 		}
+			
 	}
 
 	private static String append(ArrayList<String> newline) {

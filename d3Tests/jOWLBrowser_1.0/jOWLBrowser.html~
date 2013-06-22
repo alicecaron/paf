@@ -7,7 +7,7 @@
     <meta name="Keywords" content="OWL, Ubiquity, jQuery, jOWL, ontology, semantic web"/>
     <meta name="Description" content="jOWL Ontology Browser, visualizes ontologies loaded with the ubiquity command 'view_ontology'"/>
     <title>Mise en relation d'un corpus de programmes scolaire avec des ontologies de domaine</title>
-	<!--link rel="stylesheet" href="http://ontologyonline.org/css/blueprint/screen.css" type="text/css" media="screen, projection"/-->
+	<link rel="stylesheet" href="http://ontologyonline.org/css/blueprint/screen.css" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="css/jOWL.css" type="text/css"/>
 	<link type="text/css" rel="stylesheet" href="css/jq/custom-theme/jquery-ui-1.7.custom.css"></link>
 	<style type="text/css">
