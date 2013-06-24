@@ -58,7 +58,7 @@ public class HTMLTagger {
 				lignes.set(n, append(newline));
 			}
 		
-			String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"/>";
+			String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
 			
 			try {
 				FileWriter fw = new FileWriter(repoTagged+doc.HTMLfile);
