@@ -80,7 +80,6 @@ public class MyOntology {
 
 	private static void linkDocuments(Words w,int n) {
 		for (MyDocument doc : w.getDocFrequency().keySet()){
-			System.out.println("DOC "+doc.getFilename());
 			switch(n){
 			case 1:docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
 				break;
@@ -90,9 +89,6 @@ public class MyOntology {
 				break;
 			case 4:
 				Float f;
-				System.out.print(w.getWord()+" ");
-				System.out.print(w.getLemm().getLemm()+" ");
-				System.out.println(w.getLemm().getDocFrequency().get(doc));
 				if((f = w.getLemm().getDocFrequency().get(doc).getTfidf())>5.0)
 					docs.get(doc).addHighTfidf(w.getWord().toLowerCase(),f);
 			}
