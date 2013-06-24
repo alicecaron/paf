@@ -86,22 +86,25 @@ public class HTMLTagger {
 	}
 
 	private static String testMot(String mot, LinkedDocument doc) {
+		String tfidfInfos="";
+		if(doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
+			float tfidf = doc.getHighTfidfWords().get(mot.toLowerCase());
+			tfidfInfos=" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\"";
+		}
+		
 		if (doc.getWordsToEnhance().contains(mot.toLowerCase()))
-			return ("<span class=\"verbeOnto\">"+mot+"</span>");
+			return ("<span class=\"verbeOnto\""+tfidfInfos+">"+mot+"</span>");
 			//return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
-			return ("<span class=\"verbePasOnto\">"+mot+"</span>");
+			return ("<span class=\"verbePasOnto\""+tfidfInfos+">"+mot+"</span>");
 			//return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
-			return ("<span class=\"nomsPropres;\">"+mot+"</span>");
+			return ("<span class=\"nomsPropres;\""+tfidfInfos+">"+mot+"</span>");
 			//return ("<span style=\"color:green;\">"+mot+"</span>");
 		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
-			float tfidf = doc.getHighTfidfWords().get(mot.toLowerCase());
 			//return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
-			return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
+			return ("<span class=\"highTfidf\""+tfidfInfos+" >"+mot+"</span>");
 		}
-			
-			
 		else return mot;
 	}
 }

@@ -71,9 +71,7 @@ public class MyOntology {
 		  }
 		  else if(w.getType().startsWith("X")){
 			  linkDocuments(w,3); }
-		 
-		  else linkDocuments(w,4);
-			 	  
+		  linkDocuments(w,4);
 	   }
    }
 
