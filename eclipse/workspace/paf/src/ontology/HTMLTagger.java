@@ -22,20 +22,8 @@ public class HTMLTagger {
 			ArrayList<String> lignes = new ArrayList<String>();
 			InputStream file = null;
 			
-			String repoSaved = null;
-			String repoTagged = null;;
-			//sources pdf:1 sources html:2
-			int source=1;
-			switch(source){
-			case 1:
-				repoSaved="pdfTxt/pdfSaved/";
-				repoTagged="pdfTxt/pdfTagged/";
-				break;
-			case 2:
-				repoSaved="htmlTxt/htmlSaved/";
-				repoTagged="htmlTxt/htmlTagged/";
-				break;			
-			}
+			String repoSaved="docTxt/docSaved/";
+			String repoTagged="docTxt/docTagged/";
 			
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());

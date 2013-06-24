@@ -89,7 +89,7 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 		//ArrayList<String> HTMLLinks=getList("src/list.txt");
 		//makeTXTFile(HTMLLinks,"htmlTxt/");
 		Set<HTMLLink> HTMLLinks=getListUp("src/list.txt");
-		makeHTMLFile(HTMLLinks,"htmlTxt/");
+		makeHTMLFile(HTMLLinks,"docTxt/");
 	}
 	private static Set<HTMLLink> getListUp(String list) throws IOException {
 		Set<HTMLLink> liste=new HashSet<HTMLLink>();
@@ -123,7 +123,7 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 			
 			//save html content
 			if(!HTMLText.equals("")){
-				String path = repository+"htmlSaved/"+filename+".html";
+				String path = repository+"docSaved/"+filename+".html";
 				System.out.println(path);
 				//System.out.println(path);
 				File file = new File(path);
@@ -176,7 +176,7 @@ private static void saveHTMLContent(ArrayList<String> fileList,String repository
 	 *******************************************/
 	
 	private static void computePDF() throws Exception {
-		String repository="pdfTxt/";
+		String repository="docTxt/";
 		ArrayList<String> pathToPDFFiles = getRepositoryList(repository+"pdf/");
 		makeTXTFile(pathToPDFFiles,repository);
 	}
