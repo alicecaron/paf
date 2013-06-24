@@ -49,9 +49,10 @@ public class HTMLTagger {
 					//	System.out.println((int)s.charAt(j+1));
 						newline.add(testMot(s.substring(j,i),doc));
 						j=i+1;
+						if(c=='<') while(i<s.length() && s.charAt(j)!='>') j++;
 						newline.add(s.substring(i,j));
 					}
-					i++;
+					i=Math.max(j,i+1);
 				}
 				newline.add(s.substring(j,s.length()));		
 				lignes.set(n, append(newline));
