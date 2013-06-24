@@ -126,7 +126,7 @@ function initjOWL(){
 //script de la visu d3
 
 var w = 250,
-    h = 2000,
+    h = 10000,
     i = 0,
     barHeight = 20,
     barWidth = w * .8,
@@ -266,12 +266,13 @@ function click(d) {
   $("#info").html("<br><b>Mot:</b> <span id=\"selectedWord\">"+d.name+"</span>");
   if(d.corpusFreq!=undefined)
 	$("#info").html($("#info").html()+"<br><br><b>Fréquence dans le corpus:</b> "+d.corpusFreq);
-  if(d.tfidf!=undefined)
-	$("#info").html($("#info").html()+"<br><br><b>TFIDF:</b> "+d.tfidf);
-  if(d.otherDocs!=undefined)
-	$("#info").html($("#info").html()+"<br><br><b>Documents possédant ce mot:</b><br>"+d.otherDocs);
+ if(d.nbApparition!=undefined)
+	$("#info").html($("#info").html()+"<br><b>Occurence dans ce document: </b>"+d.nbApparition);
+ if(d.tfidf!=undefined)
+	$("#info").html($("#info").html()+"<br><b>TFIDF:</b> "+d.tfidf);
+ if(d.nbDocApparition!=undefined & d.otherDocs!=undefined)
+	$("#info").html($("#info").html()+"<br><br><b>Document(s) possédant ce mot: </b>"+d.nbDocApparition+d.otherDocs);
 
-	
 	
   if (d.children) {
     d._children = d.children;

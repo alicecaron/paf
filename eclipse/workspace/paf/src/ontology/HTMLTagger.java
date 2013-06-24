@@ -28,7 +28,7 @@ public class HTMLTagger {
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());
 			} catch (FileNotFoundException e) {}
-			System.out.println(doc.getDocument().getFilename());
+			
 			BufferedReader br = new BufferedReader(new InputStreamReader(file));
 			try {
 				while((line = br.readLine()) !=null){

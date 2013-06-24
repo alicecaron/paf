@@ -48,7 +48,6 @@ public class JsonCreator {
 				jsonObjectList.add(docObject);
 			}
 			
-			
 			JSONArray docClasseArray = new JSONArray();
 			for(Words word:docWords){
 				if(word.getType().equals("VINF")){
@@ -56,7 +55,9 @@ public class JsonCreator {
 					verbe.put("name", word.getWord());
 					verbe.put("tfidf",word.getDocFrequency().get(doc).getTfidf());
 					verbe.put("corpusFreq", word.getCorpusFrequency());
-					
+					verbe.put("nbDocApparition", word.getDocFrequency().size());
+					verbe.put("nbApparition", word.getDocFrequency().get(doc).getDocumentFrequency());
+
 					String otherDocs="";
 					Set<MyDocument> clef = word.getDocFrequency().keySet();
 					Iterator<MyDocument> it = clef.iterator();
@@ -83,50 +84,6 @@ public class JsonCreator {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.print(json);
-		
+		System.out.print("the Json file has been generated.");	
 	}
-	
-/*	public static void main(String[] args){
-		JSONObject json = new JSONObject();
-		json.put("name", "Programme Scolaire");
-		
-		JSONArray jsonObjectList=new JSONArray();
-		JSONArray jsonObjectList2=new JSONArray();
-		json.put("children",jsonObjectList);
-		
-		JSONObject j1 = new JSONObject();
-		JSONObject j2 = new JSONObject();
-		JSONObject j3 = new JSONObject();
-		JSONObject j4 = new JSONObject();
-		JSONObject j5 = new JSONObject();
-		JSONObject j6 = new JSONObject();
-		
-		j1.put("name", "Mathématiques");
-		j1.put("children", jsonObjectList2);
-		j2.put("name", "Physique");
-		j3.put("name", "Arts");
-		j4.put("name", "6eme");
-		j5.put("name", "5eme");
-		j6.put("name", "Terminale");
-		
-		
-		jsonObjectList.add(j1);
-		jsonObjectList.add(j2);
-		jsonObjectList.add(j3);
-		jsonObjectList2.add(j4);
-		jsonObjectList2.add(j5);
-		jsonObjectList2.add(j6);
-		
-		try {
-			FileWriter file = new FileWriter("json/test.json");
-			file.write(json.toJSONString());
-			file.flush();
-			file.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		System.out.print(json);
-	}
-	*/
 }
