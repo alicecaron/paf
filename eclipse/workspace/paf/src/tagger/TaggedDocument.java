@@ -16,7 +16,7 @@ public class TaggedDocument {
 		return taggedDocContent;
 	}	
 	
-	public TaggedDocument (String file, Set<Words> corpusWords){
+	public TaggedDocument (String file){
 		BufferedReader br;
 		String ligne;
 		

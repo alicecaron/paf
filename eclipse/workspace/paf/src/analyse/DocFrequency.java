@@ -2,7 +2,7 @@ package analyse;
 
 public class DocFrequency {
 	private int documentFrequency;
-	private float tfidf =0;
+	private float tfidf = 0;
 
 	public float getTfidf() {
 		return tfidf;

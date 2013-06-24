@@ -3,6 +3,7 @@ package analyse;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -14,8 +15,8 @@ import jsonCreator.JsonCreator;
 import tagger.TaggedDocument;
 
 public class Comptage {
-	private static Set<Words> corpusWords = new HashSet<Words>();
-	private static Set<Lemm> corpusLemms = new HashSet<Lemm>();
+	private static HashMap<String,Words> corpusWords = new HashMap<String,Words>();
+	private static HashMap<String,Lemm> corpusLemms = new HashMap<String,Lemm>();
 	private static Set<MyDocument> corpus = new HashSet<MyDocument>();
 	private static int CORPUS_SIZE;
 	private static DocumentDifferences docDiff;
@@ -33,16 +34,21 @@ public class Comptage {
 		/*****************************************************
 		 * Tri des mots et lemms pour enlever les inutiles
 		 *****************************************************/
-	//	sortUselessWords(corpusWords);
-		sortUselessLemms(corpusLemms);
+		sortUselessWords();
+		sortUselessLemms();
 
 		/*****************************************************
 		 * Calculs des TFIDF des mots et des lemmes
 		 *****************************************************/
-		for (Words word : corpusWords)
+		for (Words word : corpusWords.values())
 			if(!word.getFiltered()) word.computeTFIDF(corpus);
-		for (Lemm lemm : corpusLemms)
-			if(!lemm.getFiltered()) lemm.computeTFIDF(corpus);
+		
+		for (Lemm lemm : corpusLemms.values())
+			if(!lemm.getFiltered()){ 
+				lemm.computeTFIDF(corpus);
+				//System.out.println(lemm.getLemm() +" "+lemm.getType());
+			}
+			
 
 		/*****************************************************
 		 * Matrice des différences inter-documents
@@ -67,9 +73,10 @@ public class Comptage {
 	}
 
 	//Tris
-	private static void sortUselessWords(Set<Words> corpusWords2) {
-		for (Words word : corpusWords) {
-			if (word.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")){
+	private static void sortUselessWords() {
+		for (Words word : corpusWords.values()) {
+			if ( word.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")
+				|| (word.getType().equals("MOTINC")&&corpusWords.containsKey(word.getWord().toLowerCase())) ){
 				word.setFiltered(true);
 			//if (word.getType().matches("(^(X).*)")){
 				//word.setFiltered(false);
@@ -77,9 +84,10 @@ public class Comptage {
 			}
 		}
 	}
-	private static void sortUselessLemms(Set<Lemm> corpusLemms) {
-		for (Lemm lemm : corpusLemms) {
-			if (lemm.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")){
+	private static void sortUselessLemms() {
+		for (Lemm lemm : corpusLemms.values()) {
+			if (lemm.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")
+				|| (lemm.getType().equals("MOTINC")&&corpusWords.containsKey(lemm.getLemm().toLowerCase()))){
 				lemm.setFiltered(true);
 				//System.out.println(lemm.getWord()+" "+lemm.getType()+" is now filtered");
 			}
@@ -90,8 +98,8 @@ public class Comptage {
 	public static Set<MyDocument> getCorpus() {
 		return corpus;
 	}
-	public static Set<Words> getCorpusWords() {
-		return corpusWords;
+	public static Collection<Words> getCorpusWords() {
+		return corpusWords.values();
 	}
 
 	//Remplissage des documents, mots et lemmes du corpus
@@ -106,7 +114,7 @@ public class Comptage {
 	}
 	private static ArrayList<String> getFileContent(File file) throws IOException {
 		String documentPath = file.getAbsolutePath();
-		TaggedDocument taggedDocument = new TaggedDocument(documentPath,corpusWords);
+		TaggedDocument taggedDocument = new TaggedDocument(documentPath);
 		return taggedDocument.getTaggedDocContent();
 	}
 	private static void computeWord(String[] wordiz, MyDocument document) {
@@ -114,7 +122,7 @@ public class Comptage {
 		boolean found = false;
 		Words foundWord = null;
 		Lemm foundLemm;
-		for (Words word : corpusWords) {
+		for (Words word : corpusWords.values()) {
 			if (word.getWord().equals(wordStr) && word.getType().equals(wordiz[1])) {
 				found = true;
 				foundWord = word;
@@ -125,18 +133,18 @@ public class Comptage {
 		}
 		if (!found) {
 			foundWord = new Words(wordiz, document);
-			corpusWords.add(foundWord);
+			corpusWords.put(wordStr,foundWord);
 		}
-		for (Lemm lemm : corpusLemms) {
+		for (Lemm lemm : corpusLemms.values()) {
 			if (lemm.getLemm().equals(wordiz[2])) {
 				foundWord.setLemm(lemm);
 				lemm.updateCorpusFrequency(document);
-				//document.addLemm(lemm);
 				return;
 			}
 		}
+	//	if(document.getClasse().equals("3")) System.out.println("NOUVEAU LEMME : "+wordiz[2]);
 		foundLemm = new Lemm(wordiz, document);
-		corpusLemms.add(foundLemm);
+		corpusLemms.put(wordiz[2],foundLemm);
 		foundWord.setLemm(foundLemm);
 	}
 
@@ -155,7 +163,7 @@ public class Comptage {
 	 * Display Word and Lemm statistics
 	 **************************************/
 	private static void displayWordStatistics() {
-		for (Words word : corpusWords) {
+		for (Words word : corpusWords.values()) {
 			System.out.println("=====================" + word.getWord() + " "
 					+ word.getType() + " " + word.getLemm());
 			System.out.println("++ Corpus frequency: "
@@ -166,7 +174,7 @@ public class Comptage {
 		}
 	}
 	private static void displayLemmStatistics() {
-		for (Lemm lemm : corpusLemms) {
+		for (Lemm lemm : corpusLemms.values()) {
 			System.out.println("=====================" + lemm.getLemm() + " "
 					+ lemm.getType());
 			System.out.println("++ Corpus frequency: "
@@ -220,7 +228,7 @@ public class Comptage {
 		}
 	}
 	private static void displayFiltered() {
-		for (Words word : corpusWords) {
+		for (Words word : corpusWords.values()) {
 			if(!word.getFiltered())
 				System.out.println(word.getWord());
 		}

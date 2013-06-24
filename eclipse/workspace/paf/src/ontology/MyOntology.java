@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -33,7 +34,7 @@ public class MyOntology {
     	for (MyDocument doc : comptage.getCorpus())
     		docs.put(doc,(new LinkedDocument(doc)));
     	
-    	Set<Words> verbes = comptage.getCorpusWords();
+    	Collection<Words> verbes = comptage.getCorpusWords();
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
         fillOntology(m,verbes);
@@ -49,7 +50,7 @@ public class MyOntology {
         htmlTagger.tagHTML(docs);
     } 
 
-   public static void fillOntology(OntModel onto, Set<Words> mots){
+   public static void fillOntology(OntModel onto, Collection<Words> mots){
    	   OntClass cl;
 	   Iterator<OntClass> it = onto.listClasses();
 	   Map<String,OntClass> classes = new HashMap<String,OntClass>();
@@ -78,7 +79,8 @@ public class MyOntology {
 
 
 	private static void linkDocuments(Words w,int n) {
-		for (MyDocument doc : w.getDocFrequency().keySet())
+		for (MyDocument doc : w.getDocFrequency().keySet()){
+			System.out.println("DOC "+doc.getFilename());
 			switch(n){
 			case 1:docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
 				break;
@@ -88,8 +90,12 @@ public class MyOntology {
 				break;
 			case 4:
 				Float f;
+				System.out.print(w.getWord()+" ");
+				System.out.print(w.getLemm().getLemm()+" ");
+				System.out.println(w.getLemm().getDocFrequency().get(doc));
 				if((f = w.getLemm().getDocFrequency().get(doc).getTfidf())>5.0)
 					docs.get(doc).addHighTfidf(w.getWord().toLowerCase(),f);
 			}
+		}
 	}
 }

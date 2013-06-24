@@ -94,7 +94,7 @@ public class HTMLTagger {
 		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
 			float tfidf = doc.getHighTfidfWords().get(mot.toLowerCase());
 			//return ("<span class=\"highTfidf;\">"+mot+"</span>");
-			return ("<span style=\"color:#2c3e50;\" tfidf=\""+tfidf+
+			return ("<span style=\"color:#d35400;\" tfidf=\""+tfidf+
 						"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
 		}
 			
