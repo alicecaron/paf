@@ -58,9 +58,13 @@ public class HTMLTagger {
 				lignes.set(n, append(newline));
 			}
 		
+			String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
+			
 			try {
 				FileWriter fw = new FileWriter(repoTagged+doc.HTMLfile);
 				BufferedWriter bw = new BufferedWriter(fw);
+				
+				bw.write(style);
 				
 				for(String s: lignes){
 				//	System.out.println(s);
@@ -83,19 +87,18 @@ public class HTMLTagger {
 
 	private static String testMot(String mot, LinkedDocument doc) {
 		if (doc.getWordsToEnhance().contains(mot.toLowerCase()))
-			//return ("<span class=\"verbeOnto\">"+mot+"</span>");
-			return ("<span style=\"color:red;\">"+mot+"</span>");
+			return ("<span class=\"verbeOnto\">"+mot+"</span>");
+			//return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
-			//return ("<span class=\"verbePasOnto\">"+mot+"</span>");
-			return ("<span style=\"color:blue;\">"+mot+"</span>");
+			return ("<span class=\"verbePasOnto\">"+mot+"</span>");
+			//return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
-			//return ("<span class=\"nomsPropres;\">"+mot+"</span>");
-			return ("<span style=\"color:green;\">"+mot+"</span>");
+			return ("<span class=\"nomsPropres;\">"+mot+"</span>");
+			//return ("<span style=\"color:green;\">"+mot+"</span>");
 		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
 			float tfidf = doc.getHighTfidfWords().get(mot.toLowerCase());
-			//return ("<span class=\"highTfidf;\">"+mot+"</span>");
-			return ("<span style=\"color:#d35400;\" tfidf=\""+tfidf+
-						"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
+			//return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
+			return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
 		}
 			
 			
