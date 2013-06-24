@@ -69,10 +69,10 @@ public class MyOntology {
 			   else linkDocuments(w,2);
 		  }
 		  else if(w.getType().startsWith("X")){
-			  linkDocuments(w,3);
-			 
-			  
-		  }
+			  linkDocuments(w,3); }
+		 
+		  else linkDocuments(w,4);
+			 	  
 	   }
    }
 
@@ -86,6 +86,10 @@ public class MyOntology {
 				break;
 			case 3:docs.get(doc).addMotPropre(w.getWord().toLowerCase());
 				break;
+			case 4:
+				if(w.getDocFrequency().get(doc).getTfidf()>5.0)
+					docs.get(doc).addHighTfidf(w.getWord().toLowerCase());
+				
 			
 			}
 	}

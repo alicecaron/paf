@@ -94,11 +94,17 @@ public class HTMLTagger {
 
 	private static String testMot(String mot, LinkedDocument doc) {
 		if (doc.getWordsToEnhance().contains(mot.toLowerCase()))
+			//return ("<span class=\"verbeOnto\">"+mot+"</span>");
 			return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
+			//return ("<span class=\"verbePasOnto\">"+mot+"</span>");
 			return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
+			//return ("<span class=\"nomsPropres;\">"+mot+"</span>");
 			return ("<span style=\"color:green;\">"+mot+"</span>");
+		else if (doc.getHighTfidfWords().contains(mot.toLowerCase()))
+			//return ("<span class=\"highTfidf;\">"+mot+"</span>");
+			return ("<span style=\"color:#2c3e50;\">"+mot+"</span>");
 		else return mot;
 	}
 }
