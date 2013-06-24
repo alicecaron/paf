@@ -15,15 +15,15 @@ public class TestQueryDBPedia {
 	public static void main(String[] args) {
 		String service = "http://dbpedia.org/sparql";
 		
-		
-		String sparqlQueryString1= "PREFIX dbont: <http://dbpedia.org/ontology/> "+
-	    	    "PREFIX dbp: <http://dbpedia.org/property/>"+
-	    	        "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>"+
-	    	    "   SELECT ?musician  ?place"+
-	    	//    "   FROM<http://dbpedia.org/resource/Daphne_Oram>"+
-	    	    "   WHERE {  "+
-	    	    "       ?musician dbont:birthPlace ?place ."+
-	    	    "        }";
+		String sparqlQueryString1="SELECT DISTINCT ?person ?link WHERE {?link foaf:primaryTopic ?link . ?person foaf:name ?person}";
+//		String sparqlQueryString1= "PREFIX dbont: <http://dbpedia.org/ontology/> "+
+//	    	    "PREFIX dbp: <http://dbpedia.org/property/>"+
+//	    	        "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>"+
+//	    	    "   SELECT ?musician  ?place"+
+//	    	//    "   FROM<http://dbpedia.org/resource/Daphne_Oram>"+
+//	    	    "   WHERE {  "+
+//	    	    "       ?musician dbont:birthPlace ?place ."+
+//	    	    "        }";
 
 
 	    	      Query query = QueryFactory.create(sparqlQueryString1);
