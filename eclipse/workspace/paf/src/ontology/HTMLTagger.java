@@ -40,7 +40,7 @@ public class HTMLTagger {
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());
 			} catch (FileNotFoundException e) {}
-				
+			System.out.println(doc.getDocument().getFilename());
 			BufferedReader br = new BufferedReader(new InputStreamReader(file));
 			try {
 				while((line = br.readLine()) !=null){
@@ -97,6 +97,8 @@ public class HTMLTagger {
 			return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
 			return ("<span style=\"color:blue;\">"+mot+"</span>");
+		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
+			return ("<span style=\"color:green;\">"+mot+"</span>");
 		else return mot;
 	}
 }

@@ -64,17 +64,29 @@ public class MyOntology {
 				   System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
 				   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
 				   ind.setLabel(w.getWord(), "fr");
-				   linkDocuments(w,true);
+				   linkDocuments(w,1);
 			   }
-			   else linkDocuments(w,false);
+			   else linkDocuments(w,2);
+		  }
+		  else if(w.getType().startsWith("X")){
+			  linkDocuments(w,3);
+			 
+			  
 		  }
 	   }
    }
 
-	private static void linkDocuments(Words w,boolean inOnto) {
+
+	private static void linkDocuments(Words w,int n) {
 		for (MyDocument doc : w.getDocFrequency().keySet())
-			if(inOnto)docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
-			else docs.get(doc).addWordToSuggest(w.getWord().toLowerCase());
-		
+			switch(n){
+			case 1:docs.get(doc).addWordToEnhance(w.getWord().toLowerCase());
+				break;
+			case 2:docs.get(doc).addWordToSuggest(w.getWord().toLowerCase());
+				break;
+			case 3:docs.get(doc).addMotPropre(w.getWord().toLowerCase());
+				break;
+			
+			}
 	}
 }

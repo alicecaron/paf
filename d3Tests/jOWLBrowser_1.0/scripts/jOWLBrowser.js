@@ -64,7 +64,15 @@ function showOverviewResults(results, list, widget){
 	})
 
 }
-
+/*$(".jowl_link").click(function(){
+	alert("iop");
+	/* each(function(){
+		$(this).on("click", function(){
+			alert("popo");
+			var selectedWordInOntology=$(this).txt();
+			alert(selectedWordInOntology);
+		}); 
+});*/
 function createOverviewWidget(){
 
 	function sparql(query, list, widget, cb){
@@ -74,6 +82,7 @@ function createOverviewWidget(){
 			onComplete : function(res){
 				if(!res.results) {return; }
 				showOverviewResults(res.jOWLArray("?x"), list, widget);
+
 				if(cb){ cb();}
 			}
 		});

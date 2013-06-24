@@ -20,7 +20,7 @@ public class JsonCreator {
 		JSONArray jsonObjectList=new JSONArray();
 		json.put("name", "Programme Scolaire");		
 		json.put("children",jsonObjectList);
-		
+			
 		for(MyDocument doc:corpus){
 			ArrayList<Words> docWords = doc.getDocWords();
 			String matiere;
@@ -56,7 +56,7 @@ public class JsonCreator {
 					verbe.put("name", word.getWord());
 					verbe.put("tfidf",word.getDocFrequency().get(doc).getTfidf());
 					verbe.put("corpusFreq", word.getCorpusFrequency());
-
+					
 					String otherDocs="";
 					Set<MyDocument> clef = word.getDocFrequency().keySet();
 					Iterator<MyDocument> it = clef.iterator();
