@@ -1,6 +1,5 @@
 package analyse;
 
-import java.util.Set;
 
 public class Lemm extends Mots {
 	private String lemm;

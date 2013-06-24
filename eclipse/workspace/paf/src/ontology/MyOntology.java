@@ -61,7 +61,7 @@ public class MyOntology {
 		  if (w.isVerb()) {
 			   String lemm = w.getLemm().getLemm(); 
 			   if (classes.containsKey(lemm)){
-				   System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
+				   //System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
 				   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
 				   ind.setLabel(w.getWord(), "fr");
 				   linkDocuments(w,1);
