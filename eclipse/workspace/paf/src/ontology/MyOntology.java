@@ -87,10 +87,9 @@ public class MyOntology {
 			case 3:docs.get(doc).addMotPropre(w.getWord().toLowerCase());
 				break;
 			case 4:
-				if(w.getDocFrequency().get(doc).getTfidf()>5.0)
-					docs.get(doc).addHighTfidf(w.getWord().toLowerCase());
-				
-			
+				Float f;
+				if((f = w.getLemm().getDocFrequency().get(doc).getTfidf())>5.0)
+					docs.get(doc).addHighTfidf(w.getWord().toLowerCase(),f);
 			}
 	}
 }

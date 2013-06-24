@@ -2,7 +2,7 @@ package analyse;
 
 public class DocFrequency {
 	private int documentFrequency;
-	private float tfidf;
+	private float tfidf =0;
 
 	public float getTfidf() {
 		return tfidf;
@@ -23,10 +23,10 @@ public class DocFrequency {
 		this.documentFrequency+=1;
 	}
 	public float computeTFIDF(int CORPUS_SIZE,int nbDoc) {
-		this.tfidf=(float) (documentFrequency*log2((CORPUS_SIZE/nbDoc)+1));
+		this.tfidf=(float) (documentFrequency*log2(CORPUS_SIZE/nbDoc)+1);
 		return tfidf;
 	}
-	private double log2(int i) {
+	private double log2(float i) {
 		return Math.log(i)/Math.log(2);
 	}
 }

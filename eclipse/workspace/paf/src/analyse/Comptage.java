@@ -33,16 +33,16 @@ public class Comptage {
 		/*****************************************************
 		 * Tri des mots et lemms pour enlever les inutiles
 		 *****************************************************/
-		sortUselessWords(corpusWords);
-		//sortUselessLemms(corpusLemms);
+	//	sortUselessWords(corpusWords);
+		sortUselessLemms(corpusLemms);
 
 		/*****************************************************
 		 * Calculs des TFIDF des mots et des lemmes
 		 *****************************************************/
 		for (Words word : corpusWords)
-			word.computeTFIDF(corpus);
+			if(!word.getFiltered()) word.computeTFIDF(corpus);
 		for (Lemm lemm : corpusLemms)
-			lemm.computeTFIDF(corpus);
+			if(!lemm.getFiltered()) lemm.computeTFIDF(corpus);
 
 		/*****************************************************
 		 * Matrice des différences inter-documents

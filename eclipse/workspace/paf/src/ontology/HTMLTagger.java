@@ -22,20 +22,8 @@ public class HTMLTagger {
 			ArrayList<String> lignes = new ArrayList<String>();
 			InputStream file = null;
 			
-			String repoSaved = null;
-			String repoTagged = null;;
-			//sources pdf:1 sources html:2
-			int source=1;
-			switch(source){
-			case 1:
-				repoSaved="pdfTxt/pdfSaved/";
-				repoTagged="pdfTxt/pdfTagged/";
-				break;
-			case 2:
-				repoSaved="htmlTxt/htmlSaved/";
-				repoTagged="htmlTxt/htmlTagged/";
-				break;			
-			}
+			String repoSaved="docTxt/docSaved/";
+			String repoTagged="docTxt/docTagged/";
 			
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());
@@ -74,7 +62,7 @@ public class HTMLTagger {
 				BufferedWriter bw = new BufferedWriter(fw);
 				
 				for(String s: lignes){
-					System.out.println(s);
+				//	System.out.println(s);
 					bw.write(s+"\n");
 				}
 				bw.close();
@@ -102,9 +90,14 @@ public class HTMLTagger {
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
 			//return ("<span class=\"nomsPropres;\">"+mot+"</span>");
 			return ("<span style=\"color:green;\">"+mot+"</span>");
-		else if (doc.getHighTfidfWords().contains(mot.toLowerCase()))
+		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
+			float tfidf = doc.getHighTfidfWords().get(mot.toLowerCase());
 			//return ("<span class=\"highTfidf;\">"+mot+"</span>");
-			return ("<span style=\"color:#2c3e50;\">"+mot+"</span>");
+			return ("<span style=\"color:#2c3e50;\" tfidf=\""+tfidf+
+						"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
+		}
+			
+			
 		else return mot;
 	}
 }

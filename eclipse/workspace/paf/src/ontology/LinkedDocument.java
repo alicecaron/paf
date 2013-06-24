@@ -1,6 +1,7 @@
 package ontology;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import analyse.MyDocument;
@@ -11,7 +12,7 @@ public class LinkedDocument {
 	private HashSet<String> wordsToEnhance; // mots du doc appartenant à l'ontologie
 	private HashSet<String> wordsToSuggest; // les autres verbes
 	private HashSet<String> motsPropres;	//noms propres
-	private HashSet<String> highTfidfWords; // mots à gde Tfidf
+	private HashMap<String, Float> highTfidfWords; // mots à gde Tfidf
 	
 	MyDocument document;
 
@@ -25,7 +26,7 @@ public class LinkedDocument {
 		wordsToEnhance = new HashSet<String>();
 		wordsToSuggest = new HashSet<String>();
 		motsPropres = new HashSet<String>();
-		highTfidfWords = new HashSet<String>();
+		highTfidfWords = new HashMap<String,Float>();
 		HTMLfile = doc.getFilename().replace(".txt", ".html");
 	}
 
@@ -41,7 +42,7 @@ public class LinkedDocument {
 	public HashSet<String> getMotsPropres() {
 		return motsPropres;
 	}
-	public HashSet<String> getHighTfidfWords() {
+	public HashMap<String,Float> getHighTfidfWords() {
 		return highTfidfWords;
 	}
 
@@ -55,8 +56,8 @@ public class LinkedDocument {
 	public void addWordToSuggest(String word) {
 		wordsToSuggest.add(word);		
 	}
-	public void addHighTfidf(String word) {
-		highTfidfWords.add(word);
+	public void addHighTfidf(String word,Float f) {
+		highTfidfWords.put(word,f);
 		
 	}
 	
