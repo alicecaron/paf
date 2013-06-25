@@ -56,11 +56,11 @@ public class Comptage {
 		docDiff = new DocumentDifferences(corpus);
 
 		
-		/*****************************************************
-		 * Création du JSON pour la visualisation
-		 *****************************************************/
-		JsonCreator json=new JsonCreator(corpus);
-		
+//		/*****************************************************
+//		 * Création du JSON pour la visualisation
+//		 *****************************************************/
+//		JsonCreator json=new JsonCreator(corpus);
+//		//CSVCreator csv=new CSVCreator(corpusWords);
 		
 		/*****************************************************
 		 * Affichage des statistiques
@@ -207,7 +207,9 @@ public class Comptage {
 				.println("-----------------------------------------------------------");
 	}
 	//fonctions d'affichage des stats
-	private static void displayDocumentSimilarities() {
+	private static void displayDocumentSimilarities() throws IOException {
+		exportSimilarities exportSimilarities=new exportSimilarities("similarites.csv");
+		
 		for (MyDocument doc : corpus) {
 			// String filename=doc.getFilename();
 			String closeDocuments = doc.getMatiere() + " proche de: ";
@@ -217,15 +219,18 @@ public class Comptage {
 			for (TripletDistance triplet : diff) {
 				if (triplet.getDoc1().getFilename().equals(doc.getFilename())) {
 					distancesToSort.put(triplet.getDoc2().getFilename(),triplet.getDistance());
-					closeDocuments += triplet.getDoc2().getMatiere() + " "+ triplet.getDistance() + ", ";
+					//closeDocuments += triplet.getDoc2().getMatiere() + " "+ triplet.getDistance() + ", ";
+					exportSimilarities.addCloseDoc(doc.getFilename(), triplet.getDoc2().getFilename(), triplet.getDistance());
 				} else if (triplet.getDoc2().getFilename().equals(doc.getFilename())) {
 					distancesToSort.put(triplet.getDoc1().getFilename(),
 					triplet.getDistance());
-					closeDocuments += triplet.getDoc1().getMatiere() + " "+ triplet.getDistance() + ", ";
+					//closeDocuments += triplet.getDoc1().getMatiere() + " "+ triplet.getDistance() + ", ";
+					exportSimilarities.addCloseDoc(doc.getFilename(), triplet.getDoc1().getFilename(), triplet.getDistance());
 				}
 			}
-			System.out.println(closeDocuments);
+			//System.out.println(closeDocuments);
 		}
+		exportSimilarities.display();
 	}
 	private static void displayFiltered() {
 		for (Words word : corpusWords.values()) {

@@ -3,7 +3,9 @@ package jsonCreator;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 import org.json.simple.JSONArray;
@@ -14,15 +16,25 @@ import analyse.Words;
 
 public class JsonCreator {
 	private ArrayList<JSONObject> matiereList;
+	private Map<MyDocument,ArrayList<Words>> listeVerbes;
+	
 	public JsonCreator(Set<MyDocument> corpus){
+		listeVerbes=new HashMap<MyDocument, ArrayList<Words>>();
+	}
+	public void addWordInDoc(Words word,MyDocument doc){
+		if(!listeVerbes.containsKey(doc))
+			listeVerbes.put(doc, new ArrayList<Words>());
+		listeVerbes.get(doc).add(word);
+	}
+	public void makeJson(){
 		this.matiereList=new ArrayList<JSONObject>();
 		JSONObject json = new JSONObject();
 		JSONArray jsonObjectList=new JSONArray();
 		json.put("name", "Programme Scolaire");		
 		json.put("children",jsonObjectList);
 			
-		for(MyDocument doc:corpus){
-			ArrayList<Words> docWords = doc.getDocWords();
+		for(MyDocument doc:listeVerbes.keySet()){
+			//ArrayList<Words> docWords = doc.getDocWords();
 			String matiere;
 			String classe;
 			if((matiere=doc.getMatiere())==null)
@@ -49,7 +61,7 @@ public class JsonCreator {
 			}
 			
 			JSONArray docClasseArray = new JSONArray();
-			for(Words word:docWords){
+			for(Words word:this.listeVerbes.get(doc)){
 				if(word.getType().equals("VINF")){
 					JSONObject verbe = new JSONObject();
 					verbe.put("name", word.getWord());

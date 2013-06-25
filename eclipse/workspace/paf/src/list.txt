@@ -6,13 +6,13 @@ http://www.education.gouv.fr/cid56295/mene1109954a.html lycee_ecjs_1
 http://www.education.gouv.fr/cid53319/mene1019675a.html lycee_histoiregeo_1
 http://www.education.gouv.fr/cid53320/mene1019796a.html lycee_langues_1-T
 http://www.education.gouv.fr/cid53321/mene1019767a.html lycee_ses_1ses
-http://www.education.gouv.fr/cid53323/mene1019645a.html lycee_sciences_1SES-1L
+http://www.education.gouv.fr/cid53323/mene1019645a.html lycee_sciences_1ES-L
 http://www.education.gouv.fr/cid53324/mene1019738a.html lycee_litteratureetrangere_TL
-http://www.education.gouv.fr/cid53325/mene1019677a.html lycee_art_TL
+http://www.education.gouv.fr/cid53325/mene1019677a.html lycee_arts_TL
 http://www.education.gouv.fr/cid56818/mene1115318a.html lycee_eps_T
 http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57574 lycee_ecjs_T
-http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57575 lycee_histoiregeo_TSES-TL
-http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57523 lycee_ses_TSES
+http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57575 lycee_histoiregeo_TES-L
+http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57523 lycee_ses_TES
 http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57526 lycee_litterature_TL
 http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57524 lycee_droit_TL
 http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=57572 lycee_informatique_TS

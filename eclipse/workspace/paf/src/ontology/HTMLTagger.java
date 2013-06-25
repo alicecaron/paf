@@ -58,13 +58,13 @@ public class HTMLTagger {
 				lignes.set(n, append(newline));
 			}
 		
-			String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
+			//String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
 			
 			try {
 				FileWriter fw = new FileWriter(repoTagged+doc.HTMLfile);
 				BufferedWriter bw = new BufferedWriter(fw);
 				
-				bw.write(style);
+				//bw.write(style);
 				
 				for(String s: lignes){
 				//	System.out.println(s);
@@ -99,7 +99,7 @@ public class HTMLTagger {
 			return ("<span class=\"verbePasOnto\""+tfidfInfos+">"+mot+"</span>");
 			//return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
-			return ("<span class=\"nomsPropres;\""+tfidfInfos+">"+mot+"</span>");
+			return ("<span class=\"nomsPropres\""+tfidfInfos+">"+mot+"</span>");
 			//return ("<span style=\"color:green;\">"+mot+"</span>");
 		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
 			//return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
