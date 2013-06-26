@@ -67,6 +67,8 @@ public class JsonCreator {
 					verbe.put("name", word.getWord());
 					verbe.put("tfidf",word.getDocFrequency().get(doc).getTfidf());
 					verbe.put("corpusFreq", word.getCorpusFrequency());
+					verbe.put("file", doc.getFilename());
+
 					verbe.put("nbDocApparition", word.getDocFrequency().size());
 					verbe.put("nbApparition", word.getDocFrequency().get(doc).getDocumentFrequency());
 
@@ -75,7 +77,8 @@ public class JsonCreator {
 					Iterator<MyDocument> it = clef.iterator();
 					while (it.hasNext()) {
 						MyDocument key = it.next();
-						otherDocs+="<br><span class=\"other\">"+key.getMatiere()+" ("+key.getClasse()+")</span>";
+						//otherDocs+="<br><span class=\"other\">"+key.getMatiere()+" ("+key.getClasse()+")</span>";
+						otherDocs+=key.getFilename()+",";
 					}
 					verbe.put("otherDocs",otherDocs);
 					docClasseArray.add(verbe);

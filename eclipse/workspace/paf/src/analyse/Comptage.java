@@ -1,6 +1,7 @@
 package analyse;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,7 +21,8 @@ public class Comptage {
 	private static Set<MyDocument> corpus = new HashSet<MyDocument>();
 	private static int CORPUS_SIZE;
 	private static DocumentDifferences docDiff;
-
+	public static String regex="(^(ADVNE|ADVPAS|DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR|VA|VE).*)";
+	
 	public static void main(String[] args) throws IOException {
 		String repository = "test/";
 		getRepositoryList(repository);
@@ -36,18 +38,29 @@ public class Comptage {
 		 *****************************************************/
 		sortUselessWords();
 		sortUselessLemms();
+		//forTheCloud();
 
 		/*****************************************************
 		 * Calculs des TFIDF des mots et des lemmes
 		 *****************************************************/
 		for (Words word : corpusWords.values())
 			if(!word.getFiltered()) word.computeTFIDF(corpus);
-		
-		for (Lemm lemm : corpusLemms.values())
+
+		String cc="";
+		for (Lemm lemm : corpusLemms.values()){
 			if(!lemm.getFiltered()){ 
 				lemm.computeTFIDF(corpus);
 				//System.out.println(lemm.getLemm() +" "+lemm.getType());
+				if(!lemm.getFiltered())
+					for(int i=0;i<lemm.getCorpusFrequency();i++)
+						if(!lemm.getLemm().toLowerCase().matches("(pas|ci|son|est|très|plus|pas|non|tel|zéro|bien|ne|sont|sera|soit)"))
+							cc+=" "+lemm.getLemm();
 			}
+		}
+		File file=new File("total.txt");
+		FileWriter w = new FileWriter(file);
+		w.write(cc);
+		w.close();
 			
 
 		/*****************************************************
@@ -72,10 +85,23 @@ public class Comptage {
 		System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);	
 	}
 
+	/*private static void forTheCloud() throws IOException {
+		String cc="";
+		for(Lemm lemm:corpusLemms.values()){
+			if(!lemm.getFiltered())
+				for(int i=0;i<lemm.getCorpusFrequency();i++)
+					cc+=" "+lemm.getLemm();
+		}
+		File file=new File("total.txt");
+		FileWriter w = new FileWriter(file);
+		w.write(cc);
+		w.close();
+	}*/
+
 	//Tris
 	private static void sortUselessWords() {
 		for (Words word : corpusWords.values()) {
-			if ( word.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")
+			if ( word.getType().matches(regex)
 				|| (word.getType().equals("MOTINC")&&corpusWords.containsKey(word.getWord().toLowerCase())) ){
 				word.setFiltered(true);
 			//if (word.getType().matches("(^(X).*)")){
@@ -86,7 +112,7 @@ public class Comptage {
 	}
 	private static void sortUselessLemms() {
 		for (Lemm lemm : corpusLemms.values()) {
-			if (lemm.getType().matches("(^(DET|COCO|CHIF|COSUB|PDEM|PIN|PPER|PPOB|PRE|YPFAI|YPFOR).*)")
+			if (lemm.getType().matches(regex)
 				|| (lemm.getType().equals("MOTINC")&&corpusWords.containsKey(lemm.getLemm().toLowerCase()))){
 				lemm.setFiltered(true);
 				//System.out.println(lemm.getWord()+" "+lemm.getType()+" is now filtered");

@@ -49,7 +49,7 @@ public class MyOntology {
     	Collection<Words> verbes = comptage.getCorpusWords();
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
-        System.out.println(m.getGraph());
+        //System.out.println(m.getGraph());
         fillOntology(m,verbes);
         
   //      new ClassHierarchy().showHierarchy( System.out, m );
