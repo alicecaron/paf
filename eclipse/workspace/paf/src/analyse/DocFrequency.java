@@ -22,8 +22,8 @@ public class DocFrequency {
 	public void updateDocFrequency(){
 		this.documentFrequency+=1;
 	}
-	public float computeTFIDF(int CORPUS_SIZE,int nbDoc) {
-		this.tfidf=(float) (documentFrequency*log2(CORPUS_SIZE/nbDoc)+1);
+	public float computeTFIDF(int CORPUS_SIZE,int nbDoc,int nbWords) {
+		this.tfidf=(float) (documentFrequency/nbWords*log2(CORPUS_SIZE/nbDoc)+1);
 		return tfidf;
 	}
 	private double log2(float i) {

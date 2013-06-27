@@ -55,7 +55,7 @@ public class Mots {
 		int corpusSize=corpus.size();
 		for(MyDocument document:corpus){
 			if(this.docFrequency.containsKey(document))
-				this.docFrequency.get(document).computeTFIDF(corpusSize,this.docFrequency.size());
+				this.docFrequency.get(document).computeTFIDF(corpusSize,this.docFrequency.size(),document.getNbWords());
 		}
 	}
 	public void setFiltered(boolean filtered) {

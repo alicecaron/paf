@@ -18,8 +18,15 @@ public class MyDocument {
 	private ArrayList<Lemm> docLemms = new ArrayList<Lemm>();
 	private Double sumCarreeOccurencesLemm;
 	private Double sumCarreeTFIDFLemm;
+	private int nbWords;
 	
 	
+	public int getNbWords() {
+		return nbWords;
+	}
+	public void setNbWords(int nbWords) {
+		this.nbWords = nbWords;
+	}
 	public Double getSumCarreeTFIDF() {
 		return sumCarreeTFIDF;
 	}
@@ -131,9 +138,9 @@ public class MyDocument {
 	
 	public void computeSumPerWord(ArrayList<Words> commons) {
 		for(Words word:commons){
-			Double x =  (double)(word.getDocFrequency().get(this).getDocumentFrequency());
+			Double x =  (double)(word.getDocFrequency().get(this).getDocumentFrequency()/(double)(this.nbWords));
 			this.sumCarreeOccurences+=x*x;
-			float y = word.getDocFrequency().get(this).getTfidf();
+			float y = word.getDocFrequency().get(this).getTfidf()/(float)(this.nbWords);
 			this.sumCarreeTFIDF+=y*y;
 		}
 	}
@@ -152,6 +159,7 @@ public class MyDocument {
 		this.docLemms.add(lemm);		
 	}
 	public void addWord(Words words) {
+		this.nbWords++;
 		for(Words w:docWords)
 			if(w.getWord().equals(words.getWord()))
 				return;

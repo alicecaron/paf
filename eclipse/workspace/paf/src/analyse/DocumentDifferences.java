@@ -35,7 +35,7 @@ public class DocumentDifferences {
 		 * Similarités par 	MOTS 1:occurence 2:TFIDF
 		 * 					LEMM 3:occurence 4:TFIDF
 		 *********************************************/
-		int comptageChoice=2;
+		int comptageChoice=1;
 
 		if(comptageChoice==1 || comptageChoice==2){
 			ArrayList<Words> commons=new ArrayList<Words>();
@@ -55,7 +55,7 @@ public class DocumentDifferences {
 				for(Words word1:commons){
 					Double num;
 					Double denom;
-					num=(double)(word1.getDocFrequency().get(currentDoc).getDocumentFrequency()*word1.getDocFrequency().get(doc2).getDocumentFrequency());
+					num=(double)(word1.getDocFrequency().get(currentDoc).getDocumentFrequency()/(double)(currentDoc.getNbWords())*word1.getDocFrequency().get(doc2).getDocumentFrequency()/(double)(doc2.getNbWords()));
 					denom=Math.sqrt(sumCarree1*sumCarree2);
 					distance+=num/denom;
 				}		
