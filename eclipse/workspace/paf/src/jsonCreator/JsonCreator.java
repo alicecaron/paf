@@ -92,7 +92,7 @@ public class JsonCreator {
 			}
 		}		
 		try {
-			FileWriter file = new FileWriter("json/test.json");
+			FileWriter file = new FileWriter("json/tree.json");
 			file.write(json.toJSONString());
 			file.flush();
 			file.close();

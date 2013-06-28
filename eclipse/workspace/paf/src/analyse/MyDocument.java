@@ -112,7 +112,6 @@ public class MyDocument {
 		this.groupe=null;
 		try{
 			if(nameCompo[0]!=null)
-				//en 0:tout college lycee
 				this.groupe=nameCompo[0];
 		}
 		catch(Exception e){
@@ -127,7 +126,6 @@ public class MyDocument {
 			System.err.println("Impossible de définir la classe et la matière du document "+this.filename);return;}
 		try{
 			if(nameCompo[2] != null){
-				//intro, general
 				this.classe=nameCompo[2];
 			}
 		}

@@ -1,6 +1,5 @@
 package ontology;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
@@ -11,9 +10,7 @@ import java.util.Set;
 
 import jsonCreator.JsonCreator;
 
-import org.apache.jena.atlas.json.JsonAccess;
-
-import analyse.CSVCreator;
+import analyse.CSVBloomCreator;
 import analyse.Comptage;
 import analyse.MyDocument;
 import analyse.Words;
@@ -22,16 +19,8 @@ import com.hp.hpl.jena.ontology.Individual;
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.ontology.OntResource;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
 
-
-/**
- * <p>
- * Execution wrapper for class hierarchy example
- * </p>
- */
 public class MyOntology {
 
 	public static String URI = "http://www.semanticweb.org/deslis/ontologies/2013/1/LRE-BloomActionValues#";
@@ -49,16 +38,8 @@ public class MyOntology {
     	Collection<Words> verbes = comptage.getCorpusWords();
         OntModel m = ModelFactory.createOntologyModel( OntModelSpec.OWL_MEM, null );
         m.read ("owl/Bloom_LRE.owl");
-        //System.out.println(m.getGraph());
         fillOntology(m,verbes);
         
-  //      new ClassHierarchy().showHierarchy( System.out, m );
-        File file= new File("myonto.xml");
-/*        try {
-			m.write(new FileOutputStream(file));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}*/
         HTMLTagger htmlTagger = new HTMLTagger();
         htmlTagger.tagHTML(docs);
     } 
@@ -72,13 +53,13 @@ public class MyOntology {
 		   classes.put(cl.getLabel("fr"), cl);
 	   }
 	   
-//	   CSVCreator csvCreator = new CSVCreator();
+	   CSVBloomCreator csvCreator = new CSVBloomCreator("csv/data.csv");
 	   jsonCreator=new JsonCreator(corpus);
 	   for(Words w : mots){
 		  if (w.isVerb()) {
 			   String lemm = w.getLemm().getLemm(); 
 			   if (classes.containsKey(lemm)){
-				   //csvCreator.addLine(w);
+				   csvCreator.addLine(w);
 				   //System.out.println("Verbe de l'ontologie trouvé : "+ w.getWord() +" pour "+ lemm);
 				   Individual ind = classes.get(lemm).createIndividual(URI+w.getWord());
 				   ind.setLabel(w.getWord(), "fr");
@@ -92,7 +73,7 @@ public class MyOntology {
 		 linkDocuments(w,4);
 	   }
 	   jsonCreator.makeJson();
-	   //csvCreator.makeCSVFile();
+	   csvCreator.makeCSVFile();
    }
 
 
@@ -107,8 +88,9 @@ public class MyOntology {
 			case 3:docs.get(doc).addMotPropre(w.getWord().toLowerCase());
 				break;
 			}
-			Float f;
-			if((f = w.getLemm().getDocFrequency().get(doc).getTfidf())>5.0)
+			Float f=w.getLemm().getDocFrequency().get(doc).getTfidf();
+			//System.out.println(f);
+			if(f>5)
 				docs.get(doc).addHighTfidf(w.getWord().toLowerCase(),f);
 		}
 	}

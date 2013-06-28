@@ -8,7 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -28,7 +27,7 @@ public class HTMLTagger {
 			try {
 				file = new FileInputStream(repoSaved+doc.getHTMLfile());
 			} catch (FileNotFoundException e) {}
-			System.out.println(repoSaved+doc.getHTMLfile());
+			//System.out.println(repoSaved+doc.getHTMLfile());
 			BufferedReader br = new BufferedReader(new InputStreamReader(file));
 			try {
 				while((line = br.readLine()) !=null){
@@ -45,8 +44,6 @@ public class HTMLTagger {
 				while(i<s.length()){
 					char c = s.charAt(i);
 					if (c=='<' || c=='>' || c==' ' || c=='\''||c==8217 || c==';' || c=='.' || c==',' || c=='(' || c==')'){
-					//	System.out.println("caractère stop : "+c+" i="+i+" j="+j);
-					//	System.out.println((int)s.charAt(j+1));
 						newline.add(testMot(s.substring(j,i),doc));
 						j=i+1;
 						if(c=='<') while(i<s.length() && s.charAt(j)!='>') j++;
@@ -56,26 +53,18 @@ public class HTMLTagger {
 				}
 				newline.add(s.substring(j,s.length()));		
 				lignes.set(n, append(newline));
-			}
-		
-			//String style="<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
-			
+			}	
 			try {
 				FileWriter fw = new FileWriter(repoTagged+doc.HTMLfile);
-				BufferedWriter bw = new BufferedWriter(fw);
-				
-				//bw.write(style);
-				
+				BufferedWriter bw = new BufferedWriter(fw);				
 				for(String s: lignes){
-				//	System.out.println(s);
 					bw.write(s+"\n");
 				}
 				bw.close();
 				fw.close();
 			} catch (IOException e) {e.printStackTrace();}
 			lignes.clear();
-		}
-			
+		}		
 	}
 
 	private static String append(ArrayList<String> newline) {
@@ -94,15 +83,11 @@ public class HTMLTagger {
 		
 		if (doc.getWordsToEnhance().contains(mot.toLowerCase()))
 			return ("<span class=\"verbeOnto\""+tfidfInfos+">"+mot+"</span>");
-			//return ("<span style=\"color:red;\">"+mot+"</span>");
 		else if (doc.getWordsToSuggest().contains(mot.toLowerCase()))
 			return ("<span class=\"verbePasOnto\""+tfidfInfos+">"+mot+"</span>");
-			//return ("<span style=\"color:blue;\">"+mot+"</span>");
 		else if (doc.getMotsPropres().contains(mot.toLowerCase()))
 			return ("<span class=\"nomsPropres\""+tfidfInfos+">"+mot+"</span>");
-			//return ("<span style=\"color:green;\">"+mot+"</span>");
 		else if (doc.getHighTfidfWords().containsKey(mot.toLowerCase())){
-			//return ("<span class=\"highTfidf;\" tfidf=\""+tfidf+"\" title=\"tfidf: "+tfidf+"\" >"+mot+"</span>");
 			return ("<span class=\"highTfidf\""+tfidfInfos+" >"+mot+"</span>");
 		}
 		else return mot;

@@ -7,12 +7,12 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class exportSimilarities {
+public class ExportSimilarities {
 
 	private Map<String,ArrayList<CloseToDoc>> docSimil;
 	private CSVSimilCreator csvSimilCreator;
 	
-	public exportSimilarities(String filename){
+	public ExportSimilarities(String filename){
 		docSimil=new HashMap<String,ArrayList<CloseToDoc>>();
 		this.csvSimilCreator = new CSVSimilCreator(filename);
 	}
@@ -31,12 +31,10 @@ public class exportSimilarities {
 			csvSimilCreator.addLine(line);
 			csvSimilCreator.makeCSVFile();
 		}
-		
 	}
 
 	private void sort(String doc) {
 		ArrayList<CloseToDoc> list = docSimil.get(doc);
-		
 		Collections.sort(list, new Comparator<CloseToDoc>() {
 			public int compare(CloseToDoc f1, CloseToDoc f2) {
 				float res=f1.getDistance()-f2.getDistance();
@@ -45,7 +43,6 @@ public class exportSimilarities {
 				else
 					return 1;
 			}
-		});
-		
+		});	
 	}
 }

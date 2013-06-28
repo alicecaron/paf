@@ -3,9 +3,6 @@ package tagger;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Set;
-
-import analyse.Words;
 
 public class TaggedDocument {
 	
@@ -33,7 +30,6 @@ public class TaggedDocument {
 			while((ligne = br.readLine()) !=null)
 				this.taggedDocContent.add(ligne);
 			br.close();
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

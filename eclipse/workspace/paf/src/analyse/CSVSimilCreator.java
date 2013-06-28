@@ -22,10 +22,8 @@ public class CSVSimilCreator {
 	
 	public void makeCSVFile() throws IOException{
 		String CSVContent="document,proches";
-	
 		for(String line:lines)
 			CSVContent+="\n"+line;
-		
 		File file = new File(filename);
 		if(!file.exists()){
 			file.createNewFile();
