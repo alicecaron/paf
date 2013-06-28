@@ -59,12 +59,6 @@ public class Comptage {
 		 *****************************************************/
 		docDiff = new DocumentDifferences(corpus);
 
-		
-//		/*****************************************************
-//		 * Création du JSON pour la visualisation
-//		 *****************************************************/
-//		//JsonCreator json=new JsonCreator(corpus);
-//		
 		/*****************************************************
 		 * Affichage des statistiques
 		 *****************************************************/
@@ -75,7 +69,6 @@ public class Comptage {
 		//System.out.println("Nombre de documents dans le corpus: " + CORPUS_SIZE);	
 	}
 
-	
 
 	//Filtrage des mots et lemmes
 	private static void sortUselessWords() {
@@ -157,47 +150,35 @@ public class Comptage {
 	 **************************************/
 	private static void displayWordStatistics() {
 		for (Words word : corpusWords.values()) {
-			System.out.println("=====================" + word.getWord() + " "
-					+ word.getType() + " " + word.getLemm());
-			System.out.println("++ Corpus frequency: "
-					+ word.getCorpusFrequency());
-			System.out.println("++ Documents presence: "
-					+ word.getDocFrequency().size());
+			System.out.println("=====================" + word.getWord() + " "+ word.getType() + " " + word.getLemm());
+			System.out.println("++ Corpus frequency: "+ word.getCorpusFrequency());
+			System.out.println("++ Documents presence: "+ word.getDocFrequency().size());
 			getDocPresence(word);
 		}
 	}
 	private static void displayLemmStatistics() {
 		for (Lemm lemm : corpusLemms.values()) {
-			System.out.println("=====================" + lemm.getLemm() + " "
-					+ lemm.getType());
-			System.out.println("++ Corpus frequency: "
-					+ lemm.getCorpusFrequency());
-			System.out.println("++ Documents presence: "
-					+ lemm.getDocFrequency().size());
+			System.out.println("=====================" + lemm.getLemm() + " "+ lemm.getType());
+			System.out.println("++ Corpus frequency: "+ lemm.getCorpusFrequency());
+			System.out.println("++ Documents presence: "+ lemm.getDocFrequency().size());
 			getDocPresence(lemm);
 		}
 	}
 	private static void getDocPresence(Mots mot) {
-		System.out
-				.println("---------------------------------Statistics per document:");
+		System.out.println("---------------------------------Statistics per document:");
 		Set<MyDocument> clef = mot.getDocFrequency().keySet();
 		Iterator<MyDocument> it = clef.iterator();
 		while (it.hasNext()) {
 			MyDocument key = it.next();
-			int documentFrequency = mot.getDocFrequency().get(key)
-					.getDocumentFrequency();
-			System.out.println("**" + key.getFilename() + ": "
-					+ documentFrequency + " times ");
+			int documentFrequency = mot.getDocFrequency().get(key).getDocumentFrequency();
+			System.out.println("**" + key.getFilename() + ": "+ documentFrequency + " times ");
 			try {
-				System.out.print("(" + key.getClasse() + "," + key.getMatiere()
-						+ "," + key.getGroupe() + ")");
+				System.out.print("(" + key.getClasse() + "," + key.getMatiere()+ "," + key.getGroupe() + ")");
 			} catch (Exception e) {
 			}
-			System.out.println("    TFIDF: "
-					+ mot.getDocFrequency().get(key).getTfidf());
+			System.out.println("    TFIDF: "+ mot.getDocFrequency().get(key).getTfidf());
 		}
-		System.out
-				.println("-----------------------------------------------------------");
+		System.out.println("-----------------------------------------------------------");
 	}
 	//fonctions d'affichage des stats
 	private static void displayDocumentSimilarities() throws IOException {
